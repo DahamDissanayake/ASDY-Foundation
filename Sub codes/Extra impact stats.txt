@@ -1,0 +1,25 @@
+<!-- Impact Statistics -->
+        <section class="impact-stats">
+            <div class="container">
+                <h2>Our Impact by Numbers</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">50,000+</div>
+                        <div class="stat-label">Students Educated</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">200+</div>
+                        <div class="stat-label">Schools Built</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">25</div>
+                        <div class="stat-label">Countries Served</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">15</div>
+                        <div class="stat-label">Years of Service</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>

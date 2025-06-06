@@ -1,0 +1,162 @@
+/* ========================================
+   Intro SECTION
+   ======================================== */
+.intro {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../img/home/sl-kids.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--neutral-white);
+    margin-top: 80px;
+}
+
+.intro-content {
+    max-width: 800px;
+    padding: 0 32px;
+}
+
+.intro-content p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 20.8px;
+    margin-bottom: 32px;
+}
+
+.intro-content h1 {
+    color: var(--primary-orange)
+    
+}
+/* ========================================
+   CONTENT SECTIONS
+   ======================================== */
+.mission {
+    background: var(--neutral-light-gray);
+}
+
+.mission-content {
+    display: grid;
+    grid-template-columns: 1fr; /* One column */
+    gap: 32px;
+    align-items: start;
+    text-align: center;
+}
+
+.mission-text p {
+    margin-bottom: 24px;
+    font-size: 17.6px;
+    line-height: 1.8;
+}
+
+.sdg-logo img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px var(--shadow-light);
+}
+
+.content-navigation {
+    background: var(--neutral-white);
+    text-align: center;
+}
+
+.content-navigation h2 {
+    margin-bottom: 8px;
+}
+
+.content-navigation > p {
+    margin-bottom: 48px;
+    font-size: 19.2px;
+    color: var(--neutral-gray);
+}
+
+.content-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    margin-top: 32px;
+}
+
+.content-card {
+    background: var(--neutral-white);
+    border-radius: 15px;
+    box-shadow: 0 8px 25px var(--shadow-light);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.content-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 20px 40px var(--shadow-medium);
+}
+
+.content-card .card-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.content-card .card-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, var(--primary-orange), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.content-card:hover .card-image::after {
+    opacity: 0.3;
+}
+
+/* ========================================
+   STATISTICS SECTION
+   ======================================== */
+.impact-stats {
+    background: var(--primary-orange);
+    color: var(--neutral-white);
+}
+
+.impact-stats h2 {
+    text-align: center;
+    color: var(--neutral-white);
+    margin-bottom: 48px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 32px;
+}
+
+.stat-card {
+    text-align: center;
+    padding: 32px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-number {
+    font-size: 48px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 8px;
+    color: var(--neutral-white);
+}
+
+.stat-label {
+    font-size: 17.6px;
+    opacity: 0.9;
+    color: var(--neutral-white);
+}

@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feedback | ASDY Foundation</title>
-    <link rel="icon" type="image/png" href="img/ASDY_logo.png" />
-    <link rel="stylesheet" href="css/global.css">
-</head>
-<body>
-    <!-- Header with Navigation -->
+ <!-- Header with Navigation -->
     <header class="header">
         <div class="container">
             <nav class="nav">
@@ -32,9 +22,7 @@
     </header>
 
 
-    <!-- Start Your Code from here-->
-
-     <!-- Footer -->
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -53,7 +41,7 @@
                         </p>
                 </div>
             
-               <div class="footer-logo">
+                <div class="footer-logo">
                     <img src="img/ASDY_full.png" alt="ASDY Foundation Logo" style="max-width: 300px; width: 100%; height: auto; display: block;">
                 </div>
                 
@@ -66,5 +54,3 @@
             </div>
         </div>
     </footer>
-</body>
-</html>
