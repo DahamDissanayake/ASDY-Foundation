@@ -239,7 +239,7 @@ section {
     transition: all 0.3s ease;
 }
 
-.donate-btn:hover {
+.usr-btn:hover {
     background: var(--primary-orange-dark);
     transform: translateY(-2px);
     box-shadow: 0 5px 15px var(--shadow-medium);
@@ -472,11 +472,11 @@ img {
    RESPONSIVE DESIGN
    ======================================== */
 @media (max-width: 768px) {
-    .hero-content h1 {
+    .intro-content h1 {
         font-size: 40px;
     }
     
-    .hero-content p {
+    .intro-content p {
         font-size: 17.6px;
     }
     
@@ -502,10 +502,6 @@ img {
         grid-template-columns: 1fr;
     }
     
-    .stats-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
     .footer-content {
         grid-template-columns: 1fr;
         text-align: center;
@@ -525,16 +521,12 @@ img {
 }
 
 @media (max-width: 480px) {
-    .hero-content h1 {
+    .intro-content h1 {
         font-size: 32px;
     }
     
     .container {
         padding: 0 15px;
-    }
-    
-    .stats-grid {
-        grid-template-columns: 1fr;
     }
     
     .navigation {
@@ -546,30 +538,3 @@ img {
     }
 }
 
-/* ========================================
-   ACCESSIBILITY IMPROVEMENTS
-   ======================================== */
-@media (prefers-reduced-motion: reduce) {
-    * {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-    }
-}
-
-/* Focus styles for keyboard navigation */
-a:focus,
-button:focus,
-.nav-link:focus {
-    outline: 3px solid var(--primary-orange);
-    outline-offset: 2px;
-}
-
-/* High contrast mode support */
-@media (prefers-contrast: high) {
-    :root {
-        --shadow-light: rgba(0, 0, 0, 0.3);
-        --shadow-medium: rgba(0, 0, 0, 0.5);
-        --shadow-dark: rgba(0, 0, 0, 0.7);
-    }
-}
