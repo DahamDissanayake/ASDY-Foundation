@@ -1,0 +1,457 @@
+/* ========================================
+   TABLE.CSS - Modern Table Styles
+   For SDG 2 Data Visualization
+   ======================================== */
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, var(--primary-orange) 0%, var(--primary-orange-dark) 100%);
+    color: var(--neutral-white);
+    padding: 80px 0 60px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: var(--neutral-white);
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hero-subtitle {
+    font-size: 20px;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Section Styling */
+.data-section, .targets-section, .action-section {
+    padding: 80px 0;
+}
+
+.data-section {
+    background: var(--neutral-light-gray);
+}
+
+.targets-section {
+    background: var(--neutral-white);
+}
+
+.action-section {
+    background: var(--neutral-light-gray);
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+    color: var(--secondary-blue);
+    font-size: 36px;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-orange), var(--primary-orange-dark));
+    border-radius: 2px;
+}
+
+/* Table Container */
+.table-container {
+    background: var(--neutral-white);
+    border-radius: 15px;
+    box-shadow: 0 10px 40px var(--shadow-light);
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Modern Data Table */
+.data-table, .targets-table, .action-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Arial', sans-serif;
+}
+
+.data-table thead, .targets-table thead, .action-table thead {
+    background: linear-gradient(135deg, var(--secondary-blue), var(--secondary-blue-light));
+    color: var(--neutral-white);
+}
+
+.data-table th, .targets-table th, .action-table th {
+    padding: 20px 16px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    border: none;
+}
+
+.data-table tbody tr, .targets-table tbody tr, .action-table tbody tr {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.data-table tbody tr:hover {
+    background: linear-gradient(90deg, rgba(255, 165, 0, 0.03), rgba(255, 165, 0, 0.08));
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px var(--shadow-light);
+}
+
+
+.data-table td, .targets-table td, .action-table td {
+    padding: 24px 16px;
+    vertical-align: top;
+    border: none;
+}
+
+/* Metric Cell Styling */
+.metric-cell {
+    min-width: 200px;
+}
+
+
+.metric-cell strong {
+    color: var(--secondary-blue);
+    font-size: 16px;
+    display: block;
+}
+
+/* Data Cell Styling */
+.data-cell {
+    text-align: left;
+    min-width: 150px;
+}
+
+.data-number {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--primary-orange);
+    display: block;
+    line-height: 1.2;
+}
+
+.data-subtitle {
+    font-size: 12px;
+    color: var(--neutral-gray);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 4px;
+    display: block;
+}
+
+/* Impact Badges */
+.impact-cell {
+    min-width: 180px;
+}
+
+.impact-badge {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+}
+
+.impact-badge.critical {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    color: white;
+}
+
+.impact-badge.severe {
+    background: linear-gradient(135deg, #e67e22, #d35400);
+    color: white;
+}
+
+.impact-badge.high {
+    background: linear-gradient(135deg, #f39c12, #e67e22);
+    color: white;
+}
+
+.impact-badge.moderate {
+    background: linear-gradient(135deg, #f1c40f, #f39c12);
+    color: var(--neutral-dark-gray);
+}
+
+.impact-badge.gender {
+    background: linear-gradient(135deg, #9b59b6, #8e44ad);
+    color: white;
+}
+
+.impact-cell p {
+    font-size: 13px;
+    color: var(--neutral-gray);
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* Source Cell */
+.source-cell {
+    font-size: 13px;
+    color: var(--neutral-gray);
+    font-style: italic;
+    min-width: 150px;
+}
+
+/* Target Table Specific */
+.target-cell {
+    text-align: center;
+    min-width: 80px;
+}
+
+.target-number {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-orange);
+    background: rgba(255, 165, 0, 0.1);
+    padding: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 26px;
+}
+
+.goal-cell {
+    min-width: 300px;
+}
+
+.goal-cell strong {
+    color: var(--secondary-blue);
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.goal-cell p {
+    color: var(--neutral-gray);
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.timeline-cell {
+    text-align: center;
+    min-width: 100px;
+}
+
+.timeline-badge {
+    background: linear-gradient(135deg, var(--accent-green), #229954);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.priority-cell {
+    text-align: center;
+    min-width: 120px;
+}
+
+.priority-badge {
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: inline-block;
+}
+
+.priority-badge.urgent {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    color: white;
+}
+
+.priority-badge.high {
+    background: linear-gradient(135deg, #e67e22, #d35400);
+    color: white;
+}
+
+.priority-badge.essential {
+    background: linear-gradient(135deg, var(--primary-orange), var(--primary-orange-dark));
+    color: white;
+}
+
+.priority-badge.important {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+}
+
+/* Action Table Specific */
+.action-cell {
+    min-width: 250px;
+}
+
+.action-cell strong {
+    color: var(--secondary-blue);
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.action-cell p {
+    color: var(--neutral-gray);
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.impact-level {
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: inline-block;
+}
+
+.impact-level.very-high {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    color: white;
+}
+
+.impact-level.high {
+    background: linear-gradient(135deg, #e67e22, #d35400);
+    color: white;
+}
+
+.impact-level.medium {
+    background: linear-gradient(135deg, #f39c12, #e67e22);
+    color: white;
+}
+
+.difficulty-badge {
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: inline-block;
+}
+
+.difficulty-badge.easy {
+    background: linear-gradient(135deg, var(--accent-green), #229954);
+    color: white;
+}
+
+.difficulty-badge.moderate {
+    background: linear-gradient(135deg, #f39c12, #e67e22);
+    color: white;
+}
+
+.difficulty-badge.challenging {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    color: white;
+}
+
+.action-btn {
+    background: linear-gradient(135deg, var(--primary-orange), var(--primary-orange-dark));
+    color: var(--neutral-white);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.action-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px var(--shadow-medium);
+    background: linear-gradient(135deg, var(--primary-orange-dark), #e67e22);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 32px;
+    }
+    
+    .hero-subtitle {
+        font-size: 16px;
+    }
+    
+    .section-title {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+    
+    .table-container {
+        overflow-x: auto;
+        border-radius: 10px;
+    }
+    
+    .data-table, .targets-table, .action-table {
+        min-width: 800px;
+    }
+    
+    .data-table th, .targets-table th, .action-table th {
+        padding: 16px 12px;
+        font-size: 14px;
+    }
+    
+    .data-table td, .targets-table td, .action-table td {
+        padding: 20px 12px;
+    }
+    
+    .data-number {
+        font-size: 24px;
+    }
+    
+    .target-number {
+        font-size: 20px;
+        width: 45px;
+        height: 45px;
+        line-height: 21px;
+    }
+    
+    .action-icon {
+        font-size: 28px;
+        margin-bottom: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .data-section, .targets-section, .action-section {
+        padding: 60px 0;
+    }
+    
+    .hero-section {
+        padding: 60px 0 40px;
+    }
+    
+    .hero-content h1 {
+        font-size: 28px;
+    }
+    
+    .section-title {
+        font-size: 24px;
+    }
+}

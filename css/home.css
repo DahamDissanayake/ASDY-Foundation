@@ -1,7 +1,7 @@
 /* ========================================
-   Intro SECTION
+   Hero SECTION
    ======================================== */
-.intro {
+.hero {
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../img/home/sl-kids.jpg');
     background-size: cover;
     background-position: center;
@@ -15,18 +15,18 @@
     margin-top: 80px;
 }
 
-.intro-content {
+.hero-content {
     max-width: 800px;
     padding: 0 32px;
 }
 
-.intro-content p {
+.hero-content p {
     color: rgba(255, 255, 255, 0.9);
     font-size: 20.8px;
     margin-bottom: 32px;
 }
 
-.intro-content h1 {
+.hero-content h1 {
     color: var(--primary-orange)
     
 }
