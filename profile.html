@@ -242,31 +242,7 @@
         </form>
     </div>
 </div>
-<!-- Remove this part-->
 
-<script>
-    // Add some interactive functionality
-    document.addEventListener('DOMContentLoaded', function() {
-        // Animate skill bars on page load
-        const skillBars = document.querySelectorAll('.skill-progress');
-        skillBars.forEach(bar => {
-            const width = bar.style.width || bar.className.includes('css') ? '90%' : 
-                          bar.className.includes('advocacy') ? '95%' : 
-                          bar.className.includes('research') ? '85%' : '88%';
-            bar.style.width = '0%';
-            setTimeout(() => {
-                bar.style.width = width;
-            }, 500);
-        });
-
-        // Form submission handler
-        const form = document.querySelector('.contact-form');
-        form.addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you for your message! I will get back to you soon.');
-        });
-    });
-</script>
             <button class="cta-btn" onclick="window.location.href='home.html'">Back to home</button>
         </div>
     </div>
