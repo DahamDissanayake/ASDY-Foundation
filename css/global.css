@@ -379,7 +379,7 @@ img {
 }
 
 .footer-section p {
-    
+
     line-height: 1.6;
     opacity: 0.9;
     color: rgba(255, 255, 255, 0.8);
@@ -397,7 +397,7 @@ img {
     color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
     transition: all 0.3s ease;
-    padding: 8px 0;
+    padding: 1px 0;
     display: inline-block;
 }
 
@@ -405,7 +405,6 @@ img {
     color: var(--primary-orange);
     transform: translateY(5px);
 }
-
 
 .footer-logo img {
     display: inline-block;

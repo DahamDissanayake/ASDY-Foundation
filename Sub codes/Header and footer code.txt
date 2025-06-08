@@ -3,15 +3,15 @@
         <div class="container">
             <nav class="nav">
                 <div class="logo">
-                    <a href="index.html">
+                    <a href="splash.html">
                         <img src="img/ASDY_full.png" alt="ASDY Foundation">
                     </a>
                 </div>
                 <ul class="navigation">
-                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="home.html" class="nav-link active">Home</a></li>
                     <li><a href="volunteer.html" class="nav-link">Volunteer</a></li>
                     <li><a href="table.html" class="nav-link">Data</a></li>
-                    <li><a href="feedback.html " class="nav-link active">Feedback</a></li>
+                    <li><a href="feedback.html " class="nav-link">Feedback</a></li>
                     <li><a href="sitemap.html" class="nav-link">SiteMap</a></li>
                     <li><a href="team.html" class="nav-link">Team</a></li>
 
@@ -20,6 +20,8 @@
             </nav>
         </div>
     </header>
+
+
 
 
     <!-- Footer -->
