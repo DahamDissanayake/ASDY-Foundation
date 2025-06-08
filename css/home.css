@@ -93,6 +93,10 @@
     overflow: hidden;
 }
 
+.content-card h4{
+    font-size: 18px;
+    color: var(--neutral-gray);
+}
 .content-card:hover {
     transform: translateY(-15px);
     box-shadow: 0 20px 40px var(--shadow-medium);
