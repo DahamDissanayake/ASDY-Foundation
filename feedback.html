@@ -6,6 +6,7 @@
     <title>Feedback | ASDY Foundation</title>
     <link rel="icon" type="image/png" href="img/ASDY_logo.png" />
     <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/feedback.css">
 </head>
 <body>
     <!-- Header with Navigation -->
@@ -32,23 +33,99 @@
     </header>
 
 
-
-
-    <!-- Start Your Code from here-->
-     <!-- Remove this part from here to-->
-        
-        <section class="hero">
+            <section class="hero">
             <div class="hero-content">
-                <br>
-                <br>
-                <h1>Feedback</h1>
-                <p>Testtttttttttttttttt still under construction</p>
-                <button class="cta-btn" onclick="window.location.href='home.html'">Back to home</button>
+                <h1>We'd Love Your Feedback</h1>
+                <p>Your voice helps us grow and serve better. Let us know your thoughts.</p>
             </div>
-        </section>
-    <!-- Remove this part-->
+            </section>
+
+                <form>
+    <fieldset>
+      <legend>Personal Details</legend>
+
+      <label for="fullname">Full Name*</label>
+      <input type="text" id="fullname" name="fullname" required title="Please enter your full name">
+
+      <label for="email">Email Address*</label>
+      <input type="email" id="email" name="email" required title="Please enter a valid email address">
+
+      <label for="phone">Telephone Number</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" title="Enter a 10-digit phone number">
+
+      <label for="address">Address</label>
+      <textarea id="address" name="address" rows="3"></textarea>
+
+      <label for="feedback-date">Select Date</label>
+      <input type="date" id="feedback-date" name="feedback-date">
+
+      
+    </fieldset>
+
+    <fieldset>
+      <legend>Feedback Details</legend>
+
+      <label for="message">Comment or Message</label>
+      <textarea id="message" name="message" maxlength="250" rows="4" required title="Please enter your feedback"></textarea>
+      <div class="char-counter" id="char-counter">250 characters remaining</div>
+
+      <label for="topic">Topic</label>
+      <select id="topic" name="topic" required>
+        <option value="">Select a topic</option>
+        <option value="donation">Donation</option>
+        <option value="volunteering">Volunteering</option>
+        <option value="education">Education Support</option>
+      </select>
+
+      <label for="programs">Programs Interested In </label>
+      <select id="programs" name="programs" multiple size="4">
+        <option value="food-drives">Food Drives</option>
+        <option value="school-meals">School Meal Plans</option>
+        <option value="sustainable-agriculture">Sustainable Agriculture</option>
+        <option value="local-markets">Support Local Markets</option>
+      </select>
+
+      <label for="country">The country that you love to support</label>
+      <input list="countries" id="country" name="country" placeholder="Start typing..." />
+      <datalist id="countries">
+        <option value="Sri lanka">
+        <option value="India">
+        <option value="Kenya">
+        <option value="Brazil">
+        <option value="Bangladesh">
+        <option value="Ethiopia">
+      </datalist>
+
+      <label>How did you hear about us?</label>
+      <input type="checkbox" name="source" value="social"> Social Media<br>
+      <input type="checkbox" name="source" value="friend"> Friend<br>
+      <input type="checkbox" name="source" value="news"> News<br>
+
+      <label>Was this your first time visiting our site?</label>
+      <input type="radio" name="recommend" value="yes" required> Yes
+      <input type="radio" name="recommend" value="no"> No
+
+      <label for="file">Upload an Image or PDF (optional)</label>
+      <input type="file" id="file" name="file" accept=".jpg, .png, .pdf">
+
+      <label>Rate Your Experience</label>
+      <div class="rating">
+        <span title="Very Bad">😠</span>
+        <span title="Bad">😕</span>
+        <span title="Okay">😐</span>
+        <span title="Good">🙂</span>
+        <span title="Excellent">😍</span>
+      </div>
+    </fieldset>
+
+    <button type="submit" class="submit-btn">Submit Feedback</button>
+  </form>
+                </div>
+            </div>
+            </section>
 
 
+    
 
 
 
