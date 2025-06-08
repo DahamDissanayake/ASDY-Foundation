@@ -141,15 +141,54 @@
 }
 
 .volunteer-item {
-    background: #f8f9fa;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     padding: 15px;
     border-radius: 10px;
     text-align: center;
+    transition: all 0.3s ease;
+    color: white;
+    position: relative;
+}
+
+.volunteer-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.4);
+    border-radius: 10px;
     transition: background 0.3s ease;
 }
 
-.volunteer-item:hover {
-    background: #e9ecef;
+.volunteer-item:hover::before {
+    background: rgba(0,0,0,0.6);
+}
+
+/* Make content appear above overlay */
+.volunteer-item > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Individual background images */
+.volunteer-item.distribution {
+    background-image: url('img/profile/food-distribution.jpg');
+}
+
+.volunteer-item.community {
+    background-image: url('images/healthcare-bg.jpg');
+}
+
+.volunteer-item.education {
+    background-image: url('images/environment-bg.jpg');
+}
+
+.volunteer-item.funds {
+    background-image: url('images/community-bg.jpg');
 }
 
 .volunteer-icon {
@@ -165,7 +204,7 @@
 }
 
 .interest-item {
-    background: linear-gradient(45deg, #FFA500, #FFB84D);
+    background: linear-gradient(45deg, #FFA500,  #FFB84D);
     color: white;
     padding: 20px;
     border-radius: 15px;
