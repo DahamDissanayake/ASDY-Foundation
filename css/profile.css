@@ -6,7 +6,7 @@
 }
 
 .profile-header {
-    background:  #FF8C00;
+    background:  #FFA500;
     border-radius: 20px;
     padding: 30px;
     margin-bottom: 30px;
@@ -250,29 +250,15 @@
     justify-content: flex-end;
 }
 
-.btn {
-    padding: 12px 24px;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
 
-.btn-primary {
-    background: #3498db;
-    color: white;
-}
+
+
 
 .btn-primary:hover {
     background: #2980b9;
     transform: translateY(-2px);
 }
 
-.btn-secondary {
-    background: #95a5a6;
-    color: white;
-}
 
 .btn-secondary:hover {
     background: #7f8c8d;
