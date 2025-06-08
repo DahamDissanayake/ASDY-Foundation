@@ -4,23 +4,31 @@
    ======================================== */
 
 /* Profile Container */
+/* Profile Container */
 .profile-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
-/* Profile Header */
+/* Profile Header - Full Width Box */
 .profile-header {
     background: var(--primary-orange);
-    border-radius: 20px;
+    border-radius: 0; /* Remove rounded corners */
     padding: 30px;
-    margin-bottom: 30px;
+    margin: 0; /* Remove margins to extend full width */
+    margin-bottom: 30px; /* Keep bottom margin for spacing */
     box-shadow: 0 10px 30px var(--shadow-medium);
     display: flex;
     align-items: center;
     gap: 30px;
     transition: transform 0.3s ease;
+    width: 100vw; /* Full viewport width */
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
 }
 
 .profile-header:hover {
