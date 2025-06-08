@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page Editor Student - provide your student name</title>
-    <link rel="icon" type="image/png" href="img/ASDY_logo.png" />
     <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/pageEditor_validator_fixed.css"> <!-- Updated CSS link -->
+    <link rel="icon" type="image/png" href="img/ASDY_logo.png" />
+    <link rel="stylesheet" href="css/pageEditor_validator.css"> <!-- External CSS link -->
+    
 </head>
-<body>
+<body class="page-editor-body">
     
     <!-- Header with Navigation -->
     <header class="header">
@@ -31,9 +32,11 @@
             </nav>
         </div>
     </header>
-    
-    <section class="stud">
-        <h2>Student name, student role</h2>
+
+    <section class="student-header">
+        <div class="container">
+            <h2>Student name, student role</h2>
+        </div>
     </section>
 
     <div class="page-editor-container">
@@ -43,7 +46,7 @@
             <!-- Update those first three sections for the pages you were responsible to implement -->
 
             <section class="page-editor-section">
-                <h2 id="splash">Splash Page</h2>
+                <h2 id="feedback">Feedback Page</h2>
                     <h3>Technical Description</h3>
                         <p>Explain the HTML and CSS techniques used to implement this page. Justify the logic and purpose of the key tags and styling choices focusing on functionality and design without copying large code sections. Explain the purpose of key HTML tags and CSS properties. Specify key HTML tags and CSS properties used to create structure and styling.</p> 
                     
@@ -58,7 +61,7 @@
             </section>
 
             <section class="page-editor-section">
-                <h2 id="volunteer">Volunteer Page</h2>
+                <h2 id="Team">Team Page</h2>
                     <h3>Technical Description</h3>
                         <p>Explain the HTML and CSS techniques used to implement this page. Justify the logic and purpose of the key tags and styling choices focusing on functionality and design without copying large code sections. Explain the purpose of key HTML tags and CSS properties. Specify key HTML tags and CSS properties used to create structure and styling.</p> 
 
@@ -101,47 +104,28 @@
 
             <section class="page-editor-section">
                 <h2 id="ref">References</h2>
-                <p>Provide links to resources you used following a consistent format (e.g., APA, MLA, or a simplified style). For example:<br><br>
+                <p>Provide links to resources you used following a consistent format (e.g., APA, MLA, or a simplified style). For example:</p>
                     <ul class="ref">
                         <li>iStock (2025) <i>iStock.</i> Available at: <a href="#">https://www.istockphoto.com/</a> (Last accessed: 11 Feb 2025).</li>
                         <li>Duckett, J., 2011. HTML and CSS: Design and Build Websites,<i>John Willey&Sons. Inc. Indianappolis.</i></li>
                     </ul>
             </section>
 
-            <p class="top"><a href="#top">Go top</a></p>
         </main>
 
         <!-- Sidebar area -->
-        <aside class="page-editor-aside">
+        <aside class="page-editor-sidebar">
             <h3>Core pages developed:</h3>
 
-        <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
             <ul class="top-level-ul">
-                <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
-                <li><strong>Student 1</strong></li>
-                    <ul> 
-                        <li><a href="#splash">Splash page</a></li>
-                        <li><a href="#volunteer">Volunteer page</a></li>
-                        <li><a href="#content">Content page</a></li>
-                    </ul>
-                <li><strong>Student 2</strong></li>
-                    <ul>
-                        <li><a href="#">Home page </a></li>
-                        <li><a href="#">Table page</a></li>
-                        <li><a href="#">Content page</a></li>
-                    </ul>
+                
                 <li><strong>Student 3</strong></li>
                     <ul>
-                        <li><a href="#">Feedback page</a> </li>
-                        <li><a href="#">Team page</a></li>
-                        <li><a href="#">Content page</a></li>
+                        <li><a href="#feedback">Feedback page</a> </li>
+                        <li><a href="#team">Team page</a></li>
+                        <li><a href="#content">Content page</a></li>
                     </ul>
-                <li><strong>Student 4</strong></li>
-                    <ul>
-                        <li><a href="#">Profile page </a></li>
-                        <li><a href="#">Sitemap page</a></li>
-                        <li><a href="#">Content page</a></li>
-                    </ul>
+                
                 <li><a href="#challenge">Challenges and Lessons Learned</a></li>
                 <li><a href="#compliance">Compliance</a></li>
                 <li><a href="#ref">References</a></li>
@@ -188,5 +172,9 @@
             </div>
         </div>
     </footer>
+    <!-- Go to Top Button -->
+    <a href="#" class="go-to-top" id="go-to-top">
+        <div class="go-to-top-arrow"></div>
+    </a>
 </body>
 </html>
