@@ -1,16 +1,22 @@
-/* Profile Page Specific Styles */
+/* ========================================
+   PROFILE PAGE SPECIFIC STYLES
+   These styles are NOT in the global CSS
+   ======================================== */
+
+/* Profile Container */
 .profile-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
+/* Profile Header */
 .profile-header {
-    background:  #FFA500;
+    background: var(--primary-orange);
     border-radius: 20px;
     padding: 30px;
     margin-bottom: 30px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 30px var(--shadow-medium);
     display: flex;
     align-items: center;
     gap: 30px;
@@ -21,60 +27,65 @@
     transform: translateY(-5px);
 }
 
+/* Avatar */
 .avatar {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background: linear-gradient(45deg, #4CAF50, #2196F3);
+    background: linear-gradient(45deg, var(--accent-green), var(--secondary-blue));
     display: flex;
     align-items: center;
     justify-content: center;
-    color:  #ffffff;
+    color: var(--neutral-white);
     font-size: 48px;
     font-weight: bold;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 25px var(--shadow-medium);
 }
 
+/* User Info */
 .user-info h1 {
-    color: #2c3e50;
+    color: var(--secondary-blue);
     margin-bottom: 10px;
     font-size: 2.5em;
 }
 
 .user-info .role {
-    color: #2c3e50;
+    color: var(--secondary-blue);
     font-size: 1.3em;
     margin-bottom: 15px;
 }
 
-.card {
-    background: white;
+/* Profile Cards */
+.profile-card {
+    background: var(--neutral-white);
     border-radius: 15px;
     padding: 25px;
     margin-bottom: 20px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 20px var(--shadow-light);
     transition: all 0.3s ease;
 }
 
-.card:hover {
+.profile-card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+    box-shadow: 0 8px 30px var(--shadow-medium);
 }
 
-.card h2 {
-    color: #2c3e50;
+.profile-card h2 {
+    color: var(--secondary-blue);
     margin-bottom: 20px;
     font-size: 1.8em;
-    border-bottom: 3px solid #3498db;
+    border-bottom: 3px solid var(--primary-orange);
     padding-bottom: 10px;
 }
 
+/* Two Column Layout */
 .two-column {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
+/* Skills Section */
 .skills-list {
     list-style: none;
 }
@@ -84,7 +95,7 @@
 }
 
 .skill-bar {
-    background: #ecf0f1;
+    background: var(--neutral-light-gray);
     border-radius: 10px;
     height: 20px;
     margin-top: 5px;
@@ -98,32 +109,33 @@
 }
 
 .skill-progress.css { 
-    background: #3498db; 
+    background: var(--primary-orange); 
     width: 90%; 
 }
 
 .skill-progress.advocacy { 
-    background: #e74c3c; 
+    background: var(--accent-red); 
     width: 95%; 
 }
 
 .skill-progress.research { 
-    background: #f39c12; 
+    background: var(--primary-orange-light); 
     width: 85%; 
 }
 
 .skill-progress.leadership { 
-    background: #2ecc71; 
+    background: var(--accent-green); 
     width: 88%; 
 }
 
+/* Goals Section */
 .goals-list {
     list-style: none;
 }
 
 .goals-list li {
     padding: 10px 0;
-    border-bottom: 1px solid #ecf0f1;
+    border-bottom: 1px solid var(--neutral-light-gray);
     display: flex;
     align-items: center;
 }
@@ -134,6 +146,7 @@
     font-size: 1.2em;
 }
 
+/* Volunteering Grid */
 .volunteering-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -141,54 +154,18 @@
 }
 
 .volunteer-item {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: var(--primary-orange-light);
     padding: 15px;
     border-radius: 10px;
     text-align: center;
     transition: all 0.3s ease;
-    color: white;
+    color: var(--neutral-white);
     position: relative;
 }
 
-.volunteer-item::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0,0,0,0.4);
-    border-radius: 10px;
-    transition: background 0.3s ease;
-}
-
-.volunteer-item:hover::before {
-    background: rgba(0,0,0,0.6);
-}
-
-/* Make content appear above overlay */
-.volunteer-item > * {
-    position: relative;
-    z-index: 1;
-}
-
-/* Individual background images */
-.volunteer-item.distribution {
-    background-image: url('img/profile/food-distribution.jpg');
-}
-
-.volunteer-item.community {
-    background-image: url('images/healthcare-bg.jpg');
-}
-
-.volunteer-item.education {
-    background-image: url('images/environment-bg.jpg');
-}
-
-.volunteer-item.funds {
-    background-image: url('images/community-bg.jpg');
+.volunteer-item:hover {
+    background: var(--primary-orange);
+    transform: translateY(-5px);
 }
 
 .volunteer-icon {
@@ -197,6 +174,7 @@
     display: block;
 }
 
+/* Interests Grid */
 .interests-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -204,8 +182,8 @@
 }
 
 .interest-item {
-    background: linear-gradient(45deg, #FFA500,  #FFB84D);
-    color: white;
+    background: linear-gradient(45deg, var(--primary-orange), var(--primary-orange-light));
+    color: var(--neutral-white);
     padding: 20px;
     border-radius: 15px;
     text-align: center;
@@ -222,6 +200,7 @@
     display: block;
 }
 
+/* Calendar */
 .calendar {
     width: 100%;
     border-collapse: collapse;
@@ -230,28 +209,29 @@
 
 .calendar th,
 .calendar td {
-    border: 1px solid #ddd;
+    border: 1px solid var(--neutral-light-gray);
     padding: 12px;
     text-align: center;
 }
 
 .calendar th {
-    background: #FFA500;
-    color: white;
+    background: var(--primary-orange);
+    color: var(--neutral-white);
     font-weight: bold;
 }
 
 .calendar .available {
     background: #d5f4e6;
-    color: #27ae60;
+    color: var(--accent-green);
     font-weight: bold;
 }
 
 .calendar .busy {
     background: #fadbd8;
-    color: #e74c3c;
+    color: var(--accent-red);
 }
 
+/* Contact Form */
 .contact-form {
     display: grid;
     gap: 15px;
@@ -265,13 +245,13 @@
 .form-group label {
     margin-bottom: 5px;
     font-weight: bold;
-    color: #2c3e50;
+    color: var(--secondary-blue);
 }
 
 .form-group input,
 .form-group textarea {
     padding: 12px;
-    border: 2px solid #ecf0f1;
+    border: 2px solid var(--neutral-light-gray);
     border-radius: 8px;
     font-size: 16px;
     transition: border-color 0.3s ease;
@@ -280,7 +260,7 @@
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #3498db;
+    border-color: var(--primary-orange);
 }
 
 .form-buttons {
@@ -289,18 +269,7 @@
     justify-content: flex-end;
 }
 
-
-.btn-primary:hover {
-    background: #2980b9;
-    transform: translateY(-2px);
-}
-
-
-.btn-secondary:hover {
-    background: #7f8c8d;
-}
-
-/* Responsive Design */
+/* Responsive Design for Profile Page */
 @media (max-width: 768px) {
     .profile-header {
         flex-direction: column;
