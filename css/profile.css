@@ -6,7 +6,7 @@
 }
 
 .profile-header {
-    background: white;
+    background:  #ffffff;
     border-radius: 20px;
     padding: 30px;
     margin-bottom: 30px;
@@ -29,7 +29,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color:  #ffffff;
     font-size: 48px;
     font-weight: bold;
     box-shadow: 0 8px 25px rgba(0,0,0,0.2);
@@ -197,7 +197,7 @@
 }
 
 .calendar th {
-    background: #3498db;
+    background: #FFA500;
     color: white;
     font-weight: bold;
 }
