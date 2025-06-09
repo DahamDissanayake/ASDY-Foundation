@@ -1,0 +1,12 @@
+<!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Learn About Hunger</h1>
+                    <p class="hero-subtitle">Understanding UN Sustainable Development Goal 2: Zero Hunger</p>
+                </div>
+            </div>
+        </section>
+
+
+CSS part is in the global.css file
