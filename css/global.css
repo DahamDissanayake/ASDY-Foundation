@@ -177,6 +177,156 @@ section {
 }
 
 /* ========================================
+   PAGE NAVIGATION BAR
+   Add this section to your global.css file
+   ======================================== */
+
+.page-nav-section {
+    background: var(--neutral-light-gray);
+    padding: 32px 0;
+    border-top: 3px solid var(--primary-orange);
+    border-bottom: 3px solid var(--primary-orange);
+}
+
+.page-nav-bar {
+    text-align: center;
+}
+
+.page-nav-title {
+    color: var(--secondary-blue);
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    position: relative;
+}
+
+.page-nav-title::after {
+    content: '';
+    width: 60px;
+    height: 3px;
+    background: var(--primary-orange);
+    display: block;
+    margin: 8px auto 0;
+    border-radius: 2px;
+}
+
+.page-nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.page-nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 16px;
+    background: var(--neutral-white);
+    border-radius: 12px;
+    text-decoration: none;
+    color: var(--neutral-dark-gray);
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px var(--shadow-light);
+    border: 2px solid transparent;
+    min-width: 140px;
+}
+
+.page-nav-link:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px var(--shadow-medium);
+    border-color: var(--primary-orange);
+    color: var(--primary-orange);
+}
+
+.page-nav-link.active {
+    background: var(--primary-orange);
+    color: var(--neutral-white);
+    border-color: var(--primary-orange-dark);
+    box-shadow: 0 5px 15px var(--shadow-medium);
+}
+
+.page-nav-link.active:hover {
+    background: var(--primary-orange-dark);
+    transform: translateY(-3px);
+}
+
+.nav-icon {
+    font-size: 28px;
+    margin-bottom: 8px;
+    transition: transform 0.3s ease;
+}
+
+.page-nav-link:hover .nav-icon {
+    transform: scale(1.2);
+}
+
+.page-nav-link span {
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.3;
+}
+
+/* ========================================
+   INTERNAL NAVIGATION BAR
+   for Content pages
+   ======================================== */
+
+.internal-nav-section {
+    background: var(--neutral-light-gray);
+    padding: 32px 0;
+    border-top: 3px solid var(--primary-orange);
+    border-bottom: 3px solid var(--primary-orange);
+}
+
+.internal-nav-bar {
+    text-align: center;
+}
+
+
+.internal-nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.internal-nav-link {
+    display: inline-block;
+    padding: 12px 24px;
+    background: var(--neutral-white);
+    border-radius: 25px;
+    text-decoration: none;
+    color: var(--neutral-dark-gray);
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px var(--shadow-light);
+    border: 2px solid transparent;
+}
+
+.internal-nav-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px var(--shadow-medium);
+    border-color: var(--primary-orange);
+    color: var(--primary-orange);
+    background: var(--neutral-white);
+}
+
+.internal-nav-link:active,
+.internal-nav-link.active {
+    background: var(--primary-orange);
+    color: var(--neutral-white);
+    border-color: var(--primary-orange-dark);
+    box-shadow: 0 5px 15px var(--shadow-medium);
+}
+
+.internal-nav-link.active:hover {
+    background: var(--primary-orange-dark);
+    transform: translateY(-2px);
+}
+
+/* ========================================
    BUTTONS
    ======================================== */
 .btn {
@@ -379,7 +529,7 @@ img {
 }
 
 .footer-section p {
-    
+
     line-height: 1.6;
     opacity: 0.9;
     color: rgba(255, 255, 255, 0.8);
@@ -397,7 +547,7 @@ img {
     color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
     transition: all 0.3s ease;
-    padding: 8px 0;
+    padding: 1px 0;
     display: inline-block;
 }
 
@@ -405,7 +555,6 @@ img {
     color: var(--primary-orange);
     transform: translateY(5px);
 }
-
 
 .footer-logo img {
     display: inline-block;
@@ -428,6 +577,56 @@ img {
     color: var(--primary-orange);
 }
 
+/* ========================================
+   GO TO TOP BUTTON
+   Add this to your global.css file
+   ======================================== */
+
+.go-to-top {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    width: 60px;
+    height: 60px;
+    background: var(--primary-orange);
+    color: var(--neutral-white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 5px 20px var(--shadow-medium);
+    transition: all 0.3s ease;
+    z-index: 999;
+    border: 3px solid var(--neutral-white);
+}
+
+.go-to-top:hover {
+    background: var(--primary-orange-dark);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px var(--shadow-dark);
+    border-color: var(--primary-orange-light);
+    color: var(--neutral-white);
+}
+
+.go-to-top:active {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px var(--shadow-medium);
+}
+
+.go-to-top-arrow {
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 12px solid var(--neutral-white);
+    transition: all 0.3s ease;
+}
+
+.go-to-top:hover .go-to-top-arrow {
+    border-bottom-color: var(--neutral-white);
+    transform: translateY(-2px);
+}
 /* ========================================
    UTILITY CLASSES
    ======================================== */
@@ -515,6 +714,15 @@ img {
     section {
         padding: 48px 0;
     }
+
+    .internal-nav-links {
+        gap: 16px;
+    }
+    
+    .internal-nav-link {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -532,6 +740,26 @@ img {
     
     .card-content {
         padding: 24px;
+    }
+
+    .internal-nav-section {
+        padding: 24px 0;
+    }
+    
+    .internal-nav-title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .internal-nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+    
+    .internal-nav-link {
+        width: 200px;
+        text-align: center;
     }
 }
 
