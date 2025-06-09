@@ -22,7 +22,6 @@
     display: flex;
     align-items: center;
     gap: 30px;
-    transition: transform 0.3s ease;
     width: 100vw; /* Full viewport width */
     position: relative;
     left: 50%;
@@ -31,9 +30,6 @@
     margin-right: -50vw;
 }
 
-.profile-header:hover {
-    transform: translateY(-5px);
-}
 
 /* Avatar */
 .avatar {
@@ -70,13 +66,10 @@
     padding: 25px;
     margin-bottom: 20px;
     box-shadow: 0 5px 20px var(--shadow-light);
-    transition: all 0.3s ease;
+    
 }
 
-.profile-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 30px var(--shadow-medium);
-}
+
 
 .profile-card h2 {
     color: var(--secondary-blue);
@@ -113,7 +106,7 @@
 .skill-progress {
     height: 100%;
     border-radius: 10px;
-    transition: width 0.8s ease;
+    
 }
 
 .skill-progress.css { 
