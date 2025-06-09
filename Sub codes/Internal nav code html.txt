@@ -1,0 +1,15 @@
+<!-- Internal Navigation Section -->
+        <section class="internal-nav-section">
+            <div class="container">
+                <div class="internal-nav-bar">
+                    
+                    <div class="internal-nav-links">
+                        <a href="#zero-hunger" class="internal-nav-link">What is Zero Hunger</a>
+                        <a href="#causes" class="internal-nav-link">Causes of Hunger</a>
+                        <a href="#impact" class="internal-nav-link">Impact on Children</a>
+                        <a href="#global-local" class="internal-nav-link">Global vs Local</a>
+                        <a href="#take-action" class="internal-nav-link">Take Action</a>
+                    </div>
+                </div>
+            </div>
+        </section>
