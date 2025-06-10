@@ -7,6 +7,7 @@
     <link rel="icon" type="image/png" href="img/ASDY_logo.png" />
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/feedback.css">
+
 </head>
 <body>
     <!-- Header with Navigation -->
@@ -42,50 +43,50 @@
 
                 <form>
     <fieldset>
-      <legend>Personal Details</legend>
+      <legend><h3><big>Personal Details</big></h3></legend>
 
-      <label for="fullname">Full Name*</label>
+      <label for="fullname"><h4>Full Name*</h4></label>
       <input type="text" id="fullname" name="fullname" required title="Please enter your full name">
 
-      <label for="email">Email Address*</label>
+      <label for="email"><h4>Email Address*</h4></label>
       <input type="email" id="email" name="email" required title="Please enter a valid email address">
 
-      <label for="phone">Telephone Number</label>
+      <label for="phone"><h4>Telephone Number</h4></label>
       <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" title="Enter a 10-digit phone number">
 
-      <label for="address">Address</label>
+      <label for="address"><h4>Address</h4></label>
       <textarea id="address" name="address" rows="3"></textarea>
 
-      <label for="feedback-date">Select Date</label>
+      <label for="feedback-date"><h4>Select Date</h4></label>
       <input type="date" id="feedback-date" name="feedback-date">
 
       
     </fieldset>
 
     <fieldset>
-      <legend>Feedback Details</legend>
+      <legend><h3><big>Feedback Details</big></h3></legend>
 
-      <label for="message">Comment or Message</label>
+      <label for="message"><h4>Comment or Message</h4></label>
       <textarea id="message" name="message" maxlength="250" rows="4" required title="Please enter your feedback"></textarea>
       <div class="char-counter" id="char-counter">250 characters remaining</div>
 
-      <label for="topic">Topic</label>
+      <label for="topic"><h4>Topic</h4></label>
       <select id="topic" name="topic" required>
-        <option value="">Select a topic</option>
-        <option value="donation">Donation</option>
-        <option value="volunteering">Volunteering</option>
-        <option value="education">Education Support</option>
+        <option value=""><p>Select a topic</p></option>
+        <option value="donation"><p>Donation</p></option>
+        <option value="volunteering"><p>Volunteering</p></option>
+        <option value="education"><p>Education Support</p></option>
       </select>
 
-      <label for="programs">Programs Interested In </label>
+      <label for="programs"><h4>Programs Interested In</h4></label>
       <select id="programs" name="programs" multiple size="4">
-        <option value="food-drives">Food Drives</option>
-        <option value="school-meals">School Meal Plans</option>
-        <option value="sustainable-agriculture">Sustainable Agriculture</option>
-        <option value="local-markets">Support Local Markets</option>
+        <option value="food-drives"><p>Food Drives</p></option>
+        <option value="school-meals"><p></p>School Meal Plans</option>
+        <option value="sustainable-agriculture"><p>Sustainable Agriculture</p></option>
+        <option value="local-markets"><p>Support Local Markets</p></option>
       </select>
 
-      <label for="country">The country that you love to support</label>
+      <label for="country"><h4>The country that you love to support</h4></label>
       <input list="countries" id="country" name="country" placeholder="Start typing..." />
       <datalist id="countries">
         <option value="Sri lanka">
@@ -96,29 +97,41 @@
         <option value="Ethiopia">
       </datalist>
 
-      <label>How did you hear about us?</label>
-      <input type="checkbox" name="source" value="social"> Social Media<br>
-      <input type="checkbox" name="source" value="friend"> Friend<br>
+      <label ><h4>How did you hear about us?</h4></label>
+      <input type="checkbox" name="source" value="social" > Social Media<br>
+      <input type="checkbox" name="source" value="friend" > Friend<br>
       <input type="checkbox" name="source" value="news"> News<br>
 
-      <label>Was this your first time visiting our site?</label>
+      <label><h4>Was this your first time visiting our site?</h4></label>
       <input type="radio" name="recommend" value="yes" required> Yes
       <input type="radio" name="recommend" value="no"> No
 
-      <label for="file">Upload an Image or PDF (optional)</label>
+      <label for="file"><h4>Upload an Image or PDF (optional)</h4></label>
       <input type="file" id="file" name="file" accept=".jpg, .png, .pdf">
+      
 
-      <label>Rate Your Experience</label>
-      <div class="rating">
-        <span title="Very Bad">😠</span>
-        <span title="Bad">😕</span>
-        <span title="Okay">😐</span>
-        <span title="Good">🙂</span>
-        <span title="Excellent">😍</span>
-      </div>
+      <!--<label>Rate Your Experience</label>-->
+        <label><h4>Rate Our Site</h4></label>
+            <div class="rating">
+            <input type="radio" id="star5" name="rating" value="5">
+            <label for="star5" title="Excellent">&#9733;</label>
+            <input type="radio" id="star4" name="rating" value="4">
+            <label for="star4" title="Good">&#9733;</label>
+            <input type="radio" id="star3" name="rating" value="3">
+            <label for="star3" title="Average">&#9733;</label>
+            <input type="radio" id="star2" name="rating" value="2">
+            <label for="star2" title="Poor">&#9733;</label>
+            <input type="radio" id="star1" name="rating" value="1">
+            <label for="star1" title="Very Poor">&#9733;</label>
+            </div>
+
+
+                               
+
+        </div>
     </fieldset>
 
-    <button type="submit" class="submit-btn">Submit Feedback</button>
+    <button type="submit" class="submit-btn">Send Feedback</button>
   </form>
                 </div>
             </div>

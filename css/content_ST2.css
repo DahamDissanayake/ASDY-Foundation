@@ -2,30 +2,6 @@
    content_ST2.HTML separate css file
    ======================================== */
 
-/* ========================================
-   HERO SECTION
-   ======================================== */
-.hero-section {
-    background: linear-gradient(135deg, var(--primary-orange) 0%, var(--primary-orange-dark) 100%);
-    color: var(--neutral-white);
-    padding: 120px 0 80px;
-    margin-top: 80px;
-    text-align: center;
-}
-
-.hero-content h1 {
-    color: var(--neutral-white);
-    font-size: 48px;
-    margin-bottom: 16px;
-}
-
-.hero-subtitle {
-    font-size: 20px;
-    margin-bottom: 32px;
-    opacity: 0.9;
-    color: var(--neutral-white);
-}
-
 .sdg-badge {
     display: inline-flex;
     align-items: center;
