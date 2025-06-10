@@ -1,34 +1,32 @@
-
-  
-  .hero {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../img/feedback/pexels-photo-17975843.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    height: 70vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+.hero-section {
+    background: linear-gradient(135deg, var(--primary-orange) 0%, var(--primary-orange-dark) 100%);
     color: var(--neutral-white);
-    margin-top: 80px;
+    padding: 80px 0 60px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .hero-content {
-    max-width: 800px;
-    padding: 0 32px;
-}
-
-.hero-content p {
-    color: rgba(255, 255, 255, 0.9);
-    font-size: 20.8px;
-    margin-bottom: 32px;
+    position: relative;
+    z-index: 2;
 }
 
 .hero-content h1 {
-    color: var(--primary-orange)
-    
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: var(--neutral-white);
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
+
+.hero-subtitle {
+    font-size: 20px;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
 form {
   max-width: 850px;
   margin: 0 auto;
@@ -133,21 +131,7 @@ input[type="radio"] {
 }
 
 /* Submit Button */
-.submit-btn {
-  background: var(--primary-orange);
-    color: var(--neutral-white);
-    border: none;
-    padding: 15px 30px;
-    border-radius: 30px;
-    font-size: 17.6px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
 
-.submit-btn:hover {
-  background-color: #FF8C00;
-}
 
 /* Error Styling */
 input:invalid,
@@ -167,3 +151,24 @@ select:invalid:focus {
   font-size: 0.9rem;
   margin-top: 0.25rem;
 }
+
+
+.cta-btn {
+    background: var(--primary-orange);
+    color: var(--neutral-white);
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 17.6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}    
+
+.btn-secondary {
+    background: var(--secondary-blue);
+    color: var(--neutral-white);
+    margin-left: 10px;
+}
+
