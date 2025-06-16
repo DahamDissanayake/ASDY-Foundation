@@ -212,36 +212,36 @@
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* Zero Hunger */
-.interest-item:nth-child(1) {
-
+/* No Poverty */
+.interests-grid a:nth-child(1) .interest-item {
     background-image: url('../img/profile/no-poverty.jpg');
 }
 
-/* Good Health */
-.interest-item:nth-child(2) {
+/* Zero Hunger */
+.interests-grid a:nth-child(2) .interest-item {
     background-image: url('../img/profile/zero-hunger.png');
 }
 
-/* Clean Water */
-.interest-item:nth-child(3) {
+/* Good Health */
+.interests-grid a:nth-child(3) .interest-item {
     background-image: url('../img/profile/good-health.png');
 }
 
 /* Quality Education */
-.interest-item:nth-child(4) {
+.interests-grid a:nth-child(4) .interest-item {
     background-image: url('../img/profile/quality-education.jpg');
 }
 
-/* Partnerships */
-.interest-item:nth-child(5) {
+/* Clean Water */
+.interests-grid a:nth-child(5) .interest-item {
     background-image: url('../img/profile/clean-water.jpg');
 }
 
-/* No Poverty */
-.interest-item:nth-child(6) {
+/* Partnerships */
+.interests-grid a:nth-child(6) .interest-item {
     background-image: url('../img/profile/partnership.png');
 }
+
 
 .interest-item:hover {
     transform: scale(1.05);
