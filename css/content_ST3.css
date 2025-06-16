@@ -378,6 +378,23 @@
     background: var(--neutral-white);
     color: var(--secondary-blue);
 }
+.button {
+  background-color: orange;
+  color: white; /* Default font color */
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: darkorange; /* Or any color you want on hover */
+  color: white; /* Keep font color white on hover */
+}
+
 
 /* ========================================
    RESPONSIVE DESIGN
