@@ -7,6 +7,17 @@ body {
   color: #333;
 }
 
+.bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.5; /* optional: control visibility */
+}
+
 h1 {
   margin-top: 100px;
 }
@@ -17,7 +28,9 @@ h1 {
   justify-content: center;
   gap: 2rem;
   padding: 4rem;
+  
 }
+
 
 .team-member {
   position: relative;
