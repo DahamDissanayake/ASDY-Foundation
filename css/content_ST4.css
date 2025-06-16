@@ -1,5 +1,3 @@
-
-
 /* ========================================
    CONTENT SECTIONS
    ======================================== */
@@ -116,7 +114,7 @@
     text-align: center;
 }
 
-.partners-content > p {
+.partners-content>p {
     font-size: 18px;
     margin-bottom: 40px;
     line-height: 1.8;
@@ -163,7 +161,7 @@
     text-align: center;
 }
 
-.approach-content > p {
+.approach-content>p {
     font-size: 18px;
     margin-bottom: 40px;
     line-height: 1.8;
@@ -238,29 +236,29 @@
         grid-template-columns: 1fr;
         gap: 24px;
     }
-    
+
     .team-grid,
     .approach-pillars {
         grid-template-columns: 1fr;
         gap: 24px;
     }
-    
+
     .partner-categories {
         grid-template-columns: 1fr;
         gap: 20px;
     }
-    
+
     .content-section {
         padding: 40px 0;
     }
-    
+
     .mission-card,
     .vision-card,
     .team-member,
     .pillar {
         padding: 24px;
     }
-    
+
     .cta-section h2 {
         font-size: 28px;
     }
@@ -270,33 +268,33 @@
     .mission-vision-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .mission-card,
     .vision-card {
         padding: 20px;
     }
-    
+
     .team-member,
     .pillar,
     .partner-category {
         padding: 20px;
     }
-    
+
     .content-section h2 {
         font-size: 28px;
         margin-bottom: 32px;
     }
-    
+
     .history-content p,
-    .partners-content > p,
-    .approach-content > p {
+    .partners-content>p,
+    .approach-content>p {
         font-size: 16px;
     }
-    
+
     .cta-section {
         padding: 40px 0;
     }
-    
+
     .cta-section h2 {
         font-size: 24px;
     }

@@ -24,7 +24,8 @@
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
-    min-height: 400px; /* Adjust this value as needed */
+    min-height: 400px;
+    /* Adjust this value as needed */
 }
 
 /* Avatar */
@@ -40,7 +41,8 @@
     font-size: 48px;
     font-weight: bold;
     box-shadow: 0 8px 25px var(--shadow-medium);
-    margin: 0; /* Remove left margin */
+    margin: 0;
+    /* Remove left margin */
 }
 
 .avatar img {
@@ -71,7 +73,8 @@
 }
 
 .user-info p {
-    max-width: 600px; /* Limit width for better readability */
+    max-width: 600px;
+    /* Limit width for better readability */
     word-wrap: break-word;
     white-space: normal;
     margin: 0;
@@ -86,7 +89,7 @@
     padding: 25px;
     margin-bottom: 20px;
     box-shadow: 0 5px 20px var(--shadow-light);
-    
+
 }
 
 
@@ -126,27 +129,27 @@
 .skill-progress {
     height: 100%;
     border-radius: 10px;
-    
+
 }
 
-.skill-progress.css { 
-    background: var(--primary-orange); 
-    width: 90%; 
+.skill-progress.css {
+    background: var(--primary-orange);
+    width: 90%;
 }
 
-.skill-progress.advocacy { 
-    background: var(--accent-red); 
-    width: 95%; 
+.skill-progress.advocacy {
+    background: var(--accent-red);
+    width: 95%;
 }
 
-.skill-progress.research { 
-    background: var(--primary-orange-light); 
-    width: 85%; 
+.skill-progress.research {
+    background: var(--primary-orange-light);
+    width: 85%;
 }
 
-.skill-progress.leadership { 
-    background: var(--accent-green); 
-    width: 88%; 
+.skill-progress.leadership {
+    background: var(--accent-green);
+    width: 88%;
 }
 
 /* Goals Section */
@@ -162,7 +165,7 @@
 }
 
 .goals-list li:before {
-  
+
     margin-right: 10px;
     font-size: 1.2em;
 }
@@ -203,13 +206,14 @@
 }
 
 .interest-item {
-    height: 150px;                   /* Increase height */
+    height: 150px;
+    /* Increase height */
     border-radius: 15px;
     transition: transform 0.3s ease;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* No Poverty */
@@ -319,6 +323,7 @@
     justify-content: flex-start;
     padding-top: 20px;
 }
+
 fieldset {
     border: 2px solid #FFB84D;
     border-radius: 10px;
@@ -332,10 +337,11 @@ legend {
     color: #FFB84D;
     font-size: 1.2rem;
 }
+
 label {
-  display: block;
-  margin-top: 1rem;
-  font-weight: 500;
+    display: block;
+    margin-top: 1rem;
+    font-weight: 500;
 }
 
 
