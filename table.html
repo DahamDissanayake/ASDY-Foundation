@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/table.css">
 </head>
+
 <body>
     <!-- Header with Navigation -->
     <header class="header">
@@ -27,7 +29,7 @@
                     <li><a href="team.html" class="nav-link">Team</a></li>
 
                 </ul>
-                <button class="usr-btn" onclick="window.location.href='profile.html'">User Profile</button> 
+                <button class="usr-btn" onclick="window.location.href='profile.html'">User Profile</button>
             </nav>
         </div>
     </header>
@@ -39,11 +41,11 @@
             <div class="container">
                 <div class="hero-content">
                     <h1>SDG 2: Zero Hunger Data</h1>
-                    <p class="hero-subtitle">Understanding the global hunger crisis through key facts, statistics, and actionable insights</p>
+                    <p class="hero-subtitle">Understanding the global hunger crisis through key facts, statistics, and
+                        actionable insights</p>
                 </div>
             </div>
         </section>
-
         <!-- Global Hunger Statistics -->
         <section class="data-section">
             <div class="container">
@@ -52,31 +54,55 @@
                     <table class="data-table">
                         <thead>
                             <tr>
-                                <th>Metric</th>
-                                <th>2023 Data</th>
-                                <th>Impact</th>
-                                <th>Source</th>
+                                <th rowspan="2" class="logo-header">
+                                    <img src="img/ASDY_logo_db.png" alt="ASDY Foundation Logo" class="table-logo">
+                                    <span class="logo-text">ASDY Foundation</span>
+                                </th>
+                                <th colspan="2" class="merged-header">Global Impact Data</th>
+                                <th rowspan="2">Source & Actions</th>
+                            </tr>
+                            <tr>
+                                <th class="th-clr">2023 Statistics</th>
+                                <th class="th-clr">Impact Level</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td class="metric-cell">
+                                    <div class="metric-thumbnail"
+                                        title="735 million people worldwide face chronic hunger, representing nearly 1 in 10 people globally">
+                                        <svg class="metric-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                            <path
+                                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.58L19 8l-9 9z" />
+                                        </svg>
+                                    </div>
                                     <strong>People Facing Hunger</strong>
+                                    <span class="status-icon">✗</span>
                                 </td>
                                 <td class="data-cell">
                                     <span class="data-number">735 million</span>
+                                    <span class="data-subtitle">people affected</span>
                                 </td>
                                 <td class="impact-cell">
                                     <span class="impact-badge critical">Critical</span>
                                     <p>Escalating due to conflict & climate change</p>
                                 </td>
                                 <td class="source-cell">
-                                    <a href="https://www.fao.org/publications/fao-flagship-publications/the-state-of-food-security-and-nutrition-in-the-world/2023/en" target="_blank">FAO SOFI Report 2023</a> 
+                                    <a href="https://www.fao.org/publications/fao-flagship-publications/the-state-of-food-security-and-nutrition-in-the-world/2023/en"
+                                        target="_blank">🔗 FAO SOFI Report 2023</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="metric-cell">
+                                    <div class="metric-thumbnail"
+                                        title="Stunting affects physical and cognitive development, leading to reduced learning capacity and economic productivity">
+                                        <svg class="metric-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                                            <circle cx="12" cy="7" r="4" />
+                                        </svg>
+                                    </div>
                                     <strong>Stunted Children</strong>
+                                    <span class="status-icon">⚠</span>
                                 </td>
                                 <td class="data-cell">
                                     <span class="data-number">1 in 5</span>
@@ -87,12 +113,21 @@
                                     <p>Lifelong physical & cognitive effects</p>
                                 </td>
                                 <td class="source-cell">
-                                    <a href="https://data.unicef.org/topic/nutrition/" target="_blank">UNICEF Nutrition Data</a> 
+                                    <a href="https://data.unicef.org/topic/nutrition/" target="_blank">🔗 UNICEF
+                                        Nutrition Data</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="metric-cell">
+                                    <div class="metric-thumbnail"
+                                        title="Food insecurity represents the lack of regular access to enough safe and nutritious food for normal growth and development">
+                                        <svg class="metric-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                            <path d="M3 12h18m-9-9v18" />
+                                            <circle cx="12" cy="12" r="10" />
+                                        </svg>
+                                    </div>
                                     <strong>Food Insecurity</strong>
+                                    <span class="status-icon">⚠</span>
                                 </td>
                                 <td class="data-cell">
                                     <span class="data-number">2.4 billion</span>
@@ -103,12 +138,24 @@
                                     <p>Lack year-round access to adequate food</p>
                                 </td>
                                 <td class="source-cell">
-                                    <a href="https://www.fao.org/hunger/en/" target="_blank">FAO Hunger Map 2022</a> 
+                                    <a href="https://www.fao.org/hunger/en/" target="_blank">🔗 FAO Hunger Map
+                                        2022</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="metric-cell">
+                                    <div class="metric-thumbnail"
+                                        title="Food waste occurs at all stages of the supply chain, from production to consumption, representing a massive inefficiency">
+                                        <svg class="metric-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                            <polyline points="3,6 5,6 21,6" />
+                                            <path
+                                                d="m19,6v14a2,2 0 0,1 -2,2H7a2,2 0 0,1 -2,-2V6m3,0V4a2,2 0 0,1 2,-2h4a2,2 0 0,1 2,2v2" />
+                                            <line x1="10" y1="11" x2="10" y2="17" />
+                                            <line x1="14" y1="11" x2="14" y2="17" />
+                                        </svg>
+                                    </div>
                                     <strong>Food Waste</strong>
+                                    <span class="status-icon">⚠</span>
                                 </td>
                                 <td class="data-cell">
                                     <span class="data-number">17%</span>
@@ -119,12 +166,23 @@
                                     <p>Wasted while millions go hungry</p>
                                 </td>
                                 <td class="source-cell">
-                                    <a href="https://www.unep.org/resources/report/unep-food-waste-index-report-2021" target="_blank">UNEP Food Waste Report</a> 
+                                    <a href="https://www.unep.org/resources/report/unep-food-waste-index-report-2021"
+                                        target="_blank">🔗 UNEP Food Waste Report</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="metric-cell">
+                                    <div class="metric-thumbnail"
+                                        title="Women make up nearly half of the agricultural workforce but face significant barriers to accessing resources and opportunities">
+                                        <svg class="metric-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                            <circle cx="12" cy="8" r="5" />
+                                            <path d="M12 14v7" />
+                                            <path d="M8 21h8" />
+                                            <path d="M10 14h4" />
+                                        </svg>
+                                    </div>
                                     <strong>Women in Agriculture</strong>
+                                    <span class="status-icon">⚠</span>
                                 </td>
                                 <td class="data-cell">
                                     <span class="data-number">43%</span>
@@ -135,199 +193,83 @@
                                     <p>Less access to land, credit & markets</p>
                                 </td>
                                 <td class="source-cell">
-                                    <a href="https://www.unwomen.org/en/news/in-focus/csw61/women-and-sustainable-development-goals/sdg-2-zero-hunger" target="_blank">UN Women Food Security</a> 
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </section>
-
-        <!-- SDG 2 Targets -->
-        <section class="targets-section">
-            <div class="container">
-                <h2 class="section-title">SDG 2 Targets & Goals</h2>
-                <div class="table-container">
-                    <table class="targets-table">
-                        <thead>
-                            <tr>
-                                <th>Target</th>
-                                <th>Goal Description</th>
-                                <th>Timeline</th>
-                                <th>Priority Level</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="target-cell">
-                                    <span class="target-number">2.1</span>
-                                </td>
-                                <td class="goal-cell">
-                                    <strong>End Hunger</strong>
-                                    <p>Ensure access to safe, nutritious food for all people year-round</p>
-                                </td>
-                                <td class="timeline-cell">
-                                    <span class="timeline-badge">By 2030</span>
-                                </td>
-                                <td class="priority-cell">
-                                    <span class="priority-badge urgent">Urgent</span>
+                                    <a href="https://www.unwomen.org/en/news/in-focus/csw61/women-and-sustainable-development-goals/sdg-2-zero-hunger"
+                                        target="_blank">🔗 UN Women Food Security</a>
                                 </td>
                             </tr>
                             <tr>
-                                <td class="target-cell">
-                                    <span class="target-number">2.2</span>
+                                <td class="metric-cell">
+                                    <div class="metric-thumbnail"
+                                        title="Acute malnutrition threatens children's survival and development, requiring immediate intervention">
+                                        <svg class="metric-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                                        </svg>
+                                    </div>
+                                    <strong>Acute Malnutrition</strong>
+                                    <span class="status-icon">✗</span>
                                 </td>
-                                <td class="goal-cell">
-                                    <strong>End Malnutrition</strong>
-                                    <p>End all forms of malnutrition, particularly among children and women</p>
-                                </td>
-                                <td class="timeline-cell">
-                                    <span class="timeline-badge">By 2030</span>
-                                </td>
-                                <td class="priority-cell">
-                                    <span class="priority-badge urgent">Urgent</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="target-cell">
-                                    <span class="target-number">2.3</span>
-                                </td>
-                                <td class="goal-cell">
-                                    <strong>Double Farmer Productivity</strong>
-                                    <p>Double productivity and income of small-scale food producers</p>
-                                </td>
-                                <td class="timeline-cell">
-                                    <span class="timeline-badge">By 2030</span>
-                                </td>
-                                <td class="priority-cell">
-                                    <span class="priority-badge high">High</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="target-cell">
-                                    <span class="target-number">2.4</span>
-                                </td>
-                                <td class="goal-cell">
-                                    <strong>Sustainable Food Systems</strong>
-                                    <p>Ensure sustainable food production systems and resilient practices</p>
-                                </td>
-                                <td class="timeline-cell">
-                                    <span class="timeline-badge">By 2030</span>
-                                </td>
-                                <td class="priority-cell">
-                                    <span class="priority-badge essential">Essential</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="target-cell">
-                                    <span class="target-number">2.5</span>
-                                </td>
-                                <td class="goal-cell">
-                                    <strong>Genetic Diversity</strong>
-                                    <p>Maintain genetic diversity of seeds, crops and livestock</p>
-                                </td>
-                                <td class="timeline-cell">
-                                    <span class="timeline-badge">By 2030</span>
-                                </td>
-                                <td class="priority-cell">
-                                    <span class="priority-badge important">Important</span>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </section>
-
-        <!-- Action Items -->
-        <section class="action-section">
-            <div class="container">
-                <h2 class="section-title">How You Can Contribute</h2>
-                <div class="table-container">
-                    <table class="action-table">
-                        <thead>
-                            <tr>
-                                <th>Action</th>
-                                <th>Impact Level</th>
-                                <th>Difficulty</th>
-                                <th>Get Started</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="action-cell">
-                                    <strong>Support Food Banks</strong>
-                                    <p>Donate excess food or volunteer at local food banks</p>
+                                <td class="data-cell">
+                                    <span class="data-number">45 million</span>
+                                    <span class="data-subtitle">children under 5</span>
                                 </td>
                                 <td class="impact-cell">
-                                    <span class="impact-level high">High Impact</span>
+                                    <span class="impact-badge critical">Critical</span>
+                                    <p>Life-threatening condition requiring urgent care</p>
                                 </td>
-                                <td class="difficulty-cell">
-                                    <span class="difficulty-badge easy">Easy</span>
-                                </td>
-                                <td class="start-cell">
-                                    <button class="action-btn">Find Local Banks</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="action-cell">
-                                    <strong>Reduce Food Waste</strong>
-                                    <p>Plan meals, store food properly, and compost scraps</p>
-                                </td>
-                                <td class="impact-cell">
-                                    <span class="impact-level medium">Medium Impact</span>
-                                </td>
-                                <td class="difficulty-cell">
-                                    <span class="difficulty-badge easy">Easy</span>
-                                </td>
-                                <td class="start-cell">
-                                    <button class="action-btn">Learn Tips</button>
+                                <td class="source-cell">
+                                    <a href="https://www.unicef.org/reports/state-of-worlds-children-2023"
+                                        target="_blank">🔗 UNICEF State of Children 2023</a>
                                 </td>
                             </tr>
                             <tr>
-                                <td class="action-cell">
-                                    <strong>Support Fair Trade</strong>
-                                    <p>Buy from fair-trade and small-scale farmers</p>
+                                <td class="metric-cell">
+                                    <div class="metric-thumbnail"
+                                        title="Climate change disrupts agricultural production and threatens food security worldwide">
+                                        <svg class="metric-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                            <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z" />
+                                        </svg>
+                                    </div>
+                                    <strong>Climate Impact</strong>
+                                    <span class="status-icon">⚠</span>
+                                </td>
+                                <td class="data-cell">
+                                    <span class="data-number">828 million</span>
+                                    <span class="data-subtitle">at risk by 2030</span>
                                 </td>
                                 <td class="impact-cell">
-                                    <span class="impact-level high">High Impact</span>
+                                    <span class="impact-badge severe">Severe</span>
+                                    <p>Droughts, floods affecting crop yields</p>
                                 </td>
-                                <td class="difficulty-cell">
-                                    <span class="difficulty-badge moderate">Moderate</span>
-                                </td>
-                                <td class="start-cell">
-                                    <button class="action-btn">Find Products</button>
+                                <td class="source-cell">
+                                    <a href="https://www.ipcc.ch/report/ar6/wg2/" target="_blank">🔗 IPCC Climate
+                                        Report
+                                        2023</a>
                                 </td>
                             </tr>
                             <tr>
-                                <td class="action-cell">
-                                    <strong>Raise Awareness</strong>
-                                    <p>Share information about food insecurity and solutions</p>
+                                <td class="metric-cell">
+                                    <div class="metric-thumbnail"
+                                        title="Smallholder farmers produce much of the world's food but face significant challenges in accessing markets and resources">
+                                        <svg class="metric-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                            <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                                            <path d="M2 17l10 5 10-5" />
+                                            <path d="M2 12l10 5 10-5" />
+                                        </svg>
+                                    </div>
+                                    <strong>Smallholder Farmers</strong>
+                                    <span class="status-icon">✓</span>
+                                </td>
+                                <td class="data-cell">
+                                    <span class="data-number">500 million</span>
+                                    <span class="data-subtitle">farm families</span>
                                 </td>
                                 <td class="impact-cell">
-                                    <span class="impact-level medium">Medium Impact</span>
+                                    <span class="impact-badge positive">Positive</span>
+                                    <p>Produce 80% of food in developing countries</p>
                                 </td>
-                                <td class="difficulty-cell">
-                                    <span class="difficulty-badge easy">Easy</span>
-                                </td>
-                                <td class="start-cell">
-                                    <button class="action-btn">Share Content</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="action-cell">
-                                    <strong>Advocate for Policy</strong>
-                                    <p>Support sustainable agriculture and food security policies</p>
-                                </td>
-                                <td class="impact-cell">
-                                    <span class="impact-level very-high">Very High Impact</span>
-                                </td>
-                                <td class="difficulty-cell">
-                                    <span class="difficulty-badge challenging">Challenging</span>
-                                </td>
-                                <td class="start-cell">
-                                    <button class="action-btn">Contact Reps</button>
+                                <td class="source-cell">
+                                    <a href="https://www.ifad.org/en/web/knowledge/publication/asset/39135943"
+                                        target="_blank">🔗 IFAD Rural Development Report</a>
                                 </td>
                             </tr>
                         </tbody>
@@ -337,36 +279,38 @@
         </section>
     </main>
 
-     <!-- Footer -->
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
 
                 <div class="footer-logo">
-                    <img src="img/ASDY_full.png" alt="ASDY Foundation Logo" style="max-width: 300px; width: 100%; height: auto; display: block;">
+                    <img src="img/ASDY_full.png" alt="ASDY Foundation Logo"
+                        style="max-width: 300px; width: 100%; height: auto; display: block;">
                 </div>
 
                 <div class="footer-section">
                     <h3>ASDY Foundation</h3>
-                    <p>We are a non-profit dedicated to ending hunger through food aid, sustainable farming, community empowerment programs, education, and local partnership initiatives.</p>
+                    <p>We are a non-profit dedicated to ending hunger through food aid, sustainable farming, community
+                        empowerment programs, education, and local partnership initiatives.</p>
                 </div>
 
                 <div class="footer-section">
                     <h4>Page Editors</h4>
-                        <p>
+                    <p>
                         <a href="pageEditor_ST1.html">Student 1</a> |
                         <a href="pageEditor_ST2.html">Student 2</a> |
                         <a href="pageEditor_ST3.html">Student 3</a> |
-                        <a href="pageEditor_ST4.html">Student 4</a> 
-                        </p>
+                        <a href="pageEditor_ST4.html">Student 4</a>
+                    </p>
 
                     <h4>Content Pages</h4>
-                        <p>
+                    <p>
                         <a href="content_ST1.html">Student 1</a> |
                         <a href="content_ST2.html">Student 2</a> |
                         <a href="content_ST3.html">Student 3</a> |
-                        <a href="content_ST4.html">Student 4</a> 
-                        </p>
+                        <a href="content_ST4.html">Student 4</a>
+                    </p>
                 </div>
 
             </div>
@@ -381,4 +325,5 @@
         <div class="go-to-top-arrow"></div>
     </a>
 </body>
+
 </html>
