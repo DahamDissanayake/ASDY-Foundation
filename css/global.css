@@ -176,11 +176,6 @@ section {
     background-color: var(--primary-orange-dark);
 }
 
-/* ========================================
-   PAGE NAVIGATION BAR
-   Add this section to your global.css file
-   ======================================== */
-
 .page-nav-section {
     background: var(--neutral-light-gray);
     padding: 32px 0;
@@ -611,7 +606,6 @@ img {
 
 /* ========================================
    GO TO TOP BUTTON
-   Add this to your global.css file
    ======================================== */
 
 .go-to-top {
