@@ -28,22 +28,22 @@ body {
     --primary-orange: #FFA500;
     --primary-orange-dark: #FF8C00;
     --primary-orange-light: #FFB84D;
-    
+
     /* Secondary Colors */
     --secondary-blue: #2c3e50;
     --secondary-blue-light: #34495e;
-    
+
     /* Neutral Colors */
     --neutral-white: #ffffff;
     --neutral-light-gray: #f8f9fa;
     --neutral-gray: #666666;
     --neutral-dark-gray: #333333;
     --neutral-black: #000000;
-    
+
     /* Accent Colors */
     --accent-green: #27ae60;
     --accent-red: #e74c3c;
-    
+
     /* Shadow Colors */
     --shadow-light: rgba(0, 0, 0, 0.1);
     --shadow-medium: rgba(0, 0, 0, 0.2);
@@ -53,7 +53,12 @@ body {
 /* ========================================
    TYPOGRAPHY
    ======================================== */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 700;
     color: var(--neutral-dark-gray);
     margin-bottom: 16px;
@@ -653,6 +658,7 @@ img {
     border-bottom-color: var(--neutral-white);
     transform: translateY(-2px);
 }
+
 /* ========================================
    UTILITY CLASSES
    ======================================== */
@@ -668,124 +674,461 @@ img {
     text-align: right;
 }
 
-.mb-1 { margin-bottom: 16px; }
-.mb-2 { margin-bottom: 32px; }
-.mb-3 { margin-bottom: 48px; }
+.mb-1 {
+    margin-bottom: 16px;
+}
 
-.mt-1 { margin-top: 16px; }
-.mt-2 { margin-top: 32px; }
-.mt-3 { margin-top: 48px; }
+.mb-2 {
+    margin-bottom: 32px;
+}
 
-.p-1 { padding: 16px; }
-.p-2 { padding: 32px; }
-.p-3 { padding: 48px; }
+.mb-3 {
+    margin-bottom: 48px;
+}
 
-.bg-primary { background-color: var(--primary-orange); }
-.bg-secondary { background-color: var(--secondary-blue); }
-.bg-light { background-color: var(--neutral-light-gray); }
-.bg-white { background-color: var(--neutral-white); }
+.mt-1 {
+    margin-top: 16px;
+}
 
-.text-primary { color: var(--primary-orange); }
-.text-secondary { color: var(--secondary-blue); }
-.text-white { color: var(--neutral-white); }
-.text-gray { color: var(--neutral-gray); }
+.mt-2 {
+    margin-top: 32px;
+}
+
+.mt-3 {
+    margin-top: 48px;
+}
+
+.p-1 {
+    padding: 16px;
+}
+
+.p-2 {
+    padding: 32px;
+}
+
+.p-3 {
+    padding: 48px;
+}
+
+.bg-primary {
+    background-color: var(--primary-orange);
+}
+
+.bg-secondary {
+    background-color: var(--secondary-blue);
+}
+
+.bg-light {
+    background-color: var(--neutral-light-gray);
+}
+
+.bg-white {
+    background-color: var(--neutral-white);
+}
+
+.text-primary {
+    color: var(--primary-orange);
+}
+
+.text-secondary {
+    color: var(--secondary-blue);
+}
+
+.text-white {
+    color: var(--neutral-white);
+}
+
+.text-gray {
+    color: var(--neutral-gray);
+}
+
 
 /* ========================================
-   RESPONSIVE DESIGN
+   RESPONSIVE MEDIA QUERIES
    ======================================== */
-@media (max-width: 768px) {
-    .intro-content h1 {
-        font-size: 40px;
+
+/* Tablet Styles */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 15px;
     }
-    
-    .intro-content p {
-        font-size: 17.6px;
+
+    /* Typography */
+    h1 {
+        font-size: 36px;
+        letter-spacing: 1px;
     }
-    
+
+    h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        font-size: 20px;
+        margin-bottom: 14px;
+    }
+
+    h4 {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+
+    p {
+        font-size: 16px;
+        margin-bottom: 14px;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
+    /* Navigation */
     .nav {
         flex-direction: column;
         gap: 16px;
-        padding: 16px 0;
+        padding: 12px 0;
     }
-    
+
+    .logo img {
+        width: 150px;
+        height: 50px;
+    }
+
     .navigation {
-        gap: 16px;
+        gap: 12px;
         flex-wrap: wrap;
         justify-content: center;
     }
-    
-    .mission-content {
-        grid-template-columns: 1fr;
-        gap: 32px;
-        text-align: center;
+
+    .nav-link {
+        font-size: 14px;
+        padding: 6px 12px;
     }
-    
-    .content-cards {
-        grid-template-columns: 1fr;
+
+    /* Page Navigation */
+    .page-nav-section {
+        padding: 24px 0;
     }
-    
-    .footer-content {
-        grid-template-columns: 1fr;
-        text-align: center;
+
+    .page-nav-title {
+        font-size: 20px;
+        margin-bottom: 20px;
     }
-    
-    h1 {
-        font-size: 40px;
+
+    .page-nav-links {
+        gap: 16px;
     }
-    
-    h2 {
-        font-size: 32px;
+
+    .page-nav-link {
+        min-width: 120px;
+        padding: 16px 12px;
     }
-    
-    section {
-        padding: 48px 0;
+
+    .nav-icon {
+        font-size: 24px;
+        margin-bottom: 6px;
+    }
+
+    .page-nav-link span {
+        font-size: 12px;
+    }
+
+    /* Internal Navigation */
+    .internal-nav-section {
+        padding: 24px 0;
     }
 
     .internal-nav-links {
         gap: 16px;
     }
-    
+
     .internal-nav-link {
         padding: 10px 20px;
         font-size: 14px;
     }
-}
 
-@media (max-width: 480px) {
-    .intro-content h1 {
+    /* Hero Section */
+    .hero-section {
+        padding: 60px 0 40px;
+    }
+
+    .hero-content h1 {
         font-size: 32px;
+        margin-bottom: 16px;
     }
-    
-    .container {
-        padding: 0 15px;
+
+    .hero-subtitle {
+        font-size: 18px;
     }
-    
-    .navigation {
-        font-size: 14.4px;
+
+    /* Cards */
+    .card-image img {
+        height: 200px;
     }
-    
+
     .card-content {
         padding: 24px;
     }
 
-    .internal-nav-section {
-        padding: 24px 0;
+    .card-content h3 {
+        font-size: 18px;
     }
-    
-    .internal-nav-title {
+
+    /* Footer */
+    .footer {
+        padding: 40px 0 16px;
+    }
+
+    .footer-content {
+        gap: 24px;
+    }
+
+    .footer-section h3 {
         font-size: 20px;
-        margin-bottom: 20px;
     }
-    
-    .internal-nav-links {
-        flex-direction: column;
-        align-items: center;
-        gap: 12px;
+
+    .footer-section h4 {
+        font-size: 17px;
     }
-    
-    .internal-nav-link {
-        width: 200px;
-        text-align: center;
+
+    /* Go to Top Button */
+    .go-to-top {
+        width: 50px;
+        height: 50px;
+        bottom: 24px;
+        right: 24px;
+    }
+
+    .go-to-top-arrow {
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-bottom: 10px solid var(--neutral-white);
     }
 }
 
+/* Mobile Styles */
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    /* Typography */
+    h1 {
+        font-size: 28px;
+        letter-spacing: 0.5px;
+    }
+
+    h2 {
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+
+    h3 {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+
+    h4 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 12px;
+    }
+
+    section {
+        padding: 40px 0;
+    }
+
+    /* Navigation */
+    .nav {
+        padding: 8px 0;
+    }
+
+    .logo img {
+        width: 120px;
+        height: 40px;
+    }
+
+    .navigation {
+        gap: 8px;
+    }
+
+    .nav-link {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+
+    /* Page Navigation */
+    .page-nav-section {
+        padding: 20px 0;
+    }
+
+    .page-nav-title {
+        font-size: 18px;
+        margin-bottom: 16px;
+    }
+
+    .page-nav-links {
+        gap: 12px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .page-nav-link {
+        min-width: 200px;
+        padding: 14px 16px;
+    }
+
+    .nav-icon {
+        font-size: 20px;
+        margin-bottom: 4px;
+    }
+
+    .page-nav-link span {
+        font-size: 11px;
+    }
+
+    /* Internal Navigation */
+    .internal-nav-section {
+        padding: 20px 0;
+    }
+
+    .internal-nav-links {
+        gap: 12px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .internal-nav-link {
+        padding: 8px 16px;
+        font-size: 13px;
+        min-width: 180px;
+        text-align: center;
+    }
+
+    /* Buttons */
+    .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .usr-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .cta-btn {
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+
+    /* Hero Section */
+    .hero-section {
+        padding: 40px 0 30px;
+    }
+
+    .hero-content h1 {
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+
+    .hero-subtitle {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    /* Cards */
+    .card-image img {
+        height: 180px;
+    }
+
+    .card-content {
+        padding: 20px;
+    }
+
+    .card-content h3 {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+
+    .card-content p {
+        margin-bottom: 16px;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 32px 0 16px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .footer-section h3 {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+
+    .footer-section h4 {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+
+    /* Go to Top Button */
+    .go-to-top {
+        width: 45px;
+        height: 45px;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .go-to-top-arrow {
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 8px solid var(--neutral-white);
+    }
+
+    /* Utility Classes Mobile Adjustments */
+    .mb-1 {
+        margin-bottom: 12px;
+    }
+
+    .mb-2 {
+        margin-bottom: 24px;
+    }
+
+    .mb-3 {
+        margin-bottom: 36px;
+    }
+
+    .mt-1 {
+        margin-top: 12px;
+    }
+
+    .mt-2 {
+        margin-top: 24px;
+    }
+
+    .mt-3 {
+        margin-top: 36px;
+    }
+
+    .p-1 {
+        padding: 12px;
+    }
+
+    .p-2 {
+        padding: 24px;
+    }
+
+    .p-3 {
+        padding: 36px;
+    }
+}

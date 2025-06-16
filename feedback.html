@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="css/feedback.css">
 
 </head>
+
 <body>
     <!-- Header with Navigation -->
     <header class="header">
@@ -28,66 +30,105 @@
                     <li><a href="team.html" class="nav-link">Team</a></li>
 
                 </ul>
-                <button class="usr-btn" onclick="window.location.href='profile.html'">User Profile</button> 
+                <button class="usr-btn" onclick="window.location.href='profile.html'">User Profile</button>
             </nav>
         </div>
     </header>
 
 
-            <!-- Hero Section -->
-        <section class="hero-section">
-            <div class="container">
-                <div class="hero-content">
-                    <h1 style="margin-top: 100px;">We'd Love Your Feedback</h1>
-                    <p class="hero-subtitle">Your voice helps us grow and serve better. Let us know your thoughts.</p>
-                </div>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1 style="margin-top: 100px;">We'd Love Your Feedback</h1>
+                <p class="hero-subtitle">Your voice helps us grow and serve better. Let us know your thoughts.</p>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <form>
-            <fieldset>
-            <legend><h3><big>Personal Details</big></h3></legend>
+    <form>
+        <fieldset>
+            <legend>
+                <h3><big>Personal Details</big></h3>
+            </legend>
 
-            <label for="fullname"><h4>Full Name*</h4></label>
+            <label for="fullname">
+                <h4>Full Name*</h4>
+            </label>
             <input type="text" id="fullname" name="fullname" required title="Please enter your full name">
 
-            <label for="email"><h4>Email Address*</h4></label>
+            <label for="email">
+                <h4>Email Address*</h4>
+            </label>
             <input type="email" id="email" name="email" required title="Please enter a valid email address">
 
-            <label for="phone"><h4>Telephone Number</h4></label>
+            <label for="phone">
+                <h4>Telephone Number</h4>
+            </label>
             <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" title="Enter a 10-digit phone number">
 
-            <label for="address"><h4>Address</h4></label>
+            <label for="address">
+                <h4>Address</h4>
+            </label>
             <textarea id="address" name="address" rows="3"></textarea>
 
-            <label for="birth day"><h4> Birth Day</h4></label>
+            <label for="birth day">
+                <h4> Birth Day</h4>
+            </label>
             <input type="date" id="birth day" name="birth day">
 
-            </fieldset>
+        </fieldset>
 
-            <fieldset>
-            <legend><h3><big>Feedback Details</big></h3></legend>
-            <label for="message"><h4>Comment or Message</h4></label>
-            <textarea id="message" name="message" maxlength="250" rows="4" required title="Please enter your feedback"></textarea>
+        <fieldset>
+            <legend>
+                <h3><big>Feedback Details</big></h3>
+            </legend>
+            <label for="message">
+                <h4>Comment or Message</h4>
+            </label>
+            <textarea id="message" name="message" maxlength="250" rows="4" required
+                title="Please enter your feedback"></textarea>
             <div class="char-counter" id="char-counter">250 characters remaining</div>
 
-            <label for="topic"><h4>Topic</h4></label>
+            <label for="topic">
+                <h4>Topic</h4>
+            </label>
             <select id="topic" name="topic" required>
-                <option value=""><p>Select a topic</p></option>
-                <option value="donation"><p>Donation</p></option>
-                <option value="volunteering"><p>Volunteering</p></option>
-                <option value="education"><p>Education Support</p></option>
+                <option value="">
+                    <p>Select a topic</p>
+                </option>
+                <option value="donation">
+                    <p>Donation</p>
+                </option>
+                <option value="volunteering">
+                    <p>Volunteering</p>
+                </option>
+                <option value="education">
+                    <p>Education Support</p>
+                </option>
             </select>
 
-            <label for="programs"><h4 style="margin-top: 50px;">Programs Interested In</h4></label>
+            <label for="programs">
+                <h4 style="margin-top: 50px;">Programs Interested In</h4>
+            </label>
             <select id="programs" name="programs" multiple size="4">
-                <option value="food-drives"><p>Food Drives</p></option>
-                <option value="school-meals"><p></p>School Meal Plans</option>
-                <option value="sustainable-agriculture"><p>Sustainable Agriculture</p></option>
-                <option value="local-markets"><p>Support Local Markets</p></option>
+                <option value="food-drives">
+                    <p>Food Drives</p>
+                </option>
+                <option value="school-meals">
+                    <p></p>School Meal Plans
+                </option>
+                <option value="sustainable-agriculture">
+                    <p>Sustainable Agriculture</p>
+                </option>
+                <option value="local-markets">
+                    <p>Support Local Markets</p>
+                </option>
             </select>
 
-            <label for="country"><h4 style="margin-top: 50px;">The country that you love to support</h4></label>
+            <label for="country">
+                <h4 style="margin-top: 50px;">The country that you love to support</h4>
+            </label>
             <input list="countries" id="country" name="country" placeholder="Start typing..." />
             <datalist id="countries">
                 <option value="Sri lanka">
@@ -98,81 +139,91 @@
                 <option value="Ethiopia">
             </datalist>
 
-            <label ><h4 style="margin-top: 50px;">How did you hear about us?</h4></label>
-            <input type="checkbox" name="source" value="social" > Social Media<br>
-            <input type="checkbox" name="source" value="friend" > Friend<br>
+            <label>
+                <h4 style="margin-top: 50px;">How did you hear about us?</h4>
+            </label>
+            <input type="checkbox" name="source" value="social"> Social Media<br>
+            <input type="checkbox" name="source" value="friend"> Friend<br>
             <input type="checkbox" name="source" value="news"> News<br>
 
-            <label><h4 style="margin-top: 50px;">Was this your first time visiting our site?</h4></label>
+            <label>
+                <h4 style="margin-top: 50px;">Was this your first time visiting our site?</h4>
+            </label>
             <input type="radio" name="recommend" value="yes" required> Yes
             <input type="radio" name="recommend" value="no"> No
 
-            <label for="file"><h4 style="margin-top: 50px;">Upload an Image or PDF (optional)</h4></label>
+            <label for="file">
+                <h4 style="margin-top: 50px;">Upload an Image or PDF (optional)</h4>
+            </label>
             <input type="file" id="file" name="file" accept=".jpg, .png, .pdf">
-            
+
 
             <!--<label>Rate Your Experience</label>-->
-            <label><h4 style="margin-top: 50px;">Rate Our Site</h4></label>
+            <label>
+                <h4 style="margin-top: 50px;">Rate Our Site</h4>
+            </label>
             <div class="rating" style="margin-top: -30px;">
-            <input type="radio" id="star5" name="rating" value="5">
-            <label for="star5" title="Excellent">&#9733;</label>
-            <input type="radio" id="star4" name="rating" value="4">
-            <label for="star4" title="Good">&#9733;</label>
-            <input type="radio" id="star3" name="rating" value="3">
-            <label for="star3" title="Average">&#9733;</label>
-            <input type="radio" id="star2" name="rating" value="2">
-            <label for="star2" title="Poor">&#9733;</label>
-            <input type="radio" id="star1" name="rating" value="1">
-            <label for="star1" title="Very Poor">&#9733;</label>
+                <input type="radio" id="star5" name="rating" value="5">
+                <label for="star5" title="Excellent">&#9733;</label>
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4" title="Good">&#9733;</label>
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3" title="Average">&#9733;</label>
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2" title="Poor">&#9733;</label>
+                <input type="radio" id="star1" name="rating" value="1">
+                <label for="star1" title="Very Poor">&#9733;</label>
             </div>
-            
-            
-            </fieldset>
-                <button type="submit" class="btn btn-primary">Send Feedback</button>
-                <button type="reset" class="btn btn-secondary">Reset</button>   
-        </form>
-    
-                
-        </section>
-        <div class="text-center">
-                <button class="cta-btn" onclick="window.location.href='home.html'">Back to home</button>
-        </div>
 
 
-    
+        </fieldset>
+        <button type="submit" class="btn btn-primary">Send Feedback</button>
+        <button type="reset" class="btn btn-secondary">Reset</button>
+    </form>
+
+
+    </section>
+    <div class="text-center">
+        <button class="cta-btn" onclick="window.location.href='home.html'">Back to home</button>
+    </div>
 
 
 
-     <!-- Footer -->
+
+
+
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
 
                 <div class="footer-logo">
-                    <img src="img/ASDY_full.png" alt="ASDY Foundation Logo" style="max-width: 300px; width: 100%; height: auto; display: block;">
+                    <img src="img/ASDY_full.png" alt="ASDY Foundation Logo"
+                        style="max-width: 300px; width: 100%; height: auto; display: block;">
                 </div>
 
                 <div class="footer-section">
                     <h3>ASDY Foundation</h3>
-                    <p>We are a non-profit dedicated to ending hunger through food aid, sustainable farming, community empowerment programs, education, and local partnership initiatives.</p>
+                    <p>We are a non-profit dedicated to ending hunger through food aid, sustainable farming, community
+                        empowerment programs, education, and local partnership initiatives.</p>
                 </div>
 
                 <div class="footer-section">
                     <h4>Page Editors</h4>
-                        <p>
+                    <p>
                         <a href="pageEditor_ST1.html">Student 1</a> |
                         <a href="pageEditor_ST2.html">Student 2</a> |
                         <a href="pageEditor_ST3.html">Student 3</a> |
-                        <a href="pageEditor_ST4.html">Student 4</a> 
-                        </p>
+                        <a href="pageEditor_ST4.html">Student 4</a>
+                    </p>
 
                     <h4>Content Pages</h4>
-                        <p>
+                    <p>
                         <a href="content_ST1.html">Student 1</a> |
                         <a href="content_ST2.html">Student 2</a> |
                         <a href="content_ST3.html">Student 3</a> |
-                        <a href="content_ST4.html">Student 4</a> 
-                        </p>
+                        <a href="content_ST4.html">Student 4</a>
+                    </p>
                 </div>
 
             </div>
@@ -187,4 +238,5 @@
         <div class="go-to-top-arrow"></div>
     </a>
 </body>
+
 </html>

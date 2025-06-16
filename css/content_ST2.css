@@ -386,54 +386,54 @@
     .hero-content h1 {
         font-size: 36px;
     }
-    
+
     .hero-subtitle {
         font-size: 18px;
     }
-    
+
     .content-grid {
         grid-template-columns: 1fr;
         gap: 32px;
     }
-    
+
     .causes-grid {
         grid-template-columns: 1fr;
         gap: 24px;
     }
-    
+
     .impact-comparison {
         grid-template-columns: 1fr;
         gap: 24px;
     }
-    
+
     .vs-divider {
         justify-self: center;
     }
-    
+
     .hunger-comparison {
         grid-template-columns: 1fr;
         gap: 32px;
     }
-    
+
     .target-item {
         flex-direction: column;
         text-align: center;
         gap: 12px;
     }
-    
+
     .target-number {
         margin-right: 0;
     }
-    
+
     .cta-content h2 {
         font-size: 28px;
     }
-    
+
     .cta-buttons {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .cta-buttons .cta-btn,
     .cta-buttons .btn-outline {
         width: 200px;
@@ -444,34 +444,34 @@
     .hero-section {
         padding: 100px 0 60px;
     }
-    
+
     .hero-content h1 {
         font-size: 28px;
     }
-    
+
     .content-section {
         padding: 60px 0;
     }
-    
+
     .cause-card,
     .comparison-side,
     .hunger-type {
         padding: 24px;
     }
-    
+
     .stat-card {
         padding: 24px;
     }
-    
+
     .stat-number {
         font-size: 36px;
     }
-    
+
     .sdg-badge {
         flex-direction: column;
         gap: 8px;
     }
-    
+
     .sdg-number {
         margin-right: 0;
     }

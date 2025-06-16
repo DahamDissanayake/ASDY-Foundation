@@ -7,8 +7,8 @@ body {
   color: #333;
 }
 
-h1{
-    margin-top: 100px;
+h1 {
+  margin-top: 100px;
 }
 
 .team-container {
@@ -66,11 +66,11 @@ h1{
 }
 
 
-h4{
-    padding: 16px;
-    font-size: 1.2rem;
+h4 {
+  padding: 16px;
+  font-size: 1.2rem;
 }
 
-section{
-    padding: 0.1px;
+section {
+  padding: 0.1px;
 }
