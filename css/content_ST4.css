@@ -1,0 +1,303 @@
+
+
+/* ========================================
+   CONTENT SECTIONS
+   ======================================== */
+.content-section {
+    padding: 60px 0;
+}
+
+.content-section h2 {
+    text-align: center;
+    margin-bottom: 48px;
+    color: var(--secondary-blue);
+    position: relative;
+}
+
+.content-section h2::after {
+    content: '';
+    width: 80px;
+    height: 4px;
+    background: var(--primary-orange);
+    display: block;
+    margin: 16px auto 0;
+    border-radius: 2px;
+}
+
+/* ========================================
+   MISSION AND VISION SECTION
+   ======================================== */
+.mission-vision-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 32px;
+    margin-top: 32px;
+}
+
+.mission-card,
+.vision-card {
+    background: var(--neutral-white);
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px var(--shadow-light);
+    transition: all 0.3s ease;
+    border-left: 5px solid var(--primary-orange);
+}
+
+.mission-card:hover,
+.vision-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px var(--shadow-medium);
+}
+
+.mission-card h3,
+.vision-card h3 {
+    color: var(--primary-orange);
+    margin-bottom: 16px;
+    font-size: 24px;
+}
+
+/* ========================================
+   HISTORY SECTION
+   ======================================== */
+.history-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.history-content p {
+    margin-bottom: 24px;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* ========================================
+   TEAM SECTION
+   ======================================== */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+    margin-top: 32px;
+}
+
+.team-member {
+    background: var(--neutral-white);
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px var(--shadow-light);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.team-member:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px var(--shadow-medium);
+}
+
+.team-member h4 {
+    color: var(--secondary-blue);
+    margin-bottom: 16px;
+    font-size: 20px;
+}
+
+.team-member p {
+    color: var(--neutral-gray);
+    line-height: 1.6;
+}
+
+/* ========================================
+   PARTNERS SECTION
+   ======================================== */
+.partners-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.partners-content > p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+.partner-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.partner-category {
+    background: var(--neutral-white);
+    padding: 24px;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px var(--shadow-light);
+    transition: all 0.3s ease;
+}
+
+.partner-category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px var(--shadow-medium);
+}
+
+.partner-category h4 {
+    color: var(--primary-orange);
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+.partner-category p {
+    color: var(--neutral-gray);
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* ========================================
+   APPROACH SECTION
+   ======================================== */
+.approach-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.approach-content > p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+.approach-pillars {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.pillar {
+    background: var(--neutral-white);
+    padding: 28px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px var(--shadow-light);
+    transition: all 0.3s ease;
+    border-top: 4px solid var(--primary-orange);
+}
+
+.pillar:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px var(--shadow-medium);
+    border-top-color: var(--primary-orange-dark);
+}
+
+.pillar h4 {
+    color: var(--secondary-blue);
+    margin-bottom: 16px;
+    font-size: 18px;
+}
+
+.pillar p {
+    color: var(--neutral-gray);
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* ========================================
+   CALL TO ACTION SECTION
+   ======================================== */
+.cta-section {
+    background: linear-gradient(135deg, var(--primary-orange) 0%, var(--primary-orange-dark) 100%);
+    color: var(--neutral-white);
+    padding: 60px 0;
+    text-align: center;
+}
+
+.cta-section h2 {
+    color: var(--neutral-white);
+    margin-bottom: 16px;
+    font-size: 36px;
+}
+
+.cta-section h2::after {
+    background: var(--neutral-white);
+}
+
+.cta-section p {
+    font-size: 18px;
+    margin-bottom: 32px;
+    opacity: 0.9;
+    color: var(--neutral-white);
+}
+
+/* ========================================
+   RESPONSIVE DESIGN FOR CONTENT PAGE
+   ======================================== */
+@media (max-width: 768px) {
+    .mission-vision-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    
+    .team-grid,
+    .approach-pillars {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    
+    .partner-categories {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .content-section {
+        padding: 40px 0;
+    }
+    
+    .mission-card,
+    .vision-card,
+    .team-member,
+    .pillar {
+        padding: 24px;
+    }
+    
+    .cta-section h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mission-vision-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .mission-card,
+    .vision-card {
+        padding: 20px;
+    }
+    
+    .team-member,
+    .pillar,
+    .partner-category {
+        padding: 20px;
+    }
+    
+    .content-section h2 {
+        font-size: 28px;
+        margin-bottom: 32px;
+    }
+    
+    .history-content p,
+    .partners-content > p,
+    .approach-content > p {
+        font-size: 16px;
+    }
+    
+    .cta-section {
+        padding: 40px 0;
+    }
+    
+    .cta-section h2 {
+        font-size: 24px;
+    }
+}
