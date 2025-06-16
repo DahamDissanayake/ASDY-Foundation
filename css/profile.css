@@ -9,22 +9,22 @@
 .profile-header {
     background: linear-gradient(135deg, var(--primary-orange) 0%, var(--primary-orange-dark) 100%);
     border-radius: 0;
-    padding: 20px 10px;
+    padding: 10px 10px;
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 20px;
+    gap: 10px;
     width: 100vw;
     position: relative;
     left: 50%;
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
-    min-height: 400px; 
+    min-height: 400px; /* Adjust this value as needed */
 }
 
 /* Avatar */
@@ -40,7 +40,7 @@
     font-size: 48px;
     font-weight: bold;
     box-shadow: 0 8px 25px var(--shadow-medium);
-    margin: 0; 
+    margin: 0; /* Remove left margin */
 }
 
 .avatar img {
@@ -55,7 +55,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5px;
+    gap: 0px;
 }
 
 .user-info h1 {
@@ -71,11 +71,11 @@
 }
 
 .user-info p {
-    max-width: 600px; 
+    max-width: 600px; /* Limit width for better readability */
     word-wrap: break-word;
     white-space: normal;
     margin: 0;
-    color: var(--secondary-blue);
+    color: var(--neutral-white);
     line-height: 1.6;
 }
 
@@ -112,7 +112,7 @@
 }
 
 .skills-list li {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .skill-bar {
@@ -175,7 +175,7 @@
 }
 
 .volunteer-item {
-    background: var(--primary-orange);
+    background: var(--primary-orange-light);
     padding: 15px;
     border-radius: 10px;
     text-align: center;
@@ -203,7 +203,7 @@
 }
 
 .interest-item {
-    height: 150px;                   
+    height: 150px;                   /* Increase height */
     border-radius: 15px;
     transition: transform 0.3s ease;
     background-size: cover;
@@ -212,42 +212,36 @@
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
+/* Zero Hunger */
+.interest-item:nth-child(1) {
 
-.interests-grid a {
-  display: block;
-}
-
-
-/* No Poverty */
-.interests-grid a:nth-child(1) .interest-item {
     background-image: url('../img/profile/no-poverty.jpg');
 }
 
-/* Zero Hunger */
-.interests-grid a:nth-child(2) .interest-item {
+/* Good Health */
+.interest-item:nth-child(2) {
     background-image: url('../img/profile/zero-hunger.png');
 }
 
-/* Good Health */
-.interests-grid a:nth-child(3) .interest-item {
+/* Clean Water */
+.interest-item:nth-child(3) {
     background-image: url('../img/profile/good-health.png');
 }
 
 /* Quality Education */
-.interests-grid a:nth-child(4) .interest-item {
+.interest-item:nth-child(4) {
     background-image: url('../img/profile/quality-education.jpg');
 }
 
-/* Clean Water */
-.interests-grid a:nth-child(5) .interest-item {
+/* Partnerships */
+.interest-item:nth-child(5) {
     background-image: url('../img/profile/clean-water.jpg');
 }
 
-/* Partnerships */
-.interests-grid a:nth-child(6) .interest-item {
+/* No Poverty */
+.interest-item:nth-child(6) {
     background-image: url('../img/profile/partnership.png');
 }
-
 
 .interest-item:hover {
     transform: scale(1.05);
