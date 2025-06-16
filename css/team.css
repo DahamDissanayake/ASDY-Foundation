@@ -41,6 +41,7 @@ h1{
   height: auto;
   display: block;
   transition: opacity 0.3s ease;
+  border-radius: 0px;
 }
 
 .team-member:hover .thumb,
