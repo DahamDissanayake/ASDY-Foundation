@@ -10,6 +10,7 @@
     background: linear-gradient(135deg, var(--primary-orange) 0%, var(--primary-orange-dark) 100%);
     border-radius: 0;
     padding: 10px 10px;
+    padding-bottom: 30px;
     margin: 0;
     margin-bottom: 30px;
     display: flex;

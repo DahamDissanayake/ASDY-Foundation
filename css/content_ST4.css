@@ -39,16 +39,11 @@
     background: var(--neutral-white);
     padding: 32px;
     border-radius: 12px;
-    box-shadow: 0 5px 20px var(--shadow-light);
     transition: all 0.3s ease;
     border-left: 5px solid var(--primary-orange);
+    box-shadow: 0 5px 20px var(--shadow-light);
 }
 
-.mission-card:hover,
-.vision-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 30px var(--shadow-medium);
-}
 
 .mission-card h3,
 .vision-card h3 {
@@ -80,6 +75,7 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 32px;
     margin-top: 32px;
+    
 }
 
 .team-member {
@@ -89,11 +85,7 @@
     box-shadow: 0 5px 20px var(--shadow-light);
     transition: all 0.3s ease;
     text-align: center;
-}
-
-.team-member:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 30px var(--shadow-medium);
+    border-top: 4px solid var(--primary-orange);
 }
 
 .team-member h4 {
@@ -114,6 +106,7 @@
     max-width: 900px;
     margin: 0 auto;
     text-align: center;
+    
 }
 
 .partners-content > p {
@@ -134,13 +127,9 @@
     padding: 24px;
     border-radius: 10px;
     box-shadow: 0 3px 15px var(--shadow-light);
-    transition: all 0.3s ease;
+    border-top: 4px solid var(--primary-orange);
 }
 
-.partner-category:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px var(--shadow-medium);
-}
 
 .partner-category h4 {
     color: var(--primary-orange);
@@ -185,11 +174,6 @@
     border-top: 4px solid var(--primary-orange);
 }
 
-.pillar:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 30px var(--shadow-medium);
-    border-top-color: var(--primary-orange-dark);
-}
 
 .pillar h4 {
     color: var(--secondary-blue);
