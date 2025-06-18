@@ -15,7 +15,7 @@ body {
   min-height: 100%;
   object-fit: cover;
   z-index: -1;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 h1 {
@@ -65,7 +65,6 @@ h1 {
   background-color: var(--primary-orange);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  box-shadow: 5px 5px 15px var(--shadow-light);
   height: 63px;
 }
 
@@ -82,6 +81,12 @@ h1 {
   transition: opacity 0.3s ease;
   border-radius: 0px;
   background-color: transparent;
+  border: var(--secondary-blue) solid;
+  border-radius: 10px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-width: 1.5px;
+  border-bottom: var(--primary-orange);       
 }
 
 
@@ -104,12 +109,15 @@ h1 {
 .team-member:focus .member-details {
   max-height: 250px;
   opacity: 1;
+  
 }
 
-.box:hover,
-.box:focus{
+
+.team-member:hover .box,
+.team-member:focus .box {
   border-radius: 0px;
 }
+
 
 
 h4 {
