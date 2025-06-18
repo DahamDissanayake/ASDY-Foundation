@@ -15,7 +15,7 @@ body {
   min-height: 100%;
   object-fit: cover;
   z-index: -1;
-  opacity: 0.5; /* optional: control visibility */
+  opacity: 0.5;
 }
 
 h1 {
@@ -52,22 +52,27 @@ h1 {
   
 }
 
-
 .team-member {
   position: relative;
-  width: 275px;
+  width: 295px;
   border-radius: 10px;
   overflow: hidden;
-  background-color: #fff;
   transition: transform 0.3s, box-shadow 0.3s;
   cursor: pointer;
-  outline: none;
+}
+
+.box{
+  background-color: var(--primary-orange);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 5px 5px 15px var(--shadow-light);
+  height: 63px;
 }
 
 .team-member:focus,
 .team-member:hover {
   transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 15px 35px var(--shadow-medium);
 }
 
 .thumb {
@@ -76,7 +81,10 @@ h1 {
   display: block;
   transition: opacity 0.3s ease;
   border-radius: 0px;
+  background-color: transparent;
 }
+
+
 
 .team-member:hover .thumb,
 .team-member:focus .thumb {
@@ -90,13 +98,17 @@ h1 {
   max-height: 0;
   overflow: hidden;
   opacity: 0;
-  margin-top: -20px;
 }
 
 .team-member:hover .member-details,
 .team-member:focus .member-details {
   max-height: 250px;
   opacity: 1;
+}
+
+.box:hover,
+.box:focus{
+  border-radius: 0px;
 }
 
 
