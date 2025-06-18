@@ -1,6 +1,5 @@
 /* ========================================
    SPLASH SCREEN STYLES
-   Additional styles for splash.html
    ======================================== */
 
 /* Background Video */
@@ -100,22 +99,23 @@
     margin-top: 20px;
 }
 
-.team-list li {
-    background: var(--neutral-light-gray);
+.team-list1  {
+    background: var(--primary-orange-light);
     padding: 12px 20px;
     border-radius: 25px;
     color: var(--neutral-dark-gray);
     font-weight: 500;
-    border-left: 4px solid var(--primary-orange);
+    transition: all 0.3s ease;
+}
+.team-list2  {
+    background: var(--primary-orange);
+    padding: 12px 20px;
+    border-radius: 25px;
+    color: var(--neutral-dark-gray);
+    font-weight: 500;
     transition: all 0.3s ease;
 }
 
-.team-list li:hover {
-    background: var(--primary-orange);
-    color: var(--neutral-white);
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px var(--shadow-medium);
-}
 
 /* Loader Container */
 .loader-container {
