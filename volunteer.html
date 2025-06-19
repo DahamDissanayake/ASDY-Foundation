@@ -41,186 +41,274 @@
     <!-- Start Your Code from here-->
     <!-- Remove this part from here to-->
 
-    <div class="cards-container">
-                    <div class="volunteer-card">
-                        <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=300&h=200&fit=crop" alt="Food distribution volunteers" class="card-image">
-                        <div class="card-content">
-                            <h3>Food Bank Volunteer</h3>
-                            <p>Help distribute food to families in need. Sort donations, pack boxes, and serve meals at our community kitchen.</p>
-                            <div class="card-details">
-                                <span class="time-commitment">📅 2-4 hours/week</span>
-                                <span class="location">📍 Downtown Center</span>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer - Join Our Community</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="volunteer.css">
+</head>
+<body>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Join Our Volunteer Community</h1>
+                    <p class="hero-subtitle">Make a difference in your community. Connect with like-minded people and create positive change together.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scrollable Information Section -->
+        <section class="volunteer-info-section">
+            <div class="container">
+                <div class="scrollable-content">
+                    <h2 class="text-center">Volunteer Opportunities</h2>
+                    
+                    <!-- Dropdown Menu -->
+                    <div class="dropdown-container">
+                        <div class="dropdown">
+                            <button class="dropdown-btn">Select Category ▼</button>
+                            <div class="dropdown-content">
+                                <a href="#">Community Outreach</a>
+                                <a href="#">Environmental Projects</a>
+                                <a href="#">Education Support</a>
+                                <a href="#">Healthcare Assistance</a>
+                                <a href="#">Event Organization</a>
                             </div>
-                            <button class="apply-btn">Apply Now</button>
                         </div>
                     </div>
 
-                    <div class="volunteer-card">
-                        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=300&h=200&fit=crop" alt="Tutor helping student" class="card-image">
-                        <div class="card-content">
-                            <h3>Youth Tutor</h3>
-                            <p>Support students in their academic journey. Help with homework, reading, and building confidence in learning.</p>
-                            <div class="card-details">
-                                <span class="time-commitment">📅 3-5 hours/week</span>
-                                <span class="location">📍 Local Schools</span>
+                    <!-- Information Cards -->
+                    <div class="cards-grid">
+                        <div class="card volunteer-card">
+                            <div class="card-image">
+                                <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=400&h=250&fit=crop" alt="Community outreach volunteers helping at local food bank">
                             </div>
-                            <button class="apply-btn">Apply Now</button>
+                            <div class="card-content">
+                                <h3>Community Outreach</h3>
+                                <p>Help distribute food, organize community events, and support local families in need.</p>
+                                <div class="card-stats">
+                                    <span>👥 25 volunteers needed</span>
+                                    <span>📅 Weekends</span>
+                                </div>
+                                <a href="#" class="card-link">Join Program</a>
+                            </div>
+                        </div>
+
+                        <div class="card volunteer-card">
+                            <div class="card-image">
+                                <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=400&h=250&fit=crop" alt="Environmental volunteers planting trees">
+                            </div>
+                            <div class="card-content">
+                                <h3>Environmental Projects</h3>
+                                <p>Join tree planting initiatives, beach cleanups, and sustainable gardening projects.</p>
+                                <div class="card-stats">
+                                    <span>🌱 15 volunteers needed</span>
+                                    <span>📅 Saturdays</span>
+                                </div>
+                                <a href="#" class="card-link">Join Program</a>
+                            </div>
+                        </div>
+
+                        <div class="card volunteer-card">
+                            <div class="card-image">
+                                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&h=250&fit=crop" alt="Education volunteers tutoring students">
+                            </div>
+                            <div class="card-content">
+                                <h3>Education Support</h3>
+                                <p>Tutor students, assist in libraries, and support literacy programs for all ages.</p>
+                                <div class="card-stats">
+                                    <span>📚 20 volunteers needed</span>
+                                    <span>📅 Flexible hours</span>
+                                </div>
+                                <a href="#" class="card-link">Join Program</a>
+                            </div>
+                        </div>
+
+                        <div class="card volunteer-card">
+                            <div class="card-image">
+                                <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=400&h=250&fit=crop" alt="Healthcare volunteers assisting elderly patients">
+                            </div>
+                            <div class="card-content">
+                                <h3>Healthcare Assistance</h3>
+                                <p>Support elderly care, assist at health clinics, and help with medical outreach programs.</p>
+                                <div class="card-stats">
+                                    <span>🏥 12 volunteers needed</span>
+                                    <span>📅 Weekdays</span>
+                                </div>
+                                <a href="#" class="card-link">Join Program</a>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="volunteer-card">
-                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=300&h=200&fit=crop" alt="Volunteer with elderly person" class="card-image">
-                        <div class="card-content">
-                            <h3>Senior Companion</h3>
-                            <p>Provide friendship and support to elderly community members. Share stories, play games, or simply enjoy good conversation.</p>
-                            <div class="card-details">
-                                <span class="time-commitment">📅 2-3 hours/week</span>
-                                <span class="location">📍 Senior Centers</span>
-                            </div>
-                            <button class="apply-btn">Apply Now</button>
-                        </div>
-                    </div>
-
-                    <div class="volunteer-card">
-                        <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=300&h=200&fit=crop" alt="Environmental cleanup volunteers" class="card-image">
-                        <div class="card-content">
-                            <h3>Environmental Steward</h3>
-                            <p>Help protect our local environment through cleanup events, tree planting, and conservation education programs.</p>
-                            <div class="card-details">
-                                <span class="time-commitment">📅 4-6 hours/month</span>
-                                <span class="location">📍 Parks & Trails</span>
-                            </div>
-                            <button class="apply-btn">Apply Now</button>
-                        </div>
+                    <!-- Information Table -->
+                    <div class="info-table-container">
+                        <h3>Volunteer Requirements & Benefits</h3>
+                        <table class="volunteer-table">
+                            <thead>
+                                <tr>
+                                    <th>Program</th>
+                                    <th>Time Commitment</th>
+                                    <th>Requirements</th>
+                                    <th>Benefits</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Community Outreach</td>
+                                    <td>4-6 hours/week</td>
+                                    <td>Background check</td>
+                                    <td>Certificate, networking</td>
+                                </tr>
+                                <tr>
+                                    <td>Environmental</td>
+                                    <td>3-4 hours/week</td>
+                                    <td>Physical fitness</td>
+                                    <td>Training, gear provided</td>
+                                </tr>
+                                <tr>
+                                    <td>Education Support</td>
+                                    <td>2-5 hours/week</td>
+                                    <td>High school diploma</td>
+                                    <td>Skills development</td>
+                                </tr>
+                                <tr>
+                                    <td>Healthcare</td>
+                                    <td>6-8 hours/week</td>
+                                    <td>Health screening</td>
+                                    <td>Medical training</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- User Ratings and Reviews Section -->
-        <section id="reviews" class="reviews-section">
+        <!-- Reviews Section -->
+        <section class="reviews-section bg-light">
             <div class="container">
-                <h2>Volunteer Reviews & Ratings</h2>
+                <h2 class="text-center">Volunteer Reviews & Ratings</h2>
                 
                 <!-- Overall Rating Summary -->
                 <div class="rating-summary">
                     <div class="overall-rating">
                         <div class="rating-number">4.8</div>
                         <div class="rating-stars">⭐⭐⭐⭐⭐</div>
-                        <div class="rating-subtitle">Excellent - Highly recommended by volunteers</div>
-                        <div class="total-reviews">Based on 342 reviews</div>
+                        <p class="rating-subtitle">Excellent - Based on volunteer experiences</p>
+                        <p class="total-reviews">Total Reviews: 156</p>
                     </div>
                     <div class="rating-breakdown">
                         <div class="rating-bar">
-                            <span>5 stars</span>
-                            <div class="bar"><div class="fill" style="width: 78%"></div></div>
-                            <span>267</span>
+                            <span>5 ⭐</span>
+                            <div class="bar"><div class="fill" style="width: 75%"></div></div>
+                            <span>75%</span>
                         </div>
                         <div class="rating-bar">
-                            <span>4 stars</span>
-                            <div class="bar"><div class="fill" style="width: 15%"></div></div>
-                            <span>51</span>
+                            <span>4 ⭐</span>
+                            <div class="bar"><div class="fill" style="width: 20%"></div></div>
+                            <span>20%</span>
                         </div>
                         <div class="rating-bar">
-                            <span>3 stars</span>
-                            <div class="bar"><div class="fill" style="width: 5%"></div></div>
-                            <span>17</span>
+                            <span>3 ⭐</span>
+                            <div class="bar"><div class="fill" style="width: 3%"></div></div>
+                            <span>3%</span>
                         </div>
                         <div class="rating-bar">
-                            <span>2 stars</span>
+                            <span>2 ⭐</span>
                             <div class="bar"><div class="fill" style="width: 1%"></div></div>
-                            <span>4</span>
+                            <span>1%</span>
                         </div>
                         <div class="rating-bar">
-                            <span>1 star</span>
+                            <span>1 ⭐</span>
                             <div class="bar"><div class="fill" style="width: 1%"></div></div>
-                            <span>3</span>
+                            <span>1%</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Individual Reviews -->
                 <div class="reviews-container">
-                    <div class="review-card">
+                    <div class="review-card card">
                         <div class="review-header">
-                            <h4>⭐⭐⭐⭐⭐ Amazing Experience!</h4>
-                            <div class="review-meta">
+                            <h4>⭐⭐⭐⭐⭐ Amazing Community Impact</h4>
+                            <div class="reviewer-info">
                                 <span class="reviewer-name">Sarah Johnson</span>
-                                <span class="review-date">March 15, 2025</span>
+                                <span class="review-date">March 15, 2024</span>
                             </div>
                         </div>
-                        <p class="review-description">Volunteering at the food bank has been incredibly rewarding. The staff is supportive, and knowing that I'm helping families in need gives me such purpose. The organization is well-run and makes excellent use of volunteer time.</p>
+                        <p>Volunteering with this organization has been incredibly rewarding. The community outreach program allowed me to make real connections and see the direct impact of our work.</p>
                     </div>
 
-                    <div class="review-card">
+                    <div class="review-card card">
                         <div class="review-header">
-                            <h4>⭐⭐⭐⭐⭐ Life-Changing Opportunity</h4>
-                            <div class="review-meta">
+                            <h4>⭐⭐⭐⭐⭐ Great Learning Experience</h4>
+                            <div class="reviewer-info">
                                 <span class="reviewer-name">Michael Chen</span>
-                                <span class="review-date">February 28, 2025</span>
+                                <span class="review-date">March 8, 2024</span>
                             </div>
                         </div>
-                        <p class="review-description">As a youth tutor, I've seen firsthand how much impact we can have on children's lives. The training provided was excellent, and the coordinators are always available for support. Highly recommend!</p>
+                        <p>The environmental projects taught me so much about sustainability. Great team, excellent organization, and meaningful work that benefits everyone.</p>
                     </div>
 
-                    <div class="review-card">
+                    <div class="review-card card">
                         <div class="review-header">
-                            <h4>⭐⭐⭐⭐ Great Community</h4>
-                            <div class="review-meta">
-                                <span class="reviewer-name">Emma Rodriguez</span>
-                                <span class="review-date">February 20, 2025</span>
+                            <h4>⭐⭐⭐⭐ Well Organized Programs</h4>
+                            <div class="reviewer-info">
+                                <span class="reviewer-name">Emily Rodriguez</span>
+                                <span class="review-date">February 28, 2024</span>
                             </div>
                         </div>
-                        <p class="review-description">The senior companion program connected me with wonderful people. I've learned so much from the seniors I visit, and it's created lasting friendships. The scheduling is flexible and accommodating.</p>
+                        <p>I've been volunteering in education support for 6 months. The programs are well-structured and the coordinators are very supportive. Highly recommend!</p>
                     </div>
                 </div>
 
-                <div class="see-more-container">
-                    <a href="#" class="see-more-link">See More Reviews →</a>
+                <div class="see-more-container text-center">
+                    <a href="#" class="btn btn-outline">See More Reviews</a>
                 </div>
             </div>
         </section>
 
         <!-- Feedback Form Section -->
-        <section id="feedback" class="feedback-section">
+        <section class="feedback-section">
             <div class="container">
-                <h2>Share Your Feedback</h2>
-                <p>Help us improve our volunteer programs by sharing your experience and suggestions.</p>
-                
-                <form class="feedback-form">
-                    <div class="rating-input">
-                        <label>Rate Your Experience:</label>
-                        <div class="emoji-rating">
-                            <input type="radio" id="rating-1" name="rating" value="1">
-                            <label for="rating-1" class="emoji-btn">😞</label>
-                            
-                            <input type="radio" id="rating-2" name="rating" value="2">
-                            <label for="rating-2" class="emoji-btn">😐</label>
-                            
-                            <input type="radio" id="rating-3" name="rating" value="3">
-                            <label for="rating-3" class="emoji-btn">🙂</label>
-                            
-                            <input type="radio" id="rating-4" name="rating" value="4">
-                            <label for="rating-4" class="emoji-btn">😊</label>
-                            
-                            <input type="radio" id="rating-5" name="rating" value="5">
-                            <label for="rating-5" class="emoji-btn">😍</label>
+                <h2 class="text-center">Share Your Feedback</h2>
+                <div class="feedback-form-container">
+                    <form class="feedback-form">
+                        <div class="rating-input">
+                            <h3>Rate Your Experience</h3>
+                            <div class="emoji-rating">
+                                <button type="button" class="emoji-btn" data-rating="1">😞</button>
+                                <button type="button" class="emoji-btn" data-rating="2">😐</button>
+                                <button type="button" class="emoji-btn" data-rating="3">🙂</button>
+                                <button type="button" class="emoji-btn" data-rating="4">😊</button>
+                                <button type="button" class="emoji-btn" data-rating="5">😍</button>
+                            </div>
                         </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="feedback-text">Your Feedback:</label>
-                        <textarea id="feedback-text" name="feedback" placeholder="Tell us about your volunteer experience, suggestions for improvement, or any other thoughts you'd like to share..."></textarea>
-                    </div>
-                    
-                    <div class="form-buttons">
-                        <button type="submit" class="submit-btn">Submit Feedback</button>
-                        <button type="button" class="cancel-btn">Cancel</button>
-                    </div>
-                </form>
+
+                        <div class="form-group">
+                            <textarea 
+                                placeholder="Share your volunteer experience, suggestions for improvement, or any feedback about our programs. Your input helps us serve the community better!"
+                                rows="6"
+                                class="feedback-textarea">
+                            </textarea>
+                        </div>
+
+                        <div class="form-buttons">
+                            <button type="submit" class="btn btn-primary">Submit Feedback</button>
+                            <button type="button" class="btn btn-outline">Cancel</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
+</body>
+</html>
     <!-- Remove this part-->
 
 
