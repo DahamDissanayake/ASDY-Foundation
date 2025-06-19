@@ -57,14 +57,10 @@
 /* ========================================
    CONTENT Mission
    ======================================== */
-.mission {
-    background: var(--neutral-light-gray);
-}
 
 .mission-content {
     display: grid;
     grid-template-columns: 1fr;
-    /* One column */
     gap: 32px;
     align-items: start;
     text-align: center;
@@ -72,8 +68,9 @@
 
 .mission-text p {
     margin-bottom: 24px;
-    font-size: 17.6px;
+    font-size: 18px;
     line-height: 1.8;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .sdg-logo img {

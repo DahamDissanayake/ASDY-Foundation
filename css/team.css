@@ -7,29 +7,13 @@ body {
   color: #333;
 }
 
-.bg-video {
-  position: fixed;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
-  object-fit: cover;
-  z-index: -1;
-  opacity: 0.8;
-}
-
-h1 {
-  margin-top: 100px;
-
-}
-
 .team-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
   padding: 4rem;
-  
+
 }
 
 .team-member {
@@ -41,7 +25,7 @@ h1 {
   cursor: pointer;
 }
 
-.box{
+.box {
   background-color: var(--primary-orange);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -50,7 +34,7 @@ h1 {
 
 .team-member:focus,
 .team-member:hover {
-  transform: scale(1.05); 
+  transform: scale(1.05);
 }
 
 .thumb {
@@ -64,9 +48,8 @@ h1 {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-width: 1.5px;
-  
-}
 
+}
 
 .member-details {
   padding: 16px;
@@ -81,7 +64,7 @@ h1 {
 .team-member:focus .member-details {
   max-height: 250px;
   opacity: 1;
-  
+
 }
 
 
