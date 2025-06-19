@@ -27,6 +27,17 @@
   line-height: 1.6;
 }
 
+.bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.8;
+}
+
 form {
   max-width: 850px;
   margin: 0 auto;
@@ -34,7 +45,9 @@ form {
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  margin-top: 53px;
 }
+
 
 /* Fieldsets */
 fieldset {
