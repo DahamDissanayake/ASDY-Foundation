@@ -23,26 +23,6 @@ h1 {
 
 }
 
-.section-title {
-    text-align: center;
-    margin-bottom: 60px;
-    color: var(--secondary-blue);
-    font-size: 36px;
-    position: relative;
-}
-
-.section-title::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 4px;
-    background: linear-gradient(90deg, var(--primary-orange), var(--primary-orange-dark));
-    border-radius: 2px;
-}
-
 .team-container {
   display: flex;
   flex-wrap: wrap;
@@ -70,8 +50,7 @@ h1 {
 
 .team-member:focus,
 .team-member:hover {
-  transform: scale(1.05);
-  box-shadow: 0 15px 35px var(--shadow-medium);
+  transform: scale(1.05); 
 }
 
 .thumb {
@@ -81,20 +60,13 @@ h1 {
   transition: opacity 0.3s ease;
   border-radius: 0px;
   background-color: transparent;
-  border: var(--secondary-blue) solid;
   border-radius: 10px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-width: 1.5px;
-  border-bottom: var(--primary-orange);       
+  
 }
 
-
-
-.team-member:hover .thumb,
-.team-member:focus .thumb {
-  opacity: 0.6;
-}
 
 .member-details {
   padding: 16px;
