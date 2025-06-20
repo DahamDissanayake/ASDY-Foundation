@@ -110,6 +110,9 @@ a:hover {
     padding: 0 20px;
 }
 
+.top-margin {
+    margin-top: 100px;
+}
 main {
     min-height: calc(100vh - 200px);
 }
@@ -327,6 +330,43 @@ section {
 }
 
 /* ========================================
+   Background Video
+   ======================================== */
+.bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+/* ========================================
+   Section Titile
+   ======================================== */
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+    color: var(--secondary-blue);
+    font-size: 36px;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-orange), var(--primary-orange-dark));
+    border-radius: 2px;
+}
+
+/* ========================================
    BUTTONS
    ======================================== */
 .btn {
@@ -410,6 +450,67 @@ section {
     box-shadow: 0 8px 25px var(--shadow-medium);
 }
 
+/* ========================================
+   CAUSES GRID
+   ======================================== */
+.causes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 32px;
+}
+
+.cause-card {
+    background: var(--neutral-white);
+    padding: 32px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px var(--shadow-light);
+    transition: all 0.3s ease;
+}
+
+.cause-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0 auto 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: var(--neutral-white);
+    font-weight: 700;
+}
+
+.cause-icon.poverty {
+    background: var(--accent-red);
+}
+
+.cause-icon.conflict {
+    background: var(--secondary-blue);
+}
+
+.cause-icon.climate {
+    background: var(--accent-green);
+}
+
+.cause-icon.inequality {
+    background: var(--primary-orange);
+}
+
+.cause-icon::before {
+    content: '!';
+    font-size: 28px;
+}
+
+.cause-card h3 {
+    color: var(--secondary-blue);
+    margin-bottom: 16px;
+}
+
+.cause-card p {
+    color: var(--neutral-gray);
+    line-height: 1.6;
+}
 /* ========================================
    CARDS & TILES
    ======================================== */
@@ -508,6 +609,7 @@ img {
     text-align: center;
     position: relative;
     overflow: hidden;
+    margin-top: 100px;
 }
 
 

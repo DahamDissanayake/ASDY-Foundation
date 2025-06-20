@@ -7,33 +7,34 @@ body {
   color: #333;
 }
 
-h1 {
-  margin-top: 100px;
-}
-
 .team-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
   padding: 4rem;
+
 }
 
 .team-member {
   position: relative;
-  width: 275px;
+  width: 295px;
   border-radius: 10px;
   overflow: hidden;
-  background-color: #fff;
   transition: transform 0.3s, box-shadow 0.3s;
   cursor: pointer;
-  outline: none;
+}
+
+.box {
+  background-color: var(--primary-orange);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 63px;
 }
 
 .team-member:focus,
 .team-member:hover {
   transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .thumb {
@@ -41,12 +42,17 @@ h1 {
   height: auto;
   display: block;
   transition: opacity 0.3s ease;
+  border-radius: 0px;
+  background-color: transparent;
+  border: var(--secondary-blue) solid;
+  border-radius: 10px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-width: 1.5px;
+  border-bottom: var(--primary-orange);       
 }
 
-.team-member:hover .thumb,
-.team-member:focus .thumb {
-  opacity: 0.6;
-}
+
 
 .member-details {
   padding: 16px;
@@ -55,14 +61,21 @@ h1 {
   max-height: 0;
   overflow: hidden;
   opacity: 0;
-  margin-top: -20px;
 }
 
 .team-member:hover .member-details,
 .team-member:focus .member-details {
   max-height: 250px;
   opacity: 1;
+
 }
+
+
+.team-member:hover .box,
+.team-member:focus .box {
+  border-radius: 0px;
+}
+
 
 
 h4 {

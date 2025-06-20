@@ -12,6 +12,9 @@
 </head>
 
 <body>
+    <video autoplay muted loop class="bg-video">
+    <source src="video\background.mp4" type="video/mp4">
+    </video>
     <!-- Header with Navigation -->
     <header class="header">
         <div class="container">
@@ -40,13 +43,13 @@
     <section class="hero-section">
         <div class="container">
             <div class="hero-content">
-                <h1 style="margin-top: 100px;">We'd Love Your Feedback</h1>
+                <h1>We'd Love Your Feedback</h1>
                 <p class="hero-subtitle">Your voice helps us grow and serve better. Let us know your thoughts.</p>
             </div>
         </div>
     </section>
 
-    <form>
+    <form>    
         <fieldset>
             <legend>
                 <h3><big>Personal Details</big></h3>
@@ -55,7 +58,7 @@
             <label for="fullname">
                 <h4>Full Name*</h4>
             </label>
-            <input type="text" id="fullname" name="fullname" required title="Please enter your full name">
+            <input type="text" id="fullname" name="fullname" required title="Please enter your full name" required pattern="[A-Za-z\s]+">
 
             <label for="email">
                 <h4>Email Address*</h4>
