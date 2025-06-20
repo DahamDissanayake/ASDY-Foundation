@@ -136,72 +136,7 @@
     font-weight: 500;
 }
 
-/* ========================================
-   CAUSES GRID
-   ======================================== */
-.causes-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 32px;
-}
 
-.cause-card {
-    background: var(--neutral-white);
-    padding: 32px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 5px 15px var(--shadow-light);
-    transition: all 0.3s ease;
-}
-
-.cause-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 35px var(--shadow-medium);
-}
-
-.cause-icon {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    margin: 0 auto 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    color: var(--neutral-white);
-    font-weight: 700;
-}
-
-.cause-icon.poverty {
-    background: var(--accent-red);
-}
-
-.cause-icon.conflict {
-    background: var(--secondary-blue);
-}
-
-.cause-icon.climate {
-    background: var(--accent-green);
-}
-
-.cause-icon.inequality {
-    background: var(--primary-orange);
-}
-
-.cause-icon::before {
-    content: '!';
-    font-size: 28px;
-}
-
-.cause-card h3 {
-    color: var(--secondary-blue);
-    margin-bottom: 16px;
-}
-
-.cause-card p {
-    color: var(--neutral-gray);
-    line-height: 1.6;
-}
 
 /* ========================================
    IMPACT COMPARISON

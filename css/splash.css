@@ -50,28 +50,19 @@
 }
 
 
-
-.splash-logo {
-    width: 240px;
-    height: 80px;
-    display: block;
-    margin: 0 auto 8px;
-}
-
 /* Splash Title */
 .splash-title {
     font-size: 48px;
     color: var(--primary-orange);
-    margin-bottom: 30px;
+
     text-shadow: 2px 2px 4px var(--shadow-light);
     animation: titleFadeIn 2s ease-in-out;
 }
 
-/* Mission Statement */
+/* Mission Section */
 .splash-mission {
     font-size: 20px;
     color: var(--neutral-dark-gray);
-    margin-top: 40px;
     margin-bottom: 40px;
     line-height: 1.6;
     font-weight: 500;
@@ -79,7 +70,7 @@
 }
 
 /* Team Section */
-.team-section {
+.team-section, .mission-section {
     margin-bottom: 40px;
     animation: teamFadeIn 3s ease-in-out;
 }
