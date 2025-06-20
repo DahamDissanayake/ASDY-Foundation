@@ -25,6 +25,26 @@ body {
   cursor: pointer;
 }
 
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  margin-top: 20px;
+}
+
+.social-icon img {
+  width: 36px;
+  height: 36px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  filter: drop-shadow(1px 1px 2px rgba(0,0,0,0.3));
+}
+
+.social-icon img:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+
 .box {
   background-color: var(--primary-orange);
   border-bottom-left-radius: 10px;
@@ -43,13 +63,9 @@ body {
   display: block;
   transition: opacity 0.3s ease;
   border-radius: 0px;
-  background-color: transparent;
-  border: var(--secondary-blue) solid;
-  border-radius: 10px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-width: 1.5px;
-  border-bottom: var(--primary-orange);       
+  background-color: transparent; 
+  filter: drop-shadow(7px 7px 8px rgba(0,0,0,0.3));    
+ 
 }
 
 
@@ -65,10 +81,10 @@ body {
 
 .team-member:hover .member-details,
 .team-member:focus .member-details {
-  max-height: 250px;
+  max-height: 295px;
   opacity: 1;
-
 }
+
 
 
 .team-member:hover .box,

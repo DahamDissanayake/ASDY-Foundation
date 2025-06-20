@@ -272,6 +272,29 @@ section {
 }
 
 /* ========================================
+   HEADER & NAVIGATION Specified for HOME PAGE
+   ======================================== */
+.home-header {
+    background: #414141;
+    box-shadow: 0 2px 10px var(--shadow-light);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.home-nav-link {
+    color: var(--neutral-white);
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+/* ========================================
    INTERNAL NAVIGATION BAR
    for Content pages
    ======================================== */
@@ -333,6 +356,20 @@ section {
    Background Video
    ======================================== */
 .bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+/* ========================================
+   Background Team Image
+   ======================================== */
+.bg-image {
     position: fixed;
     top: 0;
     left: 0;
@@ -580,7 +617,6 @@ section {
 img {
     max-width: 100%;
     height: auto;
-    border-radius: 8px;
 }
 
 .img-rounded {
