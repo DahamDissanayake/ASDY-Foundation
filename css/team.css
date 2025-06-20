@@ -81,12 +81,12 @@ h1 {
   transition: opacity 0.3s ease;
   border-radius: 0px;
   background-color: transparent;
-  border: var(--secondary-blue) solid;
+  /*border: var(--secondary-blue) solid;
   border-radius: 10px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-width: 1.5px;
-  border-bottom: var(--primary-orange);       
+  border-bottom: var(--primary-orange);   */    
 }
 
 
