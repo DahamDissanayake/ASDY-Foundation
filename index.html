@@ -5,7 +5,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="refresh" content="1;url=splash.html">
   <title>Redirecting...</title>
-  <link rel="preload" href="video/background.mp4" as="video" type="video/mp4">
+  <script>
+        const preloadVideo = (src) => {
+            const video = document.createElement('video');
+            video.src = src;
+            video.preload = 'auto';
+            video.style.display = 'none';
+            document.body.appendChild(video);
+        };
+
+        preloadVideo('video/background.mp4');
+        preloadVideo('video/home-hero.mp4');
+    </script>
 </head>
 
 <body>
