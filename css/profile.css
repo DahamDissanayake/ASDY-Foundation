@@ -9,80 +9,80 @@
 .profile-header {
     background: linear-gradient(135deg, var(--primary-orange) 0%, var(--primary-orange-dark) 100%);
     border-radius: 0;
-    padding: 20px 30px; /* Reduced top/bottom padding from 30px to 20px */
+    padding: 20px 30px;
     margin: 0;
     margin-bottom: 30px;
     display: flex;
-    flex-direction: row; /* Changed from column to row */
-    align-items: center; /* Changed from flex-start to center for vertical alignment */
-    justify-content: flex-start; /* Changed to flex-start for left alignment */
-    text-align: left; /* Changed from center to left */
-    gap: 30px; /* Increased gap for better spacing between avatar and text */
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
     width: 100vw;
     position: relative;
     left: 50%;
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
-    min-height: 250px; /* Reduced from 400px to 250px */
+    min-height: 250px;
 }
 
 /* Avatar */
 .avatar {
-    width: 180px; /* Made width and height equal for circle */
-    height: 180px; /* Made width and height equal for circle */
-    border-radius: 50%; /* Back to circular */
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
     background: linear-gradient(45deg, var(--accent-green), var(--secondary-blue));
     display: flex;
-    align-items: center; /* Changed from left to center */
+    align-items: center;
     justify-content: center;
     color: var(--neutral-white);
     font-size: 48px;
     font-weight: bold;
     box-shadow: 0 8px 25px var(--shadow-medium);
     margin: 0;
-    margin-left: 50px;
-    flex-shrink: 0; /* Prevent avatar from shrinking */
+    margin-left: 200px;
+    flex-shrink: 0;
 }
 
 .avatar img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 50%; /* Back to circular */
+    border-radius: 50%;
 }
 
 /* User Info */
 .user-info {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Changed from flex-start to center */
-    justify-content: center; /* Center vertically within the container */
-    gap: 10px; /* Added some gap between elements */
-    flex: 1; /* Allow user info to take remaining space */
-    text-align: center; /* Center align the text */
+    align-items: flex-start; /* Changed from center to flex-start */
+    justify-content: center;
+    gap: 10px;
+    flex: 1;
+    text-align: left; /* Changed from center to left */
 }
 
 .user-info h1 {
     color: var(--neutral-white);
-    margin: 0;
+    margin: 0; /* Removed margin-right */
     font-size: 2.5em;
 }
 
 .user-info .role {
     color: var(--secondary-blue);
     font-size: 1.3em;
-    margin: 0;
+    margin: 0; /* Removed margin-right */
 }
 
 .user-info p {
     max-width: 600px;
     word-wrap: break-word;
     white-space: normal;
-    margin: 0;
+    margin: 0; /* Removed margin-right */
     color: var(--neutral-white);
     line-height: 1.6;
 }
+
 /* Profile Cards */
 .profile-card {
     background: var(--neutral-white);
@@ -183,15 +183,10 @@
     padding: 15px;
     border-radius: 10px;
     text-align: center;
-    transition: all 0.3s ease;
     color: var(--neutral-white);
     position: relative;
 }
 
-.volunteer-item:hover {
-    background: var(--primary-orange);
-    transform: translateY(-5px);
-}
 
 .volunteer-icon {
     font-size: 2em;
@@ -335,8 +330,8 @@ fieldset {
 legend {
     padding: 0 10px;
     font-weight: bold;
-    color: #FFB84D;
-    font-size: 1.2rem;
+    color: var(--secondary-blue);
+    font-size: 1.5rem;
 }
 
 label {
