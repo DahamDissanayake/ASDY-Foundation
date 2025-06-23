@@ -21,10 +21,16 @@
     transition: all 0.3s ease;
 }
 
+rect {
+    rx: 8px;
+    ry: 8px;
+}
+
 a:hover .movable-button {
     fill: darkorange;
     stroke: #333;
     transform: scale(1.05);
+    transform-box: fill-box;
     transform-origin: center;
     filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.3));
 }
@@ -56,6 +62,9 @@ a:focus .movable-button {
     fill: darkorange;
     stroke: #333;
     stroke-width: 3px;
+    transform: scale(1.05);
+    transform-box: fill-box;
+    transform-origin: center;
     outline: 2px solid #0066cc;
     outline-offset: 2px;
 }
@@ -185,6 +194,8 @@ svg text {
     a:hover .movable-button,
     a:focus .movable-button {
         transform: scale(1.08);
+        transform-box: fill-box;
+        transform-origin: center;
     }
 }
 
@@ -362,30 +373,5 @@ svg text {
     
     .current-page .movable-button {
         animation: none;
-    }
-}
-
-/* Dark mode support */
-@media (prefers-color-scheme: dark) {
-    .svg-wrapper {
-        background-color: #1a1a1a;
-        box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
-    }
-    
-    .inner-border {
-        border-color: #ff8c42;
-    }
-    
-    svg text {
-        fill: #ffffff;
-    }
-    
-    a:hover text,
-    a:focus text {
-        fill: #000000;
-    }
-    
-    line {
-        stroke: #ff8c42;
     }
 }
