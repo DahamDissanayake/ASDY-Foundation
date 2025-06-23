@@ -7,6 +7,13 @@ body {
   color: #333;
 }
 
+p {
+    margin-bottom: 16px;
+    color: var(--neutral-dark-gray);
+    font-size: 17.6px;
+    line-height: 1.8;
+}
+
 .team-container {
   display: flex;
   flex-wrap: wrap;
@@ -46,7 +53,7 @@ body {
 
 
 .box {
-  background-color: var(--primary-orange);
+  background-color: rgba(255, 165, 0, 0.7);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   height: 63px;
@@ -72,17 +79,19 @@ body {
 
 .member-details {
   padding: 16px;
-  background-color: #fff;
+  background-color:	#FFE0B2;
   transition: max-height 0.3s ease, opacity 0.3s ease;
   max-height: 0;
   overflow: hidden;
   opacity: 0;
+  box-shadow: 0 15px 35px var(--shadow-medium);
 }
 
 .team-member:hover .member-details,
 .team-member:focus .member-details {
   max-height: 295px;
   opacity: 1;
+  box-shadow: 0 15px 35px var(--shadow-medium);
 }
 
 
@@ -93,8 +102,13 @@ body {
   border-bottom-right-radius: 0px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  background-color: rgba(255, 165, 0);
 }
 
+.team-member:hover .thumb,
+.team-member:focus .thumb {
+  opacity: 0.8;
+}
 
 
 h4 {
@@ -105,3 +119,10 @@ h4 {
 section {
   padding: 0.1px;
 }
+
+.introduction{
+  padding: 32px;
+  background-color: var(--shadow-light);
+  border-radius: 10px; 
+  margin-top: 10px;
+} 

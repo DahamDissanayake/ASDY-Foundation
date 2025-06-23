@@ -463,8 +463,24 @@ section {
     transition: all 0.3s ease;
 }
 
+.usr-btn-active {
+    background: var(--neutral-white);
+    color: var(--primary-orange);
+    border: 2px solid var(--primary-orange-dark);
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
 .usr-btn:hover {
     background: var(--primary-orange-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px var(--shadow-medium);
+}
+
+.usr-btn-active:hover {
     transform: translateY(-2px);
     box-shadow: 0 5px 15px var(--shadow-medium);
 }
