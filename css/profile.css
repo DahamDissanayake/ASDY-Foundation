@@ -9,56 +9,58 @@
 .profile-header {
     background: linear-gradient(135deg, var(--primary-orange) 0%, var(--primary-orange-dark) 100%);
     border-radius: 0;
-    padding: 10px 10px;
-    padding-bottom: 30px;
+    padding: 20px 30px; /* Reduced top/bottom padding from 30px to 20px */
     margin: 0;
     margin-bottom: 30px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 10px;
+    flex-direction: row; /* Changed from column to row */
+    align-items: center; /* Changed from flex-start to center for vertical alignment */
+    justify-content: flex-start; /* Changed to flex-start for left alignment */
+    text-align: left; /* Changed from center to left */
+    gap: 30px; /* Increased gap for better spacing between avatar and text */
     width: 100vw;
     position: relative;
     left: 50%;
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
-    min-height: 400px;
-    /* Adjust this value as needed */
+    min-height: 250px; /* Reduced from 400px to 250px */
 }
 
 /* Avatar */
 .avatar {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+    width: 180px; /* Made width and height equal for circle */
+    height: 180px; /* Made width and height equal for circle */
+    border-radius: 50%; /* Back to circular */
     background: linear-gradient(45deg, var(--accent-green), var(--secondary-blue));
     display: flex;
-    align-items: center;
+    align-items: center; /* Changed from left to center */
     justify-content: center;
     color: var(--neutral-white);
     font-size: 48px;
     font-weight: bold;
     box-shadow: 0 8px 25px var(--shadow-medium);
     margin: 0;
-    /* Remove left margin */
+    margin-left: 50px;
+    flex-shrink: 0; /* Prevent avatar from shrinking */
 }
 
 .avatar img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 50%; /* Back to circular */
 }
 
 /* User Info */
 .user-info {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 0px;
+    align-items: center; /* Changed from flex-start to center */
+    justify-content: center; /* Center vertically within the container */
+    gap: 10px; /* Added some gap between elements */
+    flex: 1; /* Allow user info to take remaining space */
+    text-align: center; /* Center align the text */
 }
 
 .user-info h1 {
@@ -75,14 +77,12 @@
 
 .user-info p {
     max-width: 600px;
-    /* Limit width for better readability */
     word-wrap: break-word;
     white-space: normal;
     margin: 0;
     color: var(--neutral-white);
     line-height: 1.6;
 }
-
 /* Profile Cards */
 .profile-card {
     background: var(--neutral-white);

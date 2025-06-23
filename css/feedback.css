@@ -27,17 +27,6 @@
   line-height: 1.6;
 }
 
-.bg-video {
-  position: fixed;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
-  object-fit: cover;
-  z-index: -1;
-  opacity: 0.8;
-}
-
 form {
   max-width: 850px;
   margin: 0 auto;
@@ -69,6 +58,14 @@ label {
   display: block;
   margin-top: 1rem;
   font-weight: 500;
+}
+
+input[type="radio"] {
+  accent-color: var(--primary-orange);
+}
+
+input[type="checkbox"] {
+  accent-color: var(--primary-orange); 
 }
 
 input,

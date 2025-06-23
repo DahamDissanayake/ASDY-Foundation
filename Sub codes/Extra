@@ -1,0 +1,17 @@
+<!-- Loading Section -->
+        <div class="loading-section">
+            <div class="loader-container">
+                <div class="animated-loader">
+                    <div class="loader-circle"></div>
+                    <div class="loader-circle"></div>
+                    <div class="loader-circle"></div>
+                </div>
+                <p class="loading-text">Loading your experience...</p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="splash-footer">
+            <p>Redirecting to Home page in <span class="countdown">4</span> seconds...</p>
+        </div>
+    </div>
