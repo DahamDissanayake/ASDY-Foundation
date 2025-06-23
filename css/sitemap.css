@@ -26,6 +26,10 @@ rect {
     ry: 8px;
 }
 
+svg * {
+    stroke-width: 3px;
+}
+
 a:hover .movable-button {
     fill: darkorange;
     stroke: #333;
@@ -47,6 +51,8 @@ svg text {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 16px;
 }
+
+
 
 /* Enhanced additions */
 
