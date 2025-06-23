@@ -185,3 +185,17 @@ select:invalid:focus {
   color: var(--neutral-white);
   margin-left: 10px;
 }
+
+h3{
+  font-size: larger;
+}
+
+.h4e{
+  margin-top: 50px;
+}
+
+label{
+  font-weight: 700;
+  color: var(--neutral-dark-gray);
+  margin-bottom: 16px;
+}
