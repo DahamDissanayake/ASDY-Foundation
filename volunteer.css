@@ -42,13 +42,7 @@ h1{
 }
 
 /* Dropdown Menu */
-.dropdown-container {
-    margin-bottom: 30px;
-    padding: 20px;
-    background: var(--neutral-light-gray);
-    border-radius: 10px;
-    border-left: 5px solid var(--primary-orange);
-}
+
 
 .dropdown-container label {
     display: block;
