@@ -10,29 +10,28 @@
     <link rel="stylesheet" href="css/home.css">
 </head>
 
-<body class="top-margin">
+<body>
     <!-- Background Image -->
     <img class="bg-image" src="img/team/grp-team2.jpg" alt="ASDY Foundation Team">
 
-    <!-- Header with Navigation -->
-    <header class="header">
+    <!-- Header with Navigation for Home Page -->
+    <header class="hp-header" id="hp-header">
         <div class="container">
-            <nav class="nav">
+            <nav class="hp-nav">
                 <div class="logo">
                     <a href="splash.html">
-                        <img src="img/ASDY_full.png" alt="ASDY Foundation">
+                        <img src="img/ASDY_full.png" alt="ASDY Foundation" class="hp-logo-img">
                     </a>
                 </div>
-                <ul class="navigation">
-                    <li><a href="home.html" class="nav-link active">Home</a></li>
-                    <li><a href="volunteer.html" class="nav-link">Volunteer</a></li>
-                    <li><a href="table.html" class="nav-link">Data</a></li>
-                    <li><a href="feedback.html " class="nav-link">Feedback</a></li>
-                    <li><a href="sitemap.html" class="nav-link">SiteMap</a></li>
-                    <li><a href="team.html" class="nav-link">Team</a></li>
-
+                <ul class="hp-navigation">
+                    <li><a href="home.html" class="hp-nav-link active">Home</a></li>
+                    <li><a href="volunteer.html" class="hp-nav-link">Volunteer</a></li>
+                    <li><a href="table.html" class="hp-nav-link">Data</a></li>
+                    <li><a href="feedback.html" class="hp-nav-link">Feedback</a></li>
+                    <li><a href="sitemap.html" class="hp-nav-link">SiteMap</a></li>
+                    <li><a href="team.html" class="hp-nav-link">Team</a></li>
                 </ul>
-                <button class="usr-btn" onclick="window.location.href='profile.html'">User Profile</button>
+                <button class="hp-usr-btn" onclick="window.location.href='profile.html'">User Profile</button>
             </nav>
         </div>
     </header>
@@ -89,62 +88,65 @@
 
         <!-- Content Pages Navigation -->
         <section class="content-navigation">
-            
-                <h2>Explore Our Work</h2>
-                <p class="nav-dis">Discover how we're making a difference through our comprehensive programs and
-                    initiatives</p>
 
-                <div class="hp-card-grid">
-                    <div class="hp-card">
-                        <img src="img/home/events-camp.jpg" alt="Events" class="hp-card-image">
-                        <div class="hp-card-overlay"></div>
-                        <div class="hp-card-content">
-                            <div class="hp-card-category">Student 01</div>
-                            <div class="hp-card-title">Events & Campaigns</div>
-                            <div class="hp-card-description">Showcase past and upcoming events and awareness efforts</div>
-                            <a href="content_ST1.html" class="hp-card-button">Explore</a>
-                        </div>
-                    </div>
+            <h2>Explore Our Work</h2>
+            <p class="nav-dis">Discover how we're making a difference through our comprehensive programs and
+                initiatives</p>
 
-                    <div class="hp-card">
-                        <img src="img/home/edu-hunger.jpg" alt="Education abt hunger" class="hp-card-image">
-                        <div class="hp-card-overlay"></div>
-                        <div class="hp-card-content">
-                            <div class="hp-card-category">Student 02</div>
-                            <div class="hp-card-title">Learn About Hunger</div>
-                            <div class="hp-card-description">Educate visitors about the causes and solutions to hunger.</div>
-                            <a href="content_ST2.html" class="hp-card-button">Explore</a>
-                        </div>
-                    </div>
-
-                    <div class="hp-card">
-                        <img src="img/home/news-upt.jpg" alt="News Updates" class="hp-card-image">
-                        <div class="hp-card-overlay"></div>
-                        <div class="hp-card-content">
-                            <div class="hp-card-category">Student 03</div>
-                            <div class="hp-card-title">News & Updates</div>
-                            <div class="hp-card-description">Give updates on what's new in ASDY and in world hunger relief.</div>
-                            <a href="content_ST3.html" class="hp-card-button">Explore</a>
-                        </div>
-                    </div>
-
-                    <div class="hp-card">
-                        <img src="img/home/about-asdy.jpg" alt="About ASDY" class="hp-card-image">
-                        <div class="hp-card-overlay"></div>
-                        <div class="hp-card-content">
-                            <div class="hp-card-category">Student 04</div>
-                            <div class="hp-card-title">ASDY Foundation</div>
-                            <div class="hp-card-description">Introduce the organization, its values, and mission.</div>
-                            <a href="content_ST4.html" class="hp-card-button">Explore</a>
-                        </div>
+            <div class="hp-card-grid">
+                <div class="hp-card">
+                    <img src="img/home/events-camp.jpg" alt="Events" class="hp-card-image">
+                    <div class="hp-card-overlay"></div>
+                    <div class="hp-card-content">
+                        <div class="hp-card-category">Student 01</div>
+                        <div class="hp-card-title">Events & Campaigns</div>
+                        <div class="hp-card-description">Showcase past and upcoming events and awareness efforts</div>
+                        <a href="content_ST1.html" class="hp-card-button">Explore</a>
                     </div>
                 </div>
-            
+
+                <div class="hp-card">
+                    <img src="img/home/edu-hunger.jpg" alt="Education abt hunger" class="hp-card-image">
+                    <div class="hp-card-overlay"></div>
+                    <div class="hp-card-content">
+                        <div class="hp-card-category">Student 02</div>
+                        <div class="hp-card-title">Learn About Hunger</div>
+                        <div class="hp-card-description">Educate visitors about the causes and solutions to hunger.
+                        </div>
+                        <a href="content_ST2.html" class="hp-card-button">Explore</a>
+                    </div>
+                </div>
+
+                <div class="hp-card">
+                    <img src="img/home/news-upt.jpg" alt="News Updates" class="hp-card-image">
+                    <div class="hp-card-overlay"></div>
+                    <div class="hp-card-content">
+                        <div class="hp-card-category">Student 03</div>
+                        <div class="hp-card-title">News & Updates</div>
+                        <div class="hp-card-description">Give updates on what's new in ASDY and in world hunger relief.
+                        </div>
+                        <a href="content_ST3.html" class="hp-card-button">Explore</a>
+                    </div>
+                </div>
+
+                <div class="hp-card">
+                    <img src="img/home/about-asdy.jpg" alt="About ASDY" class="hp-card-image">
+                    <div class="hp-card-overlay"></div>
+                    <div class="hp-card-content">
+                        <div class="hp-card-category">Student 04</div>
+                        <div class="hp-card-title">ASDY Foundation</div>
+                        <div class="hp-card-description">Introduce the organization, its values, and mission.</div>
+                        <a href="content_ST4.html" class="hp-card-button">Explore</a>
+                    </div>
+                </div>
+            </div>
+
         </section>
 
 
 
-
+        <!--JS part-->
+        <script src="js/script.js"></script>
 
         <!-- Footer -->
         <footer class="footer">
