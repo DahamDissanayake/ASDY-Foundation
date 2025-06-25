@@ -177,11 +177,11 @@
 }
 
 .hp-card-button {
-    background: rgba(255, 255, 255, 0.2);
-    color: white;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: transparent;
+    color: var(--primary-orange);
+    border: 2px solid var(--primary-orange);
     padding: 10px 20px;
-    border-radius: 8px;
+    border-radius: 25px;
     font-size: 14px;
     font-weight: 500;
     cursor: pointer;
@@ -194,7 +194,8 @@
 }
 
 .hp-card-button:hover {
-    background: rgba(255, 255, 255, 0.3);
+    background: var(--primary-orange);
+    color: var(--neutral-white);
     transform: translateY(-2px);
     text-decoration: none;
 }
