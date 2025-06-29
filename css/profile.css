@@ -24,6 +24,7 @@
     margin-left: -50vw;
     margin-right: -50vw;
     min-height: 250px;
+    margin-top: 100px;
 }
 
 /* Avatar */
@@ -203,7 +204,7 @@
 
 .interest-item {
     height: 150px;
-    /* Increase height */
+    
     border-radius: 15px;
     transition: transform 0.3s ease;
     background-size: cover;
@@ -214,7 +215,8 @@
 
 /* No Poverty */
 .interests-grid a:nth-child(1) .interest-item {
-    background-image: url('../img/profile/no-poverty.jpg');
+    background-image: url('../img/profile/no-poverty.png');
+    
 }
 
 /* Zero Hunger */
@@ -229,12 +231,12 @@
 
 /* Quality Education */
 .interests-grid a:nth-child(4) .interest-item {
-    background-image: url('../img/profile/quality-education.jpg');
+    background-image: url('../img/profile/quality-education.png');
 }
 
 /* Clean Water */
 .interests-grid a:nth-child(5) .interest-item {
-    background-image: url('../img/profile/clean-water.jpg');
+    background-image: url('../img/profile/clean-water.png');
 }
 
 /* Partnerships */
