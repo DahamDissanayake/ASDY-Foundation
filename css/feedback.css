@@ -192,10 +192,20 @@ h3{
 
 .h4e{
   margin-top: 50px;
+  color: var(--neutral-dark-gray);
 }
 
 label{
   font-weight: 700;
-  color: var(--neutral-dark-gray);
+  color: var(--secondary-blue);
   margin-bottom: 16px;
+}
+
+h3{
+  color: var(--secondary-blue);
+}
+
+input{
+  font-family: 'Arial', sans-serif;
+  color: var(--secondary-blue);
 }
