@@ -132,7 +132,8 @@
 }
 
 .metric-thumbnail:hover::after {
-    content: attr(title);
+    
+    content: attr(data-tooltip);
     position: absolute;
     top: -120px;
     left: 400%;
