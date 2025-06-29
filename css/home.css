@@ -197,27 +197,21 @@
 /* ========================================
    Cards home page CONTENT Nav
    ======================================== */
-
-
 .content-navigation {
     background: var(--neutral-white);
 }
-
 .content-navigation h2 {
     margin-bottom: 8px;
     text-align: center;
 }
-
 .nav-dis {
     text-align: center;
     margin-bottom: 24px;
 }
-
 .hp-header {
     text-align: center;
     margin-bottom: 40px;
 }
-
 .hp-card-grid {
     margin: 0 auto;
     padding: 40px 20px;
@@ -227,7 +221,6 @@
     width: 100%;
     transition: all 0.3s ease;
 }
-
 .hp-card {
     flex: 1;
     border-radius: 16px;
@@ -240,7 +233,6 @@
     flex-direction: column;
     justify-content: flex-end;
 }
-
 .hp-card-image {
     position: absolute;
     top: 0;
@@ -250,7 +242,6 @@
     object-fit: cover;
     z-index: 1;
 }
-
 .hp-card-overlay {
     position: absolute;
     top: 0;
@@ -260,14 +251,12 @@
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6));
     z-index: 2;
 }
-
 .hp-card-content {
     padding: 30px;
     color: white;
     position: relative;
     z-index: 3;
 }
-
 .hp-card-category {
     color: rgba(255, 255, 255, 0.8);
     font-size: 12px;
@@ -276,7 +265,6 @@
     margin-bottom: 8px;
     font-weight: 500;
 }
-
 .hp-card-title {
     color: white;
     font-size: 24px;
@@ -284,7 +272,6 @@
     line-height: 1.2;
     margin-bottom: 12px;
 }
-
 .hp-card-description {
     color: rgba(255, 255, 255, 0.9);
     font-size: 14px;
@@ -292,7 +279,6 @@
     margin-bottom: 20px;
     opacity: 0.9;
 }
-
 .hp-card-button {
     background: transparent;
     color: var(--primary-orange);
@@ -307,9 +293,7 @@
     width: fit-content;
     text-decoration: none;
     display: inline-block;
-
 }
-
 .hp-card-button:hover {
     background: var(--primary-orange);
     color: var(--neutral-white);
@@ -317,12 +301,15 @@
     text-decoration: none;
 }
 
-/* Hover Effects */
-.hp-card-grid:hover .hp-card:not(:hover) {
+
+/* card blur part */
+.hp-card:hover ~ .hp-card,
+.hp-card:has(~ .hp-card:hover) {
     filter: blur(8px) brightness(0.3);
     transform: scale(0.9);
 }
 
+/* card scale part */
 .hp-card:hover {
     transform: scale(1.1) translateY(-10px);
     filter: brightness(1.1);
@@ -341,7 +328,6 @@
     opacity: 0;
     transition: opacity 0.3s ease;
 }
-
 .hp-card:hover::before {
     opacity: 1;
 }
