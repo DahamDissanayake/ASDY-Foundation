@@ -30,6 +30,7 @@
 form {
   max-width: 850px;
   margin: 0 auto;
+  color: var(--secondary-blue);
   background-color: #fff;
   padding: 2rem;
   border-radius: 12px;
