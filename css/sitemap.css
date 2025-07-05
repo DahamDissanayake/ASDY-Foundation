@@ -1,4 +1,3 @@
-/* Your original CSS */
 .svg-wrapper {
     width: 90%;
     max-width: 1200px;
@@ -6,13 +5,14 @@
     margin-top: 20px;
     padding: 20px;
     background-color: #fff;
-    border-radius: 8px;
+    border-radius: 25px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.6s ease-out;
 }
 
 .inner-border {
     border: 2px solid orange;
-    border-radius: 10px;
+    border-radius: 25px;
     padding: 20px;
     overflow: auto;
 }
@@ -22,21 +22,19 @@
 }
 
 rect {
-    rx: 8px;
-    ry: 8px;
+    rx: 25px;
+    ry: 25px;
 }
 
 svg * {
-    stroke-width: 3px;
+    stroke-width: 2px;
 }
 
 a:hover .movable-button {
     fill: darkorange;
     stroke: #333;
-    transform: scale(1.05);
-    transform-box: fill-box;
-    transform-origin: center;
-    filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.3));
+    transform: translateY(-2px);
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2));
 }
 
 a:hover text {
@@ -48,15 +46,15 @@ text {
 }
 
 svg text {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 16px;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    dominant-baseline: middle;
+    text-anchor: middle;
+    
 }
 
-
-
-/* Enhanced additions */
-
-/* SVG responsive behavior */
 svg {
     width: 100%;
     height: auto;
@@ -68,10 +66,8 @@ a:focus .movable-button {
     fill: darkorange;
     stroke: #333;
     stroke-width: 3px;
-    transform: scale(1.05);
-    transform-box: fill-box;
-    transform-origin: center;
-    outline: 2px solid #0066cc;
+    transform: translateY(-2px);
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2));
     outline-offset: 2px;
 }
 
@@ -81,11 +77,12 @@ a:focus text {
 
 /* Active states */
 a:active .movable-button {
-    transform: scale(0.98);
-    filter: drop-shadow(1px 2px 3px rgba(0,0,0,0.4));
+   transform: translateY(0px);
+   filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+    
 }
 
-/* Line styling improvements */
+/* Line styling */
 line {
     transition: stroke-width 0.3s ease, opacity 0.3s ease;
 }
@@ -97,15 +94,7 @@ a:focus ~ line {
     opacity: 0.8;
 }
 
-/* Enhanced text styling */
-svg text {
-    font-weight: 600;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
-    dominant-baseline: middle;
-    text-anchor: middle;
-}
-
-/* Loading animation */
+/* Animations */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -117,11 +106,6 @@ svg text {
     }
 }
 
-.svg-wrapper {
-    animation: fadeIn 0.6s ease-out;
-}
-
-/* Pulse animation for current page indicator */
 @keyframes pulse {
     0%, 100% {
         opacity: 1;
@@ -136,8 +120,8 @@ svg text {
     fill: #ff6b35;
 }
 
-/* Media queries for responsive design */
-@media screen and (max-width: 1400px) {
+/* Essential responsive breakpoints */
+@media screen and (max-width: 1200px) {
     .svg-wrapper {
         width: 95%;
         padding: 15px;
@@ -147,39 +131,18 @@ svg text {
         padding: 15px;
     }
     
-    svg {
-        min-height: 600px;
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    .svg-wrapper {
-        width: 98%;
-        padding: 12px;
-        margin-top: 15px;
-    }
-    
-    .inner-border {
-        padding: 12px;
-    }
-    
     svg text {
         font-size: 14px;
     }
-    
-    /* Adjust button sizes for smaller screens */
-    rect {
-        rx: 4px;
-        ry: 4px;
-    }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
     .svg-wrapper {
-        width: 100%;
+        width: 98%;
         margin: 10px auto;
         padding: 10px;
         border-radius: 6px;
+        transform: translateY(-2px);
     }
     
     .inner-border {
@@ -192,7 +155,6 @@ svg text {
         font-weight: 700;
     }
     
-    /* Enhance button visibility on tablets */
     .movable-button {
         stroke-width: 2.5px;
     }
@@ -200,53 +162,6 @@ svg text {
     a:hover .movable-button,
     a:focus .movable-button {
         transform: scale(1.08);
-        transform-box: fill-box;
-        transform-origin: center;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .svg-wrapper {
-        margin: 8px auto;
-        padding: 8px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-    }
-    
-    .inner-border {
-        padding: 8px;
-        border-width: 1.5px;
-    }
-    
-    svg text {
-        font-size: 12px;
-        font-weight: 800;
-    }
-    
-    /* Increase touch targets for mobile */
-    rect {
-        stroke-width: 2px;
-    }
-    
-    .movable-button {
-        cursor: pointer;
-    }
-    
-    /* Adjust hover effects for touch devices */
-    @media (hover: none) {
-        a:hover .movable-button {
-            transform: none;
-            filter: none;
-        }
-        
-        a:active .movable-button {
-            fill: darkorange;
-            transform: scale(1.05);
-            filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.3));
-        }
-        
-        a:active text {
-            fill: black;
-        }
     }
 }
 
@@ -272,7 +187,7 @@ svg text {
     
     svg text {
         font-size: 11px;
-        font-weight: 900;
+        font-weight: 800;
     }
     
     /* Scrollbar styling for mobile */
@@ -295,89 +210,22 @@ svg text {
     }
 }
 
-@media screen and (max-width: 480px) {
-    .svg-wrapper {
-        padding: 3px;
-        margin: 3px auto;
-    }
-    
-    .inner-border {
-        padding: 3px;
-    }
-    
-    svg text {
-        font-size: 10px;
-        font-family: Arial, sans-serif;
-    }
-    
-    /* Ensure minimum touch target size */
-    rect {
-        min-width: 44px;
-        min-height: 44px;
-    }
-}
-
-/* High DPI display optimization */
-@media screen and (-webkit-min-device-pixel-ratio: 2),
-       screen and (min-resolution: 192dpi) {
-    .movable-button {
-        stroke-width: 1.5px;
-    }
-    
-    svg text {
-        text-rendering: optimizeLegibility;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-    }
-}
-
-/* Print styles */
-@media print {
-    .svg-wrapper {
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        box-shadow: none;
-        background-color: transparent;
-    }
-    
-    .inner-border {
-        border: 1px solid #000;
-        padding: 10px;
-    }
-    
-    .movable-button {
-        fill: #f0f0f0 !important;
-        stroke: #000 !important;
-    }
-    
-    svg text {
-        fill: #000 !important;
-        font-size: 12px;
-    }
-    
-    line {
-        stroke: #000 !important;
-    }
-}
-
-/* Reduced motion preferences */
-@media (prefers-reduced-motion: reduce) {
-    .movable-button,
-    line,
-    .svg-wrapper {
-        transition: none;
-        animation: none;
-    }
-    
-    a:hover .movable-button,
-    a:focus .movable-button,
-    a:active .movable-button {
+/* Touch device optimization */
+@media (hover: none) {
+    a:hover .movable-button {
         transform: none;
         filter: none;
+        transform: translateY(-1px);
+        filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
     }
     
-    .current-page .movable-button {
-        animation: none;
+    a:active .movable-button {
+        fill: darkorange;
+        transform: scale(1.05);
+        filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.3));
+    }
+    
+    a:active text {
+        fill: black;
     }
 }

@@ -3,13 +3,16 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    
+
 }
+
 
 /* Profile Header */
 .profile-header {
     background: linear-gradient(135deg, var(--primary-orange) 0%, var(--primary-orange-dark) 100%);
     border-radius: 0;
-    padding: 20px 30px;
+    padding: 80px 30px;
     margin: 0;
     margin-bottom: 30px;
     display: flex;
@@ -24,9 +27,10 @@
     margin-left: -50vw;
     margin-right: -50vw;
     min-height: 250px;
-    margin-top: 100px;
-}
+    margin-top: 0;
 
+}
+            
 /* Avatar */
 .avatar {
     width: 180px;
@@ -56,30 +60,30 @@
 .user-info {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Changed from center to flex-start */
+    align-items: flex-start; 
     justify-content: center;
     gap: 10px;
     flex: 1;
-    text-align: left; /* Changed from center to left */
+    text-align: left; 
 }
 
 .user-info h1 {
     color: var(--neutral-white);
-    margin: 0; /* Removed margin-right */
+    margin: 0; 
     font-size: 2.5em;
 }
 
 .user-info .role {
     color: var(--secondary-blue);
     font-size: 1.3em;
-    margin: 0; /* Removed margin-right */
+    margin: 0; 
 }
 
 .user-info p {
     max-width: 600px;
     word-wrap: break-word;
     white-space: normal;
-    margin: 0; /* Removed margin-right */
+    margin: 0; 
     color: var(--neutral-white);
     line-height: 1.6;
 }
@@ -93,7 +97,6 @@
     box-shadow: 0 5px 20px var(--shadow-light);
 
 }
-
 
 
 .profile-card h2 {
@@ -248,7 +251,6 @@
 .interest-item:hover {
     transform: scale(1.05);
 }
-
 
 
 
