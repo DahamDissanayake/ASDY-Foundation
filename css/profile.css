@@ -27,7 +27,7 @@
     margin-left: -50vw;
     margin-right: -50vw;
     min-height: 250px;
-    margin-top: 0;
+    margin-top: 60px;
 
 }
             
@@ -339,6 +339,7 @@ legend {
 }
 
 label {
+    
     display: block;
     margin-top: 1rem;
     font-weight: 500;
