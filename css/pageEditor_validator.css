@@ -3,7 +3,9 @@
    Edited according to global CSS
    ======================================== */
 
-
+code{
+    color: var(--primary-orange-light);
+}
 .page-editor-body {
     padding-top: 50px;
 }
@@ -43,6 +45,7 @@
 
 
 .page-editor-section {
+    scroll-margin-top: 120px;
     background: var(--neutral-white);
     margin-bottom: 32px;
     padding: 32px;
@@ -145,6 +148,25 @@
     margin: 0;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
+
+/* Button styling */
+.content-btn {
+    background: var(--secondary-blue);
+    color: var(--neutral-white);
+    padding: 8px 22px;
+    border: none;
+    border-radius: 25px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.content-btn:hover {
+    background: var(--secondary-blue-light);
+    transform: translateY(-2px);
+}
+
+
 
 /* Validation image styling */
 .validation-image {
