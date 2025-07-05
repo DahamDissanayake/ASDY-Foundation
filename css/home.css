@@ -90,9 +90,9 @@
     background: transparent;
     color: var(--neutral-white);
     border: 2px solid var(--neutral-white);
-    padding: 8px 16px;
+    padding: 12px 24px;
     border-radius: 25px;
-    font-weight: 500;
+    font-weight: 600;
     cursor: pointer;
     transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
