@@ -1,0 +1,39 @@
+/* Additional styles for content_ST1.html */
+.content-visual img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.full-width-image {
+    grid-column: 1 / -1;
+    margin-top: 40px;
+}
+
+.cause-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .content-visual {
+        order: -1;
+    }
+    
+    .cause-card img {
+        height: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cause-card img {
+        height: 150px;
+    }
+}
