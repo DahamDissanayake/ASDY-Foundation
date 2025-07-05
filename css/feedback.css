@@ -30,6 +30,7 @@
 form {
   max-width: 850px;
   margin: 0 auto;
+  color: var(--secondary-blue);
   background-color: #fff;
   padding: 2rem;
   border-radius: 12px;
@@ -75,7 +76,7 @@ select {
   padding: 0.6rem;
   border: 1px solid #ccc;
   border-radius: 6px;
-  margin-top: 0.25rem;
+  
   font-size: 1rem;
   box-sizing: border-box;
 }
@@ -184,4 +185,28 @@ select:invalid:focus {
   background: var(--secondary-blue);
   color: var(--neutral-white);
   margin-left: 10px;
+}
+
+h3{
+  font-size: larger;
+}
+
+.h4e{
+  margin-top: 50px;
+  color: var(--neutral-dark-gray);
+}
+
+label{
+  font-weight: 700;
+  color: var(--secondary-blue);
+  margin-bottom: 16px;
+}
+
+h3{
+  color: var(--secondary-blue);
+}
+
+input{
+  font-family: 'Arial', sans-serif;
+  color: var(--secondary-blue);
 }

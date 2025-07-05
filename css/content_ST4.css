@@ -3,6 +3,7 @@
    ======================================== */
 .content-section {
     padding: 60px 0;
+    scroll-margin-top: 80px;
 }
 
 .content-section h2 {

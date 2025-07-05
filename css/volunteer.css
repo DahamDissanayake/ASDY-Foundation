@@ -179,7 +179,7 @@
 
 /* Reviews Section */
 .reviews-section {
-    padding: 60px 0;
+    padding: 30px 0;
 }
 
 .rating-summary {
@@ -302,7 +302,7 @@
 
 /* Feedback Form Section */
 .feedback-section {
-    padding: 60px 0;
+    padding: 30px 0;
     background: var(--neutral-light-gray);
 }
 
@@ -355,7 +355,7 @@
 }
 
 .form-group {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .feedback-textarea {
@@ -409,7 +409,7 @@
     }
 
     .feedback-form-container {
-        padding: 30px 20px;
+        padding: 20px 10px;
     }
 
     .emoji-rating {
