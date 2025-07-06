@@ -32,13 +32,13 @@ svg * {
 
 a:hover .movable-button {
     fill: darkorange;
-    stroke: #333;
+    stroke: darkorange;
     transform: translateY(-2px);
     filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2));
 }
 
 a:hover text {
-    fill: black;
+    fill: white;
 }
 
 text {
