@@ -65,82 +65,99 @@
                 </a>
                 <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
 
-                <h3>Link to the page</h3>
-                <a href="profile.html">
-                    <button type="button" class="content-btn">Click</button>
-                </a>
+                <h3>Link to the User Profile page</h3>
+                <p><a href="profile.html">Link to the User Profile</a></p>
             </section>
 
             <section id="sitemap" class="page-editor-section">
                 <h2>Sitemap Page</h2>
                 <h3>Technical Description</h3>
-                <p>Explain the HTML and CSS techniques used to implement this page. Justify the logic and purpose of the
-                    key tags and styling choices focusing on functionality and design without copying large code
-                    sections. Explain the purpose of key HTML tags and CSS properties. Specify key HTML tags and CSS
-                    properties used to create structure and styling.</p>
-
+                <p><b>SVG Implementation:</b> The core functionality uses an inline SVG with a viewBox="0 0 1400 750" to create a scalable, interactive sitemap diagram. This approach ensures the diagram maintains proportions across different screen sizes while remaining crisp at any resolution.</p>
+                <p><b>Clickable SVG Elements: </b>Each page is represented by clickable "a" tags wrapping "rect" and "text" elements within the SVG. This creates interactive buttons that maintain semantic meaning for screen readers while providing visual feedback.</p>
+                <p><b>Hierarchical Navigation Structure: </b>The layout uses a tree-like structure with the main "ASDY Foundation" node at the top, branching down to primary pages (Home, Volunteer, Data, etc.), and further subdividing into specialized sections like "Content Pages" and "Page Editors."</p>    
+                
                 <h3>Accessibility</h3>
-                <p>Explain how you used to addressed accessibility in this particular page you implemented.</p>
+                <p><b>Responsive Design: </b>The .svg-wrapper uses percentage-based widths (90% desktop, 95% tablet, 98% mobile) with max-width: 1200px to ensure optimal viewing across devices.</p>
+                <p><b>Interactive Animations: </b>CSS transitions on .movable-button elements create smooth hover effects with transform: translateY(-2px) and filter: drop-shadow() for visual depth and user feedback.</p>
+                <p><b>Accessibility Focus States: </b>Dedicated :focus pseudo-classes ensure keyboard navigation users receive clear visual indicators with enhanced stroke width and color changes.</p>
 
                 <h3>Link to the validation page</h3>
                 <!-- Update the path to link the Page Editor with the splash page -->
-                <a href="validation_ST0.html#volunteerVal">
-                    <button type="button" class="content-btn">Click</button>
-                </a>
+                <p><a href="validation_ST4.html#volunteerVal">Validation Page for sitemap</a></p>
                 <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
 
-                <h3>Link to the page</h3>
-                <a href="sitemap.html">
-                    <button type="button" class="content-btn">Click</button>
-                </a>
+
+                <h3>Link to the Sitemap page</h3>
+                <p><a href="sitemap.html">Link to the Sitemap</a></p>
             </section>
 
             <section id="content" class="page-editor-section">
                 <h2>Content Page</h2>
                 <h3>Technical Description</h3>
-                <p>Explain the HTML and CSS techniques used to implement this page. Justify the logic and purpose of the
-                    key tags and styling choices focusing on functionality and design without copying large code
-                    sections. Explain the purpose of key HTML tags and CSS properties. Specify key HTML tags and CSS
-                    properties used to create structure and styling.</p>
+                <p>Multiple "section" elements with semantic IDs organize content logically</p>
+                <p>Grid-based layouts using CSS Grid for responsive card arrangements</p>
+                <p>Hierarchical heading structure (h1, h2, h3, h4) maintains proper document outline</p>
+                <p>The page extensively uses display: grid for flexible, responsive layouts</p>
+                <p> grid-template-columns like repeat(auto-fit, minmax(300px, 1fr)) creates responsive card layouts that adapt to screen size</p>
 
                 <h3>Accessibility</h3>
-                <p>Explain how you used to addressed accessibility in this particular page you implemented.</p>
+                <p>Anchor links with meaningful IDs allow keyboard navigation through page sections</p>
+                <p>CSS transitions and hover effects provide visual feedback for user interactions</p>
+                <p>Responsive design ensures content remains accessible across different devices and zoom levels</p>
 
                 <h3>Link to the validation page</h3>
                 <!-- Update the path to link the Page Editor with the splash page -->
-                <a href="validation_ST0.html#volunteerVal">
-                    <button type="button" class="content-btn">Click</button>
-                </a>
+                <p><a href="validation_ST4.html#contentVal">Link to the validation page</a></p>
                 <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
 
-                <h3>Link to the page</h3>
-                <a href="content_ST4.html">
-                    <button type="button" class="content-btn">Click</button>
-                </a>
+
+                <h3>Link to the Content page</h3>
+                <p><a href="content_ST4.html">Link to the content page</a></p>
             </section>
 
-            <section id="challenge" class="page-editor-section">
-                <h2> Challenges and Lessons Learned</h2>
-                <p>Detail any challenges encountered during the implementation process and explain how they were
-                    resolved. Reflect on the lessons learned from overcoming these challenges.</p>
+            <section class="page-editor-section">
+                <h2 id="challenge"> Challenges and Lessons Learned</h2>
+                <p><h3>Challenges</h3></p>
+                <p><b>User profile</b></p>
+                <p>Maintaining proper alignment of form containers and ensuring consistent spacing between form elements while creating the user profile contact form</p>
+                <p>Making SDG images clickable as interactive elements while ensuring they fit properly within their designated containers without overflow or distortion</p>
+                <p>Structuring the calendar layout with precise rows and columns arrangement to display availability data in a clear, organized tabular format</p>
+
+                <p><b>Sitemap</b></p>
+                <p>Ensuring all SVG rectangle elements remained within the visible container boundaries</p>
+                <p>Creating a smooth vertical hover effect that moves elements upward without causing unwanted rotation or skewing </p>
+                <p>Drawing connecting lines between rectangles with precise positioning and accurate lengths </p>
+
+                <p><h3>Lessons Learned</h3></p>
+                <p><b>User Profile</b></p>
+                <p>Resolved form alignment issues by implementing CSS Grid with defined column ratios (grid-template-columns: 1fr 1fr) and consistent gap spacing between form elements</p>
+                <p>Fixed SDG image container problems by using background-image properties with background-size: cover and increased the padding</p>
+                <p>Structured the calendar using HTML table elements with proper thead and tbody sections, applying border-collapse: collapse for clean row/column presentation</p>
+                <p><b>Sitemap</b></p>
+                <p>Measured all rectangle positions and added sufficient padding to set the viewBox to 1400x750 pixels</p>
+                <p>Used CSS overflow properties to enable horizontal scrolling on mobile when content exceeds container width</p>
+                <p>Applied only translateY(-2px) to move elements straight up without rotation</p>
+                <p> Implemented transition: all 0.3s ease to make the movement gradual and controlled</p>
+                <p>Used the center points of rectangles to determine line start and end positions (e.g., rectangle at x=620, width=180 means center is at x=710)</p>
+                <p>Created vertical lines first, then horizontal connecting lines, working from top to bottom of the hierarchy</p>
+
+
             </section>
 
-            <section id="compliance" class="page-editor-section">
-                <h2> Compliance</h2>
-                <p>Discuss how the pages you have created are compliant with Janet regulations governing web page
-                    publication. This includes demonstrating your understanding and application of these regulations. Be
-                    realistic and truthful.</p>
+            <section class="page-editor-section">
+                <h2 id="compliance"> Compliance</h2>
+                <p>Content follows and aligns the university guidelines.</p>
+                <p>All pages are validated to W3C standard</p>
+                <p>No commercial or inappropriate content is present</p>
             </section>
 
-            <section id="ref" class="page-editor-section">
-                <h2>References</h2>
-                <p>Provide links to resources you used following a consistent format (e.g., APA, MLA, or a simplified
-                    style). For example:</p>
+            <section class="page-editor-section">
+                <h2 id="ref">References</h2>
+            
                 <ul class="ref">
-                    <li>iStock (2025) <i>iStock.</i> Available at: <a href="#">https://www.istockphoto.com/</a> (Last
-                        accessed: 11 Feb 2025).</li>
-                    <li>Duckett, J., 2011. HTML and CSS: Design and Build Websites,<i>John Willey&Sons. Inc.
-                            Indianappolis.</i></li>
+                    <li><a href=https://www.freepik.com/popular-photos>Freepik to download pictures</a> </li>
+                    <li><a href="https://www.w3schools.com/html/default.asp">W3 Schools website</a></li>
+                    <li>University of Westminster lecture notes</li>
                 </ul>
             </section>
 
