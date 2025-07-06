@@ -23,7 +23,7 @@
                     </a>
                 </div>
                 <ul class="navigation">
-                    <li><a href="home.html" class="nav-link active">Home</a></li>
+                    <li><a href="home.html" class="nav-link">Home</a></li>
                     <li><a href="volunteer.html" class="nav-link">Volunteer</a></li>
                     <li><a href="table.html" class="nav-link">Data</a></li>
                     <li><a href="feedback.html " class="nav-link">Feedback</a></li>
@@ -48,8 +48,8 @@
 
             <!-- Update those first three sections for the pages you were responsible to implement -->
 
-            <section class="page-editor-section">
-                <h2 id="profile">Profile Page</h2>
+            <section id="profile" class="page-editor-section">
+                <h2>Profile Page</h2>
                 <h3>Technical Description</h3>
                 <p>The layout design uses a combination of CSS grid and flexbox to get structure and responsiveness. Eg: Using Two-column grid setup (grid-template-columns: 1fr 1fr) to organize content like volunteering and interests. ALso flexbox is used for the profile header and user info areas.</p>
                 <p>Adding interactive visual elements using gradient backgrounds, subtle hover effects like transform: scale(1.05), and background images for SDG interest items to make user engagement more dynamic and visually appealing.</p>
@@ -59,16 +59,18 @@
                 <p>Used Clickable images which will direct the user to the respective pages for further information and understanding about the UN Goals and Support.</p>
 
                 <h3>Link to the validation page</h3>
-                
-                <p><a href="validation_ST4.html">Link to the validation Page</a></p>
+                <!-- Update the path to link the Page Editor with the splash page -->
+                <a href="validation_ST0.html#volunteerVal">
+                    <button type="button" class="content-btn">Click</button>
+                </a>
                 <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
 
                 <h3>Link to the User Profile page</h3>
                 <p><a href="profile.html">Link to the User Profile</a></p>
             </section>
 
-            <section class="page-editor-section">
-                <h2 id="sitemap">Sitemap Page</h2>
+            <section id="sitemap" class="page-editor-section">
+                <h2>Sitemap Page</h2>
                 <h3>Technical Description</h3>
                 <p><b>SVG Implementation:</b> The core functionality uses an inline SVG with a viewBox="0 0 1400 750" to create a scalable, interactive sitemap diagram. This approach ensures the diagram maintains proportions across different screen sizes while remaining crisp at any resolution.</p>
                 <p><b>Clickable SVG Elements: </b>Each page is represented by clickable "a" tags wrapping "rect" and "text" elements within the SVG. This creates interactive buttons that maintain semantic meaning for screen readers while providing visual feedback.</p>
@@ -89,8 +91,8 @@
                 <p><a href="sitemap.html">Link to the Sitemap</a></p>
             </section>
 
-            <section class="page-editor-section">
-                <h2 id="content">Content Page</h2>
+            <section id="content" class="page-editor-section">
+                <h2>Content Page</h2>
                 <h3>Technical Description</h3>
                 <p>Multiple "section" elements with semantic IDs organize content logically</p>
                 <p>Grid-based layouts using CSS Grid for responsive card arrangements</p>

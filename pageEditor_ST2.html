@@ -23,7 +23,7 @@
                     </a>
                 </div>
                 <ul class="navigation">
-                    <li><a href="home.html" class="nav-link active">Home</a></li>
+                    <li><a href="home.html" class="nav-link">Home</a></li>
                     <li><a href="volunteer.html" class="nav-link">Volunteer</a></li>
                     <li><a href="table.html" class="nav-link">Data</a></li>
                     <li><a href="feedback.html " class="nav-link">Feedback</a></li>
@@ -37,7 +37,8 @@
 
     <section class="student-header">
         <div class="container">
-            <h2>Student name, student role</h2>
+            <h2>Student 2</h2>
+            <h2>Daham Dissanayake</h2>
         </div>
     </section>
 
@@ -47,86 +48,240 @@
 
             <!-- Update those first three sections for the pages you were responsible to implement -->
 
-            <section class="page-editor-section">
-                <h2 id="home">Home Page</h2>
+            <section id="home" class="page-editor-section" >
+                <h2>Home Page</h2>
                 <h3>Technical Description</h3>
-                <p>Explain the HTML and CSS techniques used to implement this page. Justify the logic and purpose of the
-                    key tags and styling choices focusing on functionality and design without copying large code
-                    sections. Explain the purpose of key HTML tags and CSS properties. Specify key HTML tags and CSS
-                    properties used to create structure and styling.</p>
+                <p>
+                    The <code>home.html</code> page implements a sophisticated single-page application structure using
+                    semantic HTML5 elements and advanced CSS techniques. The page utilizes a <strong>fixed header with
+                        dynamic styling</strong> through the <code>.hp-header</code> class, which transforms from
+                    transparent to
+                    white background using CSS transitions and JavaScript scroll detection. The <strong>hero
+                        section</strong> employs a
+                    full-viewport video background with HTML5 <code>&lt;video&gt;</code> element and overlay techniques
+                    using absolute positioning and z-index layering.
+                </p>
+                <p>
+                    The <strong>card-based navigation system</strong> is implemented using CSS Grid and Flexbox layouts,
+                    with the
+                    <code>.hp-card-grid</code> container utilizing flexible layouts that adapt to different screen
+                    sizes. Each card uses <strong>CSS transforms and hover effects</strong> with
+                    <code>transform: scale()</code>
+                    and
+                    <code>filter: blur()</code> properties to create interactive visual feedback. The styling
+                    incorporates <strong>CSS custom properties (variables)</strong> defined in <code>global.css</code>
+                    for
+                    consistent
+                    color theming and maintainability.
+                </p>
+                <p>
+                    <strong>Key HTML tags</strong> include semantic elements like <code>&lt;header&gt;</code>,
+                    <code>&lt;main&gt;</code>,
+                    <code>&lt;section&gt;</code>, and <code>&lt;nav&gt;</code> for proper document structure. The video
+                    element uses multiple attributes (<code>autoplay</code>, <code>muted</code>, <code>loop</code>,
+                    <code>playsinline</code>) for cross-browser compatibility. <strong>Key CSS properties</strong>
+                    include
+                    <code>position: fixed</code> for sticky navigation, <code>backdrop-filter: blur()</code> for
+                    glassmorphism effects, and transition properties with <code>cubic-bezier</code> timing functions for
+                    smooth animations.
+                </p>
+                <p>
+                    The implementation leverages <strong>global.css</strong> for foundational styles including the CSS
+                    variable system (<code>:root</code> selectors), typography hierarchy, container layouts, utility
+                    classes, and responsive breakpoints. The home-specific styles in <code>home.css</code> extend these
+                    base styles with specialized components like the hero video section and interactive card grid
+                    system.
+                </p>
 
                 <h3>Accessibility</h3>
-                <p>Explain how you used to addressed accessibility in this particular page you implemented.</p>
+                <p>
+                    The page implements several accessibility features to ensure inclusive user experience.
+                    <strong>Semantic HTML structure</strong> uses proper heading hierarchy (<code>&lt;h1&gt;</code>,
+                    <code>&lt;h2&gt;</code>) and landmark elements (<code>&lt;header&gt;</code>,
+                    <code>&lt;main&gt;</code>, <code>&lt;nav&gt;</code>,<code>&lt;footer&gt;</code>) for screen reader
+                    navigation. All interactive elements maintain <strong>keyboard accessibility</strong> through proper
+                    focus states and hover effects that don't rely solely on color changes.
+                </p>
+                <p>
+                    <strong>Alternative text</strong> is provided for all images using descriptive <code>alt</code>
+                    attributes, including
+                    the background team image and card images. The video element includes fallback content for browsers
+                    that don't support video playback. <strong>Color contrast</strong> is maintained through the CSS
+                    variable system,
+                    ensuring sufficient contrast ratios between text and background colors as defined in the global
+                    palette.
+                </p>
+                <p>
+                    The <strong>responsive design</strong> ensures accessibility across different devices and screen
+                    sizes, with
+                    mobile-first media queries adjusting font sizes, spacing, and layout for better usability on smaller
+                    screens. The navigation maintains consistent styling and positioning across breakpoints, and touch
+                    targets are appropriately sized for mobile interaction.
+                </p>
 
                 <h3>Link to the validation page</h3>
-                <!-- Update the path to link the Page Editor with the splash page -->
-                <p><a href="validation_ST0.html#splashVal">Include a link to the validation page</a>, use the marker to
-                    jump to the corresponding section of the validation page.</p>
-                <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
-
+                
+                <a href="validation_ST2.html#homeVal">
+                    <button type="button" class="content-btn">Click</button>
+                </a>
+                
                 <h3>Link to the page</h3>
-                <p><a href="splash.html">Include a link to the actual page you describe.</a></p>
+                <a href="home.html">
+                    <button type="button" class="content-btn">Click</button>
+                </a>
             </section>
 
-            <section class="page-editor-section">
-                <h2 id="table">Table Page</h2>
+            <section id="table" class="page-editor-section">
+                <h2>Table Page</h2>
                 <h3>Technical Description</h3>
-                <p>Explain the HTML and CSS techniques used to implement this page. Justify the logic and purpose of the
-                    key tags and styling choices focusing on functionality and design without copying large code
-                    sections. Explain the purpose of key HTML tags and CSS properties. Specify key HTML tags and CSS
-                    properties used to create structure and styling.</p>
+                <p>
+                    The table implementation utilizes semantic HTML5 structure with a <code>&lt;table&gt;</code> element
+                    containing proper <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, and hierarchical heading
+                    organization using <code>&lt;th&gt;</code> elements. Key structural elements include
+                    <code>rowspan</code> and <code>colspan</code> attributes for creating merged header cells,
+                    particularly for the logo header and grouped column headers that enhance data organization.
+                </p>
+                <p>
+                    The CSS implementation employs CSS Grid-like flexbox layouts within the <code>.main-container</code>
+                    and <code>.data-section</code> for responsive positioning. Critical styling techniques include CSS
+                    custom properties (CSS variables) for consistent theming, CSS transforms for interactive hover
+                    effects (<code>translateY(-3px)</code> and <code>scale(1.02)</code>), and CSS animations using
+                    <code>@keyframes</code> for tooltip fade-ins and pulsing effects on critical impact badges.
+                </p>
+                <p>
+                    Advanced CSS features include pseudo-elements (<code>::before</code> and <code>::after</code>) for
+                    creating tooltip arrows and shimmer effects on impact badges, <code>:nth-child()</code> selectors
+                    for alternating row colors, and CSS gradients for visual depth. The responsive design utilizes
+                    multiple <code>@media</code> queries targeting different breakpoints (768px, 480px) with adjusted
+                    padding, font sizes, and element dimensions.
+                </p>
+                <p>
+                    Key CSS properties include <code>position: relative/absolute</code> for tooltip positioning,
+                    <code>transform</code> and <code>transition</code> for smooth animations, <code>box-shadow</code>
+                    for depth effects, and <code>border-radius</code> for modern rounded corners. The table uses
+                    <code>border-collapse: collapse</code> and strategic <code>border: none</code> declarations for
+                    clean cell separation.
+                </p>
 
                 <h3>Accessibility</h3>
-                <p>Explain how you used to addressed accessibility in this particular page you implemented.</p>
+                <p>
+                    The implementation addresses accessibility through semantic HTML structure using proper table markup
+                    with <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, and <code>&lt;th&gt;</code> elements
+                    that provide screen reader navigation context. The <code>alt</code> attributes are implemented on
+                    all images including the logo and icons to provide descriptive text for assistive technologies.
+                </p>
+                <p>
+                    Color contrast considerations are addressed through the use of high-contrast combinations,
+                    particularly in the gradient headers and impact badges where text maintains sufficient contrast
+                    ratios. The interactive elements include <code>cursor: help</code> on thumbnails and
+                    <code>cursor: pointer</code> implications for clickable elements, providing visual feedback for user
+                    interactions.
+                </p>
+                <p>
+                    The tooltip implementation uses <code>data-tooltip</code> attributes to provide additional context
+                    information that becomes available on hover, though this could be enhanced with ARIA attributes for
+                    better screen reader support. The table structure maintains logical reading order and uses
+                    descriptive text content in data cells rather than relying solely on visual indicators.
+                </p>
+                <p>
+                    Navigation accessibility is supported through the header navigation structure with proper link
+                    semantics and the “go-to-top” button functionality. The responsive design ensures content remains
+                    accessible across different screen sizes and devices, with appropriate scaling of interactive
+                    elements like thumbnails and touch targets.
+                </p>
 
                 <h3>Link to the validation page</h3>
-                <!-- Update the path to link the Page Editor with the splash page -->
-                <p><a href="validation_ST0.html#volunteerVal">Include a link to the validation page</a>, use the marker
-                    to jump to the corresponding section of the validation page.</p>
-                <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
-
+                <a href="validation_ST2.html#tableVal">
+                    <button type="button" class="content-btn">Click</button>
+                </a>
 
                 <h3>Link to the page</h3>
-                <p><a href="volunteer.html">Include a link to the actual page you describe.</a></p>
+                <a href="table.html">
+                    <button type="button" class="content-btn">Click</button>
+                </a>
             </section>
 
-            <section class="page-editor-section">
-                <h2 id="content">Content Page</h2>
+            <section id="content" class="page-editor-section">
+                <h2>Content Page</h2>
                 <h3>Technical Description</h3>
-                <p>Explain the HTML and CSS techniques used to implement this page. Justify the logic and purpose of the
-                    key tags and styling choices focusing on functionality and design without copying large code
-                    sections. Explain the purpose of key HTML tags and CSS properties. Specify key HTML tags and CSS
-                    properties used to create structure and styling.</p>
+                <p>
+                    The <code>Content_ST2</code> page demonstrates a comprehensive educational website about UN SDG 2
+                    (Zero Hunger) using modern HTML5 semantic structure and CSS Grid/Flexbox layouts. The HTML employs
+                    semantic tags including <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>,
+                    <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;footer&gt;</code> to create a
+                    logical document structure that enhances both SEO and screen reader navigation.
+                </p>
+                <p>
+                    The CSS implementation utilizes CSS Grid for complex layouts, particularly in the
+                    <code>.content-grid</code> class which creates responsive two-column layouts (<code>2fr 1fr</code>)
+                    that automatically stack on mobile devices. The <code>.causes-grid</code> uses
+                    <code>grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))</code> to create responsive card
+                    layouts that adapt to different screen sizes. Flexbox is strategically used for component-level
+                    layouts like the <code>.target-list</code> and <code>.cta-buttons</code> to handle alignment and
+                    spacing efficiently.
+                </p>
+                <p>
+                    The styling system employs CSS custom properties (variables) for consistent color theming throughout
+                    the site, with properties like <code>var(--primary-orange)</code> and
+                    <code>var(--secondary-blue)</code> ensuring brand consistency. The visual hierarchy is established
+                    through careful typography scaling, with hero titles at <code>48px</code> scaling down to
+                    <code>28px</code> on mobile devices using media queries.
+                </p>
+                <p>
+                    Interactive elements utilize CSS pseudo-elements (<code>::after</code>) for decorative underlines
+                    and hover states with smooth transitions. The comparison section uses a three-column grid layout
+                    with a centered “VS” divider, creating an engaging visual comparison between hungry and
+                    well-nourished children. <code>Box-shadow</code> and <code>border-radius</code> properties provide
+                    depth and modern aesthetics throughout the interface.
+                </p>
 
                 <h3>Accessibility</h3>
-                <p>Explain how you used to addressed accessibility in this particular page you implemented.</p>
+                <p>
+                    The page implements several accessibility features to ensure inclusive design. Semantic HTML5
+                    elements provide proper document structure for screen readers, with logical heading hierarchy
+                    (<code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>) that allows keyboard
+                    navigation between sections. The internal navigation uses anchor links with
+                    <code>scroll-margin-top: 80px</code> to account for the fixed header when jumping to sections.
+                </p>
+                <p>
+                    Color contrast is maintained through the CSS variable system, ensuring sufficient contrast ratios
+                    between text and background colors. Interactive elements like buttons and links have proper focus
+                    states and are keyboard accessible. The responsive design ensures content remains readable across
+                    different devices and zoom levels, with font sizes that scale appropriately.
+                </p>
+                <p>
+                    Images include descriptive <code>alt</code> text attributes, and the navigation structure provides
+                    clear context for assistive technologies. The page maintains semantic meaning through proper use of
+                    lists, headings, and sectioning elements, making it accessible to users with various disabilities
+                    while maintaining visual appeal for all users.
+                </p>
 
                 <h3>Link to the validation page</h3>
-                <!-- Update the path to link the Page Editor with the splash page -->
-                <p><a href="validation_ST0.html#contentVal">Include a link to the validation page</a>, use the marker to
-                    jump to the corresponding section of the validation page.</p>
-                <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
-
-
+                <a href="validation_ST2.html#contentVal">
+                    <button type="button" class="content-btn">Click</button>
+                </a>
+                
                 <h3>Link to the page</h3>
-                <p><a href="content.html">Include a link to the actual page you describe.</a></p>
+                <a href="content_ST2.html">
+                    <button type="button" class="content-btn">Click</button>
+                </a>
             </section>
 
-            <section class="page-editor-section">
-                <h2 id="challenge"> Challenges and Lessons Learned</h2>
+            <section id="challenge" class="page-editor-section">
+                <h2> Challenges and Lessons Learned</h2>
                 <p>Detail any challenges encountered during the implementation process and explain how they were
                     resolved. Reflect on the lessons learned from overcoming these challenges.</p>
             </section>
 
-            <section class="page-editor-section">
-                <h2 id="compliance"> Compliance</h2>
+            <section id="compliance" class="page-editor-section">
+                <h2> Compliance</h2>
                 <p>Discuss how the pages you have created are compliant with Janet regulations governing web page
                     publication. This includes demonstrating your understanding and application of these regulations. Be
                     realistic and truthful.</p>
             </section>
 
-            <section class="page-editor-section">
-                <h2 id="ref">References</h2>
+            <section id="ref" class="page-editor-section">
+                <h2>References</h2>
                 <p>Provide links to resources you used following a consistent format (e.g., APA, MLA, or a simplified
                     style). For example:</p>
                 <ul class="ref">

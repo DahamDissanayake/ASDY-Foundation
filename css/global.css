@@ -107,7 +107,7 @@ a:hover {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 0px;
 }
 
 .top-margin {
@@ -352,6 +352,8 @@ section {
     background: var(--primary-orange-dark);
     transform: translateY(-2px);
 }
+
+
 
 /* ========================================
    Background Video
