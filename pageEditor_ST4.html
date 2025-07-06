@@ -70,15 +70,14 @@
             <section id="sitemap" class="page-editor-section">
                 <h2>Sitemap Page</h2>
                 <h3>Technical Description</h3>
-                <p><b>SVG Implementation:</b> The core functionality uses an inline SVG with a viewBox="0 0 1400 750" to create a scalable, interactive sitemap diagram. This approach ensures the diagram maintains proportions across different screen sizes while remaining crisp at any resolution.</p>
-                <p><b>Clickable SVG Elements: </b>Each page is represented by clickable "a" tags wrapping "rect" and "text" elements within the SVG. This creates interactive buttons that maintain semantic meaning for screen readers while providing visual feedback.</p>
-                <p><b>Hierarchical Navigation Structure: </b>The layout uses a tree-like structure with the main "ASDY Foundation" node at the top, branching down to primary pages (Home, Volunteer, Data, etc.), and further subdividing into specialized sections like "Content Pages" and "Page Editors."</p>    
+                <p><b>SVG Implementation:</b> Used an inline SVG with a viewBox="0 0 1400 750" to create a scalable and interactive sitemap.</p>
+                <p><b>Clickable SVG Elements: </b>Each page is represented by clickable "a" tags wrapping "rect" and "text" elements within the SVG.</p>
+                <p><b>Hierarchical Navigation Structure: </b>The layout uses a tree-like structure with the main "ASDY Splash page" node at the top, branching down to primary pages, and further subdividing into "Content Pages" and "Page Editors."</p>    
                 
                 <h3>Accessibility</h3>
-                <p><b>Responsive Design: </b>The .svg-wrapper uses percentage-based widths (90% desktop, 95% tablet, 98% mobile) with max-width: 1200px to ensure optimal viewing across devices.</p>
-                <p><b>Interactive Animations: </b>CSS transitions on .movable-button elements create smooth hover effects with transform: translateY(-2px) and filter: drop-shadow() for visual depth and user feedback.</p>
-                <p><b>Accessibility Focus States: </b>Dedicated :focus pseudo-classes ensure keyboard navigation users receive clear visual indicators with enhanced stroke width and color changes.</p>
-
+                <p><b>Responsive Design: </b>The .svg-wrapper uses percentage-based widths with max-width: 1200px to ensure viewing across devices.</p>
+                <p><b>Interactive Animations: </b>CSS transitions on .movable-button elements create smooth hover effects with "transform: translateY(-2px)" and "filter: drop-shadow()" for visual depth and user feedback.</p>
+                
                 <h3>Link to the validation page</h3>
                 
                 <a href="validation_ST4.html#sitemapVal">
@@ -97,9 +96,7 @@
                 <p>Multiple "section" elements with semantic IDs organize content logically</p>
                 <p>Grid-based layouts using CSS Grid for responsive card arrangements</p>
                 <p>Hierarchical heading structure (h1, h2, h3, h4) maintains proper document outline</p>
-                <p>The page extensively uses display: grid for flexible, responsive layouts</p>
-                <p> grid-template-columns like repeat(auto-fit, minmax(300px, 1fr)) creates responsive card layouts that adapt to screen size</p>
-
+               
                 <h3>Accessibility</h3>
                 <p>Anchor links with meaningful IDs allow keyboard navigation through page sections</p>
                 <p>CSS transitions and hover effects provide visual feedback for user interactions</p>
@@ -118,8 +115,8 @@
                 </a>
             </section>
 
-            <section class="page-editor-section">
-                <h2 id="challenge"> Challenges and Lessons Learned</h2>
+            <section id="challenge" class="page-editor-section">
+                <h2 > Challenges and Lessons Learned</h2>
                 <p><h3>Challenges</h3></p>
                 <p><b>User profile</b></p>
                 <p>Maintaining proper alignment of form containers and ensuring consistent spacing between form elements while creating the user profile contact form</p>
@@ -141,21 +138,21 @@
                 <p>Used CSS overflow properties to enable horizontal scrolling on mobile when content exceeds container width</p>
                 <p>Applied only translateY(-2px) to move elements straight up without rotation</p>
                 <p> Implemented transition: all 0.3s ease to make the movement gradual and controlled</p>
-                <p>Used the center points of rectangles to determine line start and end positions (e.g., rectangle at x=620, width=180 means center is at x=710)</p>
+                <p>Used the center points of rectangles to determine line start and end positions </p>
                 <p>Created vertical lines first, then horizontal connecting lines, working from top to bottom of the hierarchy</p>
 
 
             </section>
 
-            <section class="page-editor-section">
-                <h2 id="compliance"> Compliance</h2>
+            <section id="compliance" class="page-editor-section">
+                <h2 > Compliance</h2>
                 <p>Content follows and aligns the university guidelines.</p>
                 <p>All pages are validated to W3C standard</p>
                 <p>No commercial or inappropriate content is present</p>
             </section>
 
-            <section class="page-editor-section">
-                <h2 id="ref">References</h2>
+            <section id="ref" class="page-editor-section">
+                <h2>References</h2>
             
                 <ul class="ref">
                     <li><a href=https://www.freepik.com/popular-photos>Freepik to download pictures</a> </li>
