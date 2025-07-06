@@ -48,7 +48,7 @@
 
             <!-- Update those first three sections for the pages you were responsible to implement -->
 
-            <section id="home" class="page-editor-section" >
+            <section id="home" class="page-editor-section">
                 <h2>Home Page</h2>
                 <h3>Technical Description</h3>
                 <p>
@@ -120,11 +120,11 @@
                 </p>
 
                 <h3>Link to the validation page</h3>
-                
+
                 <a href="validation_ST2.html#homeVal">
                     <button type="button" class="content-btn">Click</button>
                 </a>
-                
+
                 <h3>Link to the page</h3>
                 <a href="home.html">
                     <button type="button" class="content-btn">Click</button>
@@ -260,7 +260,7 @@
                 <a href="validation_ST2.html#contentVal">
                     <button type="button" class="content-btn">Click</button>
                 </a>
-                
+
                 <h3>Link to the page</h3>
                 <a href="content_ST2.html">
                     <button type="button" class="content-btn">Click</button>
@@ -269,26 +269,48 @@
 
             <section id="challenge" class="page-editor-section">
                 <h2> Challenges and Lessons Learned</h2>
-                <p>Detail any challenges encountered during the implementation process and explain how they were
-                    resolved. Reflect on the lessons learned from overcoming these challenges.</p>
+                <p>One challenge was using a video background, which slowed down my home page load time. I fixed this by
+                    using JavaScript to preload the video on the previous page, improving performance.</p>
+                <p>Another issue was my sticky header covering section headings when jumping to IDs. I solved this by
+                    adding a scroll margin in CSS to keep the headings visible.</p>
+                <p>We also used GitHub for version control, which helped us collaborate smoothly and track changes.</p>
+                <p>These challenges taught me the value of optimization, careful CSS tweaks, and good teamwork tools.
+                </p>
             </section>
 
             <section id="compliance" class="page-editor-section">
                 <h2> Compliance</h2>
-                <p>Discuss how the pages you have created are compliant with Janet regulations governing web page
-                    publication. This includes demonstrating your understanding and application of these regulations. Be
-                    realistic and truthful.</p>
+                <p>In developing the ASDY Foundation website, I focused on creating a solid structural foundation that
+                    would meet basic web compliance standards while prioritizing user experience and content
+                    accessibility. I deliberately chose to implement HTML5 semantic elements throughout all pages,
+                    ensuring proper document structure with DOCTYPE declarations, UTF-8 encoding, and logical heading
+                    hierarchies. My approach was to build a responsive design framework using external CSS files and
+                    proper viewport meta tags, which I knew would support both desktop and mobile users while
+                    maintaining clean separation of content and presentation.</p>
+                <p>However, I must acknowledge that in my development process, I prioritized visual design and
+                    functionality over comprehensive accessibility compliance. While I included alt text for images and
+                    used semantic HTML structure, I didn't fully implement WCAG 2.1 AA standards in several key areas.
+                    For instance, when I created the data table in table.html, I focused more on visual presentation
+                    than on providing proper header associations and caption elements for screen readers. Similarly, my
+                    decision to use JavaScript onclick handlers for navigation was driven by ease of implementation
+                    rather than ensuring keyboard accessibility alternatives.</p>
+                <p>Looking back on my development choices, I realize that while I created a functional and visually
+                    appealing website, I fell short of full regulatory compliance in crucial accessibility areas. My
+                    focus on rapid development led me to overlook essential features like ARIA labels, proper color
+                    contrast ratios for status indicators, and skip navigation links. If I were to rebuild this site, I
+                    would approach it with accessibility-first principles, ensuring that every interactive element is
+                    keyboard accessible and that all content is properly structured for assistive technologies from the
+                    ground up, rather than treating accessibility as an afterthought.</p>
             </section>
 
             <section id="ref" class="page-editor-section">
                 <h2>References</h2>
-                <p>Provide links to resources you used following a consistent format (e.g., APA, MLA, or a simplified
-                    style). For example:</p>
                 <ul class="ref">
-                    <li>iStock (2025) <i>iStock.</i> Available at: <a href="#">https://www.istockphoto.com/</a> (Last
-                        accessed: 11 Feb 2025).</li>
-                    <li>Duckett, J., 2011. HTML and CSS: Design and Build Websites,<i>John Willey&Sons. Inc.
-                            Indianappolis.</i></li>
+                    <li>Daily Mirror. (n.d.). <em>sl-kids.jpg</em> [Image]. Daily Mirror.</li>
+                    <li>World Food Programme. (n.d.). <em>events-camp.jpg</em> [Image]. World Food Programme.</li>
+                    <li>The Daily Eye. (n.d.). <em>news-upt.jpg</em> [Image]. The Daily Eye.</li>
+                    <li>Google Gemini Pro. (n.d.). <em>home-hero.mp4</em> [AI-generated video]. Google.</li>
+                    <li>Verywell Mind. (n.d.). <em>edu-hunger.jpg</em> [Image]. Verywell Mind.</li>
                 </ul>
             </section>
 
