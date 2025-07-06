@@ -31,14 +31,14 @@ svg * {
 }
 
 a:hover .movable-button {
-    fill: darkorange;
+    fill: white;
     stroke: darkorange;
     transform: translateY(-2px);
     filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2));
 }
 
 a:hover text {
-    fill: white;
+    fill: orange;
 }
 
 text {
@@ -63,8 +63,8 @@ svg {
 
 /* Focus states for accessibility */
 a:focus .movable-button {
-    fill: darkorange;
-    stroke: #333;
+    fill: white;
+    stroke: darkorange;
     stroke-width: 3px;
     transform: translateY(-2px);
     filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2));
@@ -72,7 +72,7 @@ a:focus .movable-button {
 }
 
 a:focus text {
-    fill: black;
+    fill: dark orange;
 }
 
 /* Active states */
