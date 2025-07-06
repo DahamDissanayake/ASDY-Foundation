@@ -1,3 +1,4 @@
+/* Hero section background and layout */
 .hero-section {
   background: linear-gradient(135deg, var(--primary-orange) 0%, var(--primary-orange-dark) 100%);
   color: var(--neutral-white);
@@ -7,11 +8,13 @@
   overflow: hidden;
 }
 
+/* Ensure content is layered above background video */
 .hero-content {
   position: relative;
   z-index: 2;
 }
 
+/* Main heading style in hero section */
 .hero-content h1 {
   font-size: 48px;
   margin-bottom: 20px;
@@ -19,6 +22,7 @@
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
+/* Subheading in hero section */
 .hero-subtitle {
   font-size: 20px;
   opacity: 0.9;
@@ -27,6 +31,7 @@
   line-height: 1.6;
 }
 
+/* Feedback form container */
 form {
   max-width: 850px;
   margin: 0 auto;
@@ -38,8 +43,7 @@ form {
   margin-top: 53px;
 }
 
-
-/* Fieldsets */
+/* Fieldset container for grouping form sections */
 fieldset {
   border: 2px solid #FFB84D;
   border-radius: 10px;
@@ -47,6 +51,7 @@ fieldset {
   margin-bottom: 2rem;
 }
 
+/* Legend styling inside fieldset */
 legend {
   padding: 0 10px;
   font-weight: bold;
@@ -54,21 +59,24 @@ legend {
   font-size: 1.2rem;
 }
 
-/* Labels & Inputs */
+/* Label styling for form inputs */
 label {
   display: block;
   margin-top: 1rem;
   font-weight: 500;
 }
 
+/* Style radio buttons */
 input[type="radio"] {
   accent-color: var(--primary-orange);
 }
 
+/* Style checkboxes */
 input[type="checkbox"] {
   accent-color: var(--primary-orange); 
 }
 
+/* Shared input styles */
 input,
 textarea,
 select {
@@ -76,11 +84,11 @@ select {
   padding: 0.6rem;
   border: 1px solid #ccc;
   border-radius: 6px;
-  
   font-size: 1rem;
   box-sizing: border-box;
 }
 
+/* Focus effect for inputs */
 input:focus,
 textarea:focus,
 select:focus {
@@ -89,7 +97,7 @@ select:focus {
   box-shadow: 0 0 0 2px #c8f2cd;
 }
 
-/* Textarea Counter */
+/* Character counter below textarea */
 .char-counter {
   font-size: 0.85rem;
   color: #555;
@@ -97,6 +105,7 @@ select:focus {
   margin-top: 0.25rem;
 }
 
+/* Rating stars container */
 .rating {
   direction: rtl;
   display: flex;
@@ -106,10 +115,12 @@ select:focus {
   margin-left: 0;
 }
 
+/* Hide radio buttons in rating */
 .rating input[type="radio"] {
   display: none;
 }
 
+/* Style star labels */
 .rating label {
   font-size: 2rem;
   color: #ccc;
@@ -118,56 +129,57 @@ select:focus {
   transition: color 0.2s;
 }
 
+/* Hover effect for rating stars */
 .rating label:hover,
 .rating label:hover~label {
   color: #FFB84D;
 }
 
+/* Reset all star colors when a radio is checked */
 .rating input[type="radio"]:checked~label {
   color: #ccc;
 }
 
+/* Highlight selected stars */
 .rating input[type="radio"]:checked+label,
 .rating input[type="radio"]:checked+label~label {
   color: #FFA500;
 }
 
-
-/* File Upload */
+/* File upload input styling */
 input[type="file"] {
   padding: 0.3rem;
 }
 
-/* Checkboxes & Radios (inline style preserved) */
+/* Checkbox and radio alignment tweaks */
 input[type="checkbox"],
 input[type="radio"] {
   width: auto;
   margin-right: 0.5rem;
 }
 
-/* Submit Button */
-
-
-/* Error Styling */
+/* Invalid input field styling */
 input:invalid,
 textarea:invalid,
 select:invalid {
   border-color: #FFB84D;
 }
 
+/* Focus state for invalid fields */
 input:invalid:focus,
 textarea:invalid:focus,
 select:invalid:focus {
   box-shadow: 0 0 0 2px #fddede;
 }
 
+/* Error message display */
 .error-message {
   color: #e74c3c;
   font-size: 0.9rem;
   margin-top: 0.25rem;
 }
 
-
+/* Call-to-action button styling */
 .cta-btn {
   background: var(--primary-orange);
   color: var(--neutral-white);
@@ -181,32 +193,38 @@ select:invalid:focus {
   margin-top: 20px;
 }
 
+/* Secondary (reset) button styling */
 .btn-secondary {
   background: var(--secondary-blue);
   color: var(--neutral-white);
   margin-left: 10px;
 }
 
-h3{
+/* Heading style */
+h3 {
   font-size: larger;
 }
 
-.h4e{
+/* Special h4 label style for spacing and color */
+.h4e {
   margin-top: 50px;
   color: var(--neutral-dark-gray);
 }
 
-label{
+/* Form label enhancements */
+label {
   font-weight: 700;
   color: var(--secondary-blue);
   margin-bottom: 16px;
 }
 
-h3{
+/* Heading color override */
+h3 {
   color: var(--secondary-blue);
 }
 
-input{
+/* Default input font and color */
+input {
   font-family: 'Arial', sans-serif;
   color: var(--secondary-blue);
 }
